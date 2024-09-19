@@ -1,0 +1,65 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dul:precedes a owl:ObjectProperty .
+
+fred:athlete_1 fred:hadCompetedBefore true ;
+    fred:hadQualifiedBefore true ;
+    fred:hadTrainedBefore true .
+
+fred:competition_1 a fred:AthleticCompetition ;
+    dul:precedes fred:win_1 .
+
+fred:flag_1 fred:wasRaisedBefore true .
+
+fred:game_1 fred:wasOrganizedBefore true .
+
+fred:hadCompetedBefore a owl:DatatypeProperty .
+
+fred:hadPurchasedTicket a owl:DatatypeProperty .
+
+fred:hadQualifiedBefore a owl:DatatypeProperty .
+
+fred:hadStartedBefore a owl:DatatypeProperty .
+
+fred:hadTrainedBefore a owl:DatatypeProperty .
+
+fred:jersey_1 fred:wasPrintedBefore true .
+
+fred:qualification_1 a fred:AthleticQualification ;
+    dul:precedes fred:race_1 .
+
+fred:spectator_1 fred:hadPurchasedTicket true .
+
+fred:stadium_1 fred:wasBuiltBefore true .
+
+fred:track_1 fred:wasPreparedBefore true .
+
+fred:training_1 a fred:AthleticTraining ;
+    dul:precedes fred:win_1 .
+
+fred:uniform_1 fred:wasDesignedBefore true .
+
+fred:wasBuiltBefore a owl:DatatypeProperty .
+
+fred:wasDesignedBefore a owl:DatatypeProperty .
+
+fred:wasOrganizedBefore a owl:DatatypeProperty .
+
+fred:wasPreparedBefore a owl:DatatypeProperty .
+
+fred:wasPrintedBefore a owl:DatatypeProperty .
+
+fred:wasRaisedBefore a owl:DatatypeProperty .
+
+fred:AthleticCompetition rdfs:subClassOf pbrs:compete-01 .
+
+fred:AthleticQualification rdfs:subClassOf pbrs:qualify-01 .
+
+fred:AthleticTraining rdfs:subClassOf pbrs:train-01 .
+
+fred:race_1 fred:hadStartedBefore true .

@@ -1,0 +1,35 @@
+General instructions:
+You receive a text "T" and a frame-based knowledge graph "KG" that is the extraction of factual knowledge from T. 
+
+The KG is expressed according to:
+- the semantics of OWL2 logic language
+- frame semantics principles as formalised in the Framester schema (https://w3id.org/framester/schema/)
+- RDF language serialized in Turtle syntax
+
+The alignments in KG are to PropBank, WordNet, VerbAtlas, Wikidata, DBpedia, DOLCE-Zero, etc.
+
+T: 
+{{ Text }}
+
+KG:
+{{ KG }}
+
+Task:
+Your goal is to extend KG with more knowledge that can be assumed from T, but it is not explicit.
+Using the elements of KG, and PropBank and WordNet elements as linking points, add any further elements you need to extrat implicit knowledge about: Presuppositions.
+
+Presuppositions:
+Semantic presuppositions that are implied by the factual knowledge, in the sense of Levinson's pragmatics. 
+Here are natural language inference examples:
+1) John saw the man with two heads -> there exists a man with two heads
+2) Martha regrets drinking John's home brew -> Martha did in fact drink John's home brew
+3) John stopped teasing his wife -> John had been teasing his wife
+Here is the rough triplification, you will be more precise and use KG nodes, PropBank, WordNet, and WikiData entities as anchor point:
+1) :man :has :head . :head :hasValue "2" .
+2) :MarthaDrinkingJohnsHomeBrew a dul:Situation ; hasValue "true" .
+3) :John :teases :wife . :wife :wifeOf :John . :JohnTeasingWife a dul:Situation ; :hasTime :PreviousToEnunciation .
+
+
+Add Presuppositions triples to the KG considering the original text T.
+Print the newly generater triples only.
+Do not write anything else.

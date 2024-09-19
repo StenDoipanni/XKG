@@ -1,0 +1,26 @@
+@prefix coerce: <http://www.ontologydesignpatterns.org/ont/coercion/coerce.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix mor: <http://www.ontologydesignpatterns.org/ont/values/moral.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+coerce:coercedType a owl:ObjectProperty .
+
+fred:celebrate_1 coerce:coercedType fred:achieve_2 ;
+    mor:commitment mor:NationalPride .
+
+mor:commitment a owl:ObjectProperty .
+
+mor:evokes a owl:ObjectProperty .
+
+fred:achieve_2 a pbrs:achieve-01 ;
+    mor:evokes mor:PersonalAccomplishment ;
+    pblr:achieve-01.achiever fred:athlete_1 ;
+    pblr:achieve-01.thing-achieved fred:win_1 .
+
+mor:NationalPride a mor:MoralDue ;
+    owl:sameAs wd:Q1052978 .
+
+mor:PersonalAccomplishment a mor:PositiveMoralValueGain .

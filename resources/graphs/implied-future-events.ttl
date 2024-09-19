@@ -1,0 +1,31 @@
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix caus: <http://www.ontologydesignpatterns.org/ont/causal/causal.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#boxing:hasTruthValue> a owl:ObjectProperty .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#caus:truthDependingOn> a owl:ObjectProperty .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dul:hasQuality> a owl:ObjectProperty .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dul:precedes> a owl:ObjectProperty .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pblr:achieve-01.achiever> a owl:ObjectProperty .
+
+fred:future_achievement_1 a pbrs:achieve-01 ;
+    boxing:hasTruthValue true ;
+    caus:truthDependingOn fred:inspire_1 ;
+    dul:hasQuality fred:future_1 ;
+    owl:sameAs wd:Q185651 ;
+    pblr:achieve-01.achiever fred:athlete_1 .
+
+fred:inspire_1 dul:precedes fred:future_1,
+        fred:future_achievement_1 .
+
+fred:future_1 a fred:Future .

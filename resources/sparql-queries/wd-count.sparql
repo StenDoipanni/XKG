@@ -1,0 +1,12 @@
+SELECT (COUNT(DISTINCT ?entity) AS ?totalEntityCount)
+WHERE {
+  {
+    ?entity ?predicate ?object .
+    FILTER(REGEX(STR(?entity), "^http://www.wikidata.org/entity/"))
+  }
+  UNION
+  {
+    ?subject ?predicate ?entity .
+    FILTER(REGEX(STR(?entity), "^http://www.wikidata.org/entity/"))
+  }
+}

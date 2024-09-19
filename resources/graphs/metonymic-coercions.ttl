@@ -1,0 +1,53 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+
+
+pbrs:contain-01.container a owl:ObjectProperty .
+pbrs:contain-01.contents a owl:ObjectProperty .
+
+pblr:cheer-02.agent a owl:ObjectProperty .
+pblr:cheer-02.beneficiary a owl:ObjectProperty .
+
+pblr:celebrate-01.honored a owl:ObjectProperty .
+pblr:celebrate-01.location a owl:ObjectProperty .
+
+pblr:represent-01.theme a owl:ObjectProperty .
+
+
+fred:stadium_1 a pbrs:contain-01 ;
+    pbrs:contain-01.container fred:stadium_1 ;
+    pbrs:contain-01.contents fred:spectator_1 .
+
+fred:spectator_1 a pbrs:cheer-02 ;
+    pblr:cheer-02.agent fred:spectator_1 ;
+    pblr:cheer-02.beneficiary fred:athlete_1 .
+
+fred:celebrate_1 pblr:celebrate-01.honored fred:win_1 ;
+    pblr:celebrate-01.location fred:track_1 .
+
+fred:track_1 a pbrs:contain-01 ;
+    pbrs:contain-01.container fred:track_1 ;
+    pbrs:contain-01.contents fred:athlete_1 .
+
+fred:uniform_1 a pbrs:represent-01 ;
+    pblr:represent-01.theme fred:country_1 .
+
+fred:jersey_1 a pbrs:represent-01 ;
+    pblr:represent-01.theme fred:athlete_1 .
+
+fred:flag_1 a pbrs:represent-01 ;
+    pblr:represent-01.theme fred:country_2 .
+
+fred:stadium_1 owl:sameAs wdt:Q483110 .
+
+fred:track_1 owl:sameAs wdt:Q1159373 .
+
+#fred:contain_1 rdf:type owl:ObjectProperty .
+#fred:cheer_2 rdf:type owl:ObjectProperty .
+#fred:represent_1 rdf:type owl:ObjectProperty .

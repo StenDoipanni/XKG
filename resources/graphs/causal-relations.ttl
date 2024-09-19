@@ -1,0 +1,29 @@
+@prefix caus: <http://www.ontologydesignpatterns.org/ont/causal/causal.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+caus:triggeringCauseFor a owl:ObjectProperty .
+
+fred:achieve_1 caus:triggeringCauseFor fred:inspire_1,
+        fred:thrill_1 ;
+    owl:sameAs pbrs:achieve-01 .
+
+fred:win_1 caus:triggeringCauseFor fred:celebrate_1,
+        fred:exhilarate_1,
+        fred:joy_1,
+        fred:pride-01_1,
+        fred:pride_1,
+        fred:scene_1 ;
+    owl:sameAs pbrs:win-01 .
+
+fred:celebrate_1 caus:triggeringCauseFor fred:beam_1 .
+
+fred:inspire_1 owl:sameAs pbrs:inspire-01 .
+
+fred:joy_1 owl:sameAs wn30:synset-joy-noun-1 .
+
+fred:pride_1 owl:sameAs pbrs:pride-01 .
+
+fred:thrill_1 owl:sameAs pbrs:thrill-01 .

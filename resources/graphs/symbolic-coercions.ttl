@@ -1,0 +1,43 @@
+@prefix coerce: <http://www.ontologydesignpatterns.org/ont/coercion/coerce.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix mor: <http://www.ontologydesignpatterns.org/ont/values/moral.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+coerce:coercedType a owl:ObjectProperty .
+
+fred:athlete_1 coerce:coercedType mor:NationalHero .
+
+fred:celebrate_1 coerce:coercedType mor:Victory .
+
+fred:flag_1 coerce:coercedType mor:NationalSymbol .
+
+fred:game_1 coerce:coercedType mor:InternationalCompetition .
+
+fred:pride-01_1 coerce:coercedType mor:NationalIdentity .
+
+fred:spirit_1 coerce:coercedType mor:Sportsmanship .
+
+fred:win_1 coerce:coercedType mor:Achievement .
+
+mor:Achievement owl:equivalentClass wn30:synset-achievement-noun-1 ;
+    owl:sameAs wd:Q1092054 .
+
+mor:InternationalCompetition owl:equivalentClass wn30:synset-international_competition-noun-1 ;
+    owl:sameAs wd:Q1656682 .
+
+mor:NationalHero owl:equivalentClass wn30:synset-national_hero-noun-1 ;
+    owl:sameAs wd:Q848697 .
+
+mor:NationalIdentity owl:equivalentClass wn30:synset-national_identity-noun-1 ;
+    owl:sameAs wd:Q331769 .
+
+mor:NationalSymbol owl:equivalentClass wn30:synset-national_symbol-noun-1 ;
+    owl:sameAs wd:Q1971849 .
+
+mor:Sportsmanship owl:equivalentClass wn30:synset-sportsmanship-noun-1 ;
+    owl:sameAs wd:Q1072326 .
+
+mor:Victory owl:equivalentClass wn30:synset-victory-noun-1 ;
+    owl:sameAs wd:Q178051 .

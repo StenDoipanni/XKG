@@ -1,0 +1,101 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix is: <http://www.ontologydesignpatterns.org/ont/is/is.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn2: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:athlete_1 is:evokes is:Figure .
+
+fred:background_1 is:evokes is:BackgroundPrimitive .
+
+fred:beam_1 is:evokes is:Radiation .
+
+fred:celebrate_1 is:evokes is:VerticalOrientation .
+
+fred:crowd_1 is:evokes is:Collection .
+
+fred:exhilarate_1 is:evokes is:Force .
+
+fred:finish_1 is:evokes is:Goal .
+
+fred:flag_1 is:evokes is:VerticalOrientation .
+
+fred:joy_1 is:evokes is:Force .
+
+fred:moment_1 is:evokes is:Cycle .
+
+fred:race_1 is:evokes is:Path .
+
+fred:spectator_1 is:evokes is:MultipleObserver .
+
+fred:stadium_1 is:evokes is:Container .
+
+fred:track_1 is:evokes is:Surface .
+
+fred:uniform_1 is:evokes is:Container .
+
+fred:win_1 is:evokes is:Balance .
+
+is:evokes a owl:ObjectProperty .
+
+is:BackgroundPrimitive a is:SpatialPrimitive .
+
+is:Balance a is:ImageSchema ;
+    rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn30:synset-balance-noun-1 ;
+    owl:sameAs wd:Q162590 .
+
+is:Collection a is:ImageSchema ;
+    rdfs:subClassOf dul:Collection ;
+    owl:equivalentClass wn30:synset-collection-noun-1 ;
+    owl:sameAs wd:Q2668072 .
+
+is:Cycle a is:ImageSchema ;
+    rdfs:subClassOf dul:Process ;
+    owl:equivalentClass wn30:synset-cycle-noun-1 ;
+    owl:sameAs wd:Q193539 .
+
+is:Figure a is:SpatialPrimitive ;
+    rdfs:subClassOf dul:Entity ;
+    owl:equivalentClass wn30:synset-figure-noun-1 ;
+    owl:sameAs wd:Q82795 .
+
+is:Goal a is:SpatialPrimitive ;
+    rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn30:synset-goal-noun-1 ;
+    owl:sameAs wd:Q1196763 .
+
+is:MultipleObserver a is:ImageSchema .
+
+is:Path a is:SpatialPrimitive ;
+    rdfs:subClassOf dul:SpaceRegion ;
+    owl:equivalentClass wn30:synset-path-noun-1 ;
+    owl:sameAs wd:Q1369 .
+
+is:Radiation a is:ImageSchema ;
+    rdfs:subClassOf dul:Event ;
+    owl:equivalentClass wn30:synset-radiation-noun-1 ;
+    owl:sameAs wd:Q11388 .
+
+is:Surface a is:SpatialPrimitive ;
+    rdfs:subClassOf dul:SpaceRegion ;
+    owl:equivalentClass wn2:synset-surface-noun-1 ;
+    owl:sameAs wd:Q219826 .
+
+is:Container a is:ImageSchema ;
+    rdfs:subClassOf dul:PhysicalObject ;
+    owl:equivalentClass wn30:synset-container-noun-1 ;
+    owl:sameAs wd:Q987767 .
+
+is:Force a is:ImageSchema ;
+    rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn30:synset-force-noun-1 ;
+    owl:sameAs wd:Q11402 .
+
+is:VerticalOrientation a is:ImageSchema ;
+    rdfs:subClassOf dul:Abstract ;
+    owl:equivalentClass wn30:synset-vertical-adjective-1 ;
+    owl:sameAs wd:Q1383554 .

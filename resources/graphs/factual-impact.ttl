@@ -1,0 +1,36 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix impact: <http://www.ontologydesignpatterns.org/ont/impact/impact.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:athlete_1 impact:hasExpectedEmotion impact:Joy,
+        impact:Pride ;
+    impact:hasExpectedPhysicalState impact:Exhilaration ;
+    impact:hasExpectedSocialImpact impact:NationalRecognition .
+
+fred:person_1 impact:hasExpectedEmotion impact:Disappointment .
+
+fred:spectator_1 impact:hasExpectedEmotion impact:Excitement ;
+    impact:hasExpectedPhysicalState impact:Energized .
+
+impact:hasExpectedEmotion a owl:ObjectProperty .
+
+impact:hasExpectedPhysicalState a owl:ObjectProperty .
+
+impact:hasExpectedSocialImpact a owl:ObjectProperty .
+
+impact:Disappointment owl:equivalentClass wn30:synset-disappointment-noun-1 .
+
+impact:Energized rdfs:subClassOf dul:PhysicalAttribute .
+
+impact:Excitement owl:equivalentClass wn30:synset-excitement-noun-1 .
+
+impact:Exhilaration owl:equivalentClass wn30:synset-exhilaration-noun-1 .
+
+impact:Joy owl:equivalentClass wn30:synset-joy-noun-1 .
+
+impact:NationalRecognition rdfs:subClassOf dul:SocialObject .
+
+impact:Pride owl:equivalentClass wn30:synset-pride-noun-1 .

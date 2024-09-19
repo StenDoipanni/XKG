@@ -1,0 +1,13 @@
+SELECT DISTINCT ?entity
+WHERE {
+  {
+    ?entity ?predicate ?object .
+    FILTER(REGEX(STR(?entity), "https://w3id.org/framester/data/propbank-3.4.0/RoleSet/"))
+  }
+  UNION
+  {
+    ?subject ?predicate ?entity .
+    FILTER(REGEX(STR(?entity), "https://w3id.org/framester/data/propbank-3.4.0/RoleSet/"))
+  }
+}
+ORDER BY ?entity

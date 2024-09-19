@@ -1,0 +1,13 @@
+SELECT DISTINCT ?entity
+WHERE {
+  {
+    ?entity ?predicate ?object .
+    FILTER(REGEX(STR(?entity), "^https://w3id.org/framester/wn/wn30/instances/"))
+  }
+  UNION
+  {
+    ?subject ?predicate ?entity .
+    FILTER(REGEX(STR(?entity), "^https://w3id.org/framester/wn/wn30/instances/"))
+  }
+}
+ORDER BY ?entity

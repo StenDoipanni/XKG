@@ -1,0 +1,40 @@
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix caus: <http://www.ontologydesignpatterns.org/ont/causal/causal.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+caus:truthDependingOn a owl:ObjectProperty .
+
+fred:disappoint_1 a pbrs:disappoint-01 ;
+    boxing:hasTruthValue true ;
+    caus:truthDependingOn fred:exhilarate_1 ;
+    pblr:disappoint-01.experiencer fred:spectator_1 .
+
+fred:discourage_1 a pbrs:discourage-01 ;
+    boxing:hasTruthValue true ;
+    caus:truthDependingOn fred:inspire_1 ;
+    pblr:discourage-01.discouraged fred:human_1 ;
+    pblr:discourage-01.discourager fred:scene_1 .
+
+fred:fail_1 a pbrs:fail-01 ;
+    boxing:hasTruthValue true ;
+    caus:truthDependingOn fred:achieve_1 ;
+    pblr:fail-01.experiencer fred:person_1 .
+
+fred:lose_1 a pbrs:lose-01 ;
+    boxing:hasTruthValue true ;
+    caus:truthDependingOn fred:win_1 ;
+    pblr:lose-01.loser fred:person_1 .
+
+pblr:disappoint-01.experiencer a owl:ObjectProperty .
+
+pblr:discourage-01.discouraged a owl:ObjectProperty .
+
+pblr:discourage-01.discourager a owl:ObjectProperty .
+
+pblr:fail-01.experiencer a owl:ObjectProperty .
+
+pblr:lose-01.loser a owl:ObjectProperty .

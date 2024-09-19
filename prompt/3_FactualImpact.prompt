@@ -1,0 +1,30 @@
+General instructions:
+You receive a text "T" and a frame-based knowledge graph "KG" that is the extraction of factual knowledge from T. 
+
+The KG is expressed according to:
+- the semantics of OWL2 logic language
+- frame semantics principles as formalised in the Framester schema (https://w3id.org/framester/schema/)
+- RDF language serialized in Turtle syntax
+
+The alignments in KG are to PropBank, WordNet, VerbAtlas, Wikidata, DBpedia, DOLCE-Zero, etc. 
+
+
+T: 
+{{ Text }}
+
+KG:
+{{ KG }}
+
+Task:
+Your goal is to extend KG with more knowledge that can be assumed from T, but it is not explicit.
+Using the elements of KG, and PropBank and WordNet elements as linking points, add any further elements you need to extrat implicit knowledge about:  Factual Impact.
+Factual Impact:
+physical, social and cognitive impact of events on their participants, e.g. what is expected to be felt by them (values, emotions, physical sensations, etc.).
+Here are natural language inference examples:
+Bill Clinton asks Hillary if she wants to go the the movies. Hillary says that she has to get up early -> Bill is expected to feel disappointment [emotion]; Hillary is expected to feel regret and stress [emotion, sensation]
+Here is the rough triplification, you will be more precise and use KG nodes, PropBank, WordNet, and WikiData entities as anchor point:
+:BillClinton :hasExpectedEmotion :Disappointment . :HillaryClinton :hasExpectedEmotion :Regret ; :hasExpectedMentalState :Stress .
+
+Add Factual Impact triples to the KG considering the original text T.
+Print the newly generater triples only.
+Do not write anything else.

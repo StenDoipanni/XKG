@@ -1,0 +1,72 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+fred:hasLocation a owl:ObjectProperty .
+
+fred:hasVictory a owl:ObjectProperty .
+
+fred:hasEmotion a owl:ObjectProperty .
+
+fred:hasPosture a owl:ObjectProperty .
+
+fred:isCompetitor a owl:ObjectProperty .
+
+fred:hasStatus a owl:ObjectProperty .
+
+fred:hasCapacity a owl:ObjectProperty .
+
+fred:hasNationality a owl:ObjectProperty .
+
+fred:hasAchievement a owl:ObjectProperty .
+
+fred:representsCountry a owl:ObjectProperty .
+
+fred:hasQualification a owl:ObjectProperty .
+
+fred:hasImportance a owl:ObjectProperty .
+
+fred:hasDedication a owl:ObjectProperty .
+
+fred:hasSignificance a owl:ObjectProperty .
+
+fred:athlete_1 fred:hasVictory fred:win_1 .
+fred:win_1 fred:hasLocation fred:track_1 .
+
+fred:athlete_1 fred:hasEmotion fred:joy_1 .
+
+fred:athlete_1 fred:hasEmotion fred:exhilaration_1 .
+fred:exhilaration_1 a wn30:synset-exhilaration-noun-1 .
+
+fred:athlete_1 fred:hasPosture fred:triumphant_pose_1 .
+fred:triumphant_pose_1 a wn30:synset-pose-noun-1 .
+
+fred:person_1 fred:isCompetitor true .
+
+fred:race_1 fred:hasStatus fred:finished .
+
+fred:stadium_1 fred:hasCapacity fred:full .
+
+fred:spectator_1 fred:hasEmotion fred:excitement_1 .
+fred:excitement_1 a wn30:synset-excitement-noun-1 .
+
+fred:athlete_1 fred:hasNationality fred:country_1 .
+
+fred:uniform_1 fred:representsCountry fred:country_1 .
+
+fred:athlete_1 fred:hasAchievement fred:personal_best_1 .
+fred:personal_best_1 a wn30:synset-personal_best-noun-1 .
+
+fred:athlete_1 fred:hasQualification fred:olympic_level_1 .
+fred:olympic_level_1 a wn30:synset-olympic-adjective-1 .
+
+fred:game_1 fred:hasImportance fred:high .
+
+fred:athlete_1 fred:hasDedication fred:high .
+
+fred:win_1 fred:hasSignificance fred:national_pride_1 .
+fred:national_pride_1 a wn30:synset-national_pride-noun-1 .

@@ -1,0 +1,30 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+
+dul:precedes a owl:ObjectProperty .
+
+fred:achieve_1 dul:precedes fred:inspire_1 .
+
+fred:beam_1 dul:precedes fred:capture_1 .
+
+fred:compete_1 dul:precedes fred:race_1 .
+
+fred:crowd_1 dul:precedes fred:cheer_1 .
+
+fred:wear_1 dul:precedes fred:celebrate_1 .
+
+vn.role:Time a owl:ObjectProperty .
+
+fred:cheer_1 vn.role:Time fred:celebrate_1 .
+
+fred:race_1 dul:precedes fred:win_1 ;
+    vn.role:Time fred:track_1 .
+
+fred:win_1 dul:precedes fred:celebrate_1 ;
+    vn.role:Time fred:game_1 .
+
+fred:celebrate_1 dul:precedes fred:finish_1,
+        fred:see_1 ;
+    vn.role:Time fred:stadium_1 .

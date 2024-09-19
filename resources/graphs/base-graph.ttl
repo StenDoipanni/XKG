@@ -1,0 +1,451 @@
+@prefix amr: <https://w3id.org/framester/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+dul:associatedWith a owl:ObjectProperty .
+
+dul:hasMember a owl:ObjectProperty .
+
+dul:hasQuality a owl:ObjectProperty .
+
+fred:cheer_1 a pbrs:cheer-02 ;
+    pblr:cheer-02.clapper fred:spectator_1 .
+
+fred:compete_1 a pbrs:compete-01 ;
+    pblr:compete-01.competitor fred:person_1 .
+
+fred:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember fred:beam_1,
+        fred:celebrate_1,
+        fred:embody_1,
+        fred:flag_1,
+        fred:moment_1,
+        fred:person_1,
+        fred:scene_1,
+        fred:spectator_1,
+        fred:wear_1 .
+
+fred:crowd_1 a pbrs:crowd-01 ;
+    pblr:crowd-01.container fred:stadium_1 .
+
+fred:have_1 a pbrs:have-03 ;
+    pblr:have-03.owner fred:uniform_1 ;
+    pblr:have-03.possession fred:string-entity_1 .
+
+fred:inspire_1 a pbrs:inspire-01 ;
+    pblr:inspire-01.causer-of-inspiration fred:scene_1 .
+
+fred:personal_1 a pbrs:personal-02 ;
+    pblr:personal-02.private-thing fred:pride_1 .
+
+fred:see_1 a pbrs:see-01 ;
+    dul:hasQuality fred:Behind ;
+    pblr:see-01.attribute-of-arg1 fred:finish_1 ;
+    pblr:see-01.thing-viewed fred:person_1 .
+
+fred:see_2 a pbrs:see-01 ;
+    pblr:see-01.thing-viewed fred:flag_1 .
+
+fred:symbolize_1 a pbrs:symbolize-01 ;
+    pblr:symbolize-01.class fred:conjunct_3 ;
+    pblr:symbolize-01.symbol fred:moment_1 .
+
+vn.role:Location a owl:ObjectProperty .
+
+schema:name a owl:ObjectProperty .
+
+pblr:beam-01.thing-transmitted a owl:ObjectProperty .
+
+pblr:beam-01.transmitter a owl:ObjectProperty .
+
+pblr:capture-01.thing-gotten a owl:ObjectProperty .
+
+pblr:celebrate-01.honored a owl:ObjectProperty .
+
+pblr:celebrate-01.honorer a owl:ObjectProperty .
+
+pblr:cheer-02.clapper a owl:ObjectProperty .
+
+pblr:compete-01.competitor a owl:ObjectProperty .
+
+pblr:crowd-01.container a owl:ObjectProperty .
+
+pblr:embody-01.entity-embodied a owl:ObjectProperty .
+
+pblr:finish-01.intentional-agent a owl:ObjectProperty .
+
+pblr:finish-01.thing-finishing a owl:ObjectProperty .
+
+pblr:have-03.owner a owl:ObjectProperty .
+
+pblr:have-03.possession a owl:ObjectProperty .
+
+pblr:inspire-01.causer-of-inspiration a owl:ObjectProperty .
+
+pblr:personal-02.private-thing a owl:ObjectProperty .
+
+pblr:see-01.attribute-of-arg1 a owl:ObjectProperty .
+
+pblr:see-01.thing-viewed a owl:ObjectProperty .
+
+pblr:symbolize-01.class a owl:ObjectProperty .
+
+pblr:symbolize-01.symbol a owl:ObjectProperty .
+
+pblr:thrill-01.excited-entity a owl:ObjectProperty .
+
+pblr:wear-01.clothing a owl:ObjectProperty .
+
+pblr:wear-01.wearer a owl:ObjectProperty .
+
+pblr:win-01.winner a owl:ObjectProperty .
+
+fschema:subsumedUnder a owl:ObjectProperty .
+
+fred:Athlete rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-athlete-noun-1 .
+
+fred:Athletic rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_pert ;
+    owl:equivalentClass wn30:synset-athletic-adjective-1 .
+
+fred:Background rdfs:subClassOf d0:Event,
+        wn30:supersense-noun_event ;
+    owl:equivalentClass wn30:synset-background-noun-5 .
+
+fred:Emotion rdfs:subClassOf d0:CognitiveEntity,
+        wn30:supersense-noun_feeling ;
+    owl:equivalentClass wn30:synset-emotion-noun-1 .
+
+fred:FellowPerson dul:associatedWith fred:Fellow ;
+    rdfs:subClassOf fred:Person .
+
+fred:Female rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-female-adjective-1 .
+
+fred:FemaleAthlete dul:associatedWith fred:Female ;
+    rdfs:subClassOf fred:Athlete .
+
+fred:Flag rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-flag-noun-1 .
+
+fred:Human rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_pert ;
+    owl:equivalentClass wn30:synset-human-adjective-1 .
+
+fred:International rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-international-adjective-1 .
+
+fred:Jersey rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-jersey-noun-3 .
+
+fred:Joy rdfs:subClassOf d0:CognitiveEntity,
+        wn30:supersense-noun_feeling ;
+    owl:equivalentClass wn30:synset-joy-noun-1 .
+
+fred:Jubilant rdfs:subClassOf dul:Quality,
+        fschema:AdjectivalQuality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-exultant-adjectivesatellite-1 .
+
+fred:Moment rdfs:subClassOf dul:Amount,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-moment-noun-1 .
+
+fred:NationPride-01 dul:associatedWith fred:Nation ;
+    rdfs:subClassOf fred:Pride-01 .
+
+fred:Potential fred:potentialOf fred:human_1 ;
+    rdfs:subClassOf dul:Situation,
+        wn30:supersense-noun_state ;
+    owl:equivalentClass wn30:synset-potential-noun-1 .
+
+fred:Raw rdfs:subClassOf dul:Quality,
+        fschema:AdjectivalQuality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-raw-adjectivesatellite-6 .
+
+fred:Scene rdfs:subClassOf dul:InformationEntity,
+        wn30:supersense-noun_cognition ;
+    owl:equivalentClass wn30:synset-view-noun-2 .
+
+fred:Spectator rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-spectator-noun-1 .
+
+fred:Spirit rdfs:subClassOf d0:Characteristic,
+        wn30:supersense-noun_attribute ;
+    owl:equivalentClass wn30:synset-spirit-noun-3 .
+
+fred:Stadium rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-stadium-noun-1 .
+
+fred:Still rdfs:subClassOf dul:Quality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-still-adverb-1 .
+
+fred:Track rdfs:subClassOf d0:Activity,
+        wn30:supersense-noun_act ;
+    owl:equivalentClass wn30:synset-track-noun-11 .
+
+fred:Uniform rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-uniform-noun-1 .
+
+fred:achieve_1 a pbrs:achieve-01 ;
+    dul:hasQuality fred:Athletic .
+
+fred:background_1 a fred:Background .
+
+fred:beam_1 a pbrs:beam-01 ;
+    pblr:beam-01.thing-transmitted fred:athlete_1 ;
+    pblr:beam-01.transmitter fred:conjunct_2 .
+
+fred:capture_1 a pbrs:capture-01 ;
+    pblr:capture-01.thing-gotten fred:conjunct_5 .
+
+fred:celebrate_1 a pbrs:celebrate-01 ;
+    vn.role:Location fred:track_1 ;
+    pblr:celebrate-01.honored fred:win_1 ;
+    pblr:celebrate-01.honorer fred:athlete_1 .
+
+fred:compete_2 a pbrs:compete-01 ;
+    dul:hasQuality fred:International .
+
+fred:conjunct_2 a boxing:Conjunct ;
+    dul:hasMember fred:exhilarate_1,
+        fred:joy_1 .
+
+fred:conjunct_3 a boxing:Conjunct ;
+    dul:hasMember fred:pride-01_1,
+        fred:pride_1 .
+
+fred:conjunct_4 a boxing:Conjunct ;
+    dul:hasMember fred:compete_2,
+        fred:spirit_1 .
+
+fred:conjunct_5 a boxing:Conjunct ;
+    dul:hasMember fred:emotion_1,
+        fred:thrill_1 .
+
+fred:country_1 a amr:Country ;
+    owl:sameAs dbpedia:Saint_Lucia,
+        wd:Q760 ;
+    schema:name "Saint_Lucia" .
+
+fred:country_2 a amr:Country ;
+    owl:sameAs dbpedia:United_States,
+        wd:Q30 ;
+    schema:name "America" .
+
+fred:embody_1 a pbrs:embody-01 ;
+    pblr:embody-01.entity-embodied fred:conjunct_4 .
+
+fred:emotion_1 a fred:Emotion ;
+    dul:hasQuality fred:Raw .
+
+fred:exhilarate_1 a pbrs:exhilarate-01 .
+
+fred:finish_1 a pbrs:finish-01 ;
+    dul:hasQuality fred:Still ;
+    pblr:finish-01.intentional-agent fred:athlete_1 ;
+    pblr:finish-01.thing-finishing fred:race_1 .
+
+fred:game_1 a amr:Game ;
+    owl:sameAs dbpedia:Olympic_Games,
+        wd:Q5389 ;
+    schema:name "Olympic" .
+
+fred:human_1 a fred:Human .
+
+fred:jersey_1 a fred:Jersey .
+
+fred:joy_1 a fred:Joy .
+
+fred:pride-01_1 a fred:NationPride-01 .
+
+fred:race_1 a pbrs:race-02 .
+
+fred:spirit_1 a fred:Spirit ;
+    dul:hasQuality fred:game_1 .
+
+fred:string-entity_1 a amr:String-entity ;
+    dul:hasQuality "ALFRED" ;
+    vn.role:Location fred:jersey_1 .
+
+fred:thrill_1 a pbrs:thrill-01 ;
+    pblr:thrill-01.excited-entity fred:achieve_1 .
+
+fred:track_1 a fred:Track .
+
+fred:wear_1 a pbrs:wear-01 ;
+    pblr:wear-01.clothing fred:uniform_1 ;
+    pblr:wear-01.wearer fred:athlete_1 .
+
+fred:win_1 a pbrs:win-01 ;
+    pblr:win-01.winner fred:athlete_1 .
+
+pbrs:achieve-01 rdfs:label "achieve" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0015f .
+
+pbrs:beam-01 rdfs:label "to emit or transmit" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0122f .
+
+pbrs:capture-01 rdfs:label "get" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0301f .
+
+pbrs:celebrate-01 rdfs:label "honor, show respect to" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0101f .
+
+pbrs:cheer-02 rdfs:label "applaud, cheer for" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0101f .
+
+pbrs:crowd-01 rdfs:label "fill to capacity, crowding past capacity, full" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0421f .
+
+pbrs:embody-01 rdfs:label "to represent in bodily form or incorporate" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0341f .
+
+pbrs:exhilarate-01 rdfs:label "make happily refreshed; energetic" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0582f .
+
+pbrs:finish-01 rdfs:label "cause to stop, stopped, completed" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0429f .
+
+pbrs:have-03 rdfs:label "own, possess" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0104f .
+
+pbrs:inspire-01 rdfs:label "to affect, guide, driving to goodness, providing motivation" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0438f .
+
+pbrs:personal-02 rdfs:label "private, pertaining to an individual" ;
+    rdfs:subClassOf dul:Event .
+
+pbrs:pride-01 rdfs:label "be proud or satisfied, being proud of, proud" ;
+    rdfs:subClassOf dul:Event .
+
+pbrs:race-02 rdfs:label "compete in a race" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0410f .
+
+pbrs:symbolize-01 rdfs:label "act as a representative of a class" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0341f .
+
+pbrs:thrill-01 rdfs:label "excite" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0435f .
+
+pbrs:wear-01 rdfs:label "not be naked" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0553f .
+
+pbrs:win-01 rdfs:label "win, win a prize/contest" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0081f .
+
+wn30:synset-athlete-noun-1 wn30schema:gloss "a person trained to compete in sports"@en-us .
+
+wn30:synset-athletic-adjective-1 wn30schema:gloss "relating to or befitting athletics or athletes; \"athletic facilities\""@en-us .
+
+wn30:synset-background-noun-5 wn30schema:gloss "relatively unimportant or inconspicuous accompanying situation; \"when the rain came he could hear the sound of thunder in the background\""@en-us .
+
+wn30:synset-emotion-noun-1 wn30schema:gloss "any strong feeling"@en-us .
+
+wn30:synset-exultant-adjectivesatellite-1 wn30schema:gloss "joyful and proud especially because of triumph or success; \"rejoicing crowds filled the streets on VJ Day\"; \"a triumphal success\"; \"a triumphant shout\""@en-us .
+
+wn30:synset-female-adjective-1 wn30schema:gloss "being the sex (of plant or animal) that produces fertilizable gametes (ova) from which offspring develop; \"a female heir\"; \"female holly trees bear the berries\""@en-us .
+
+wn30:synset-flag-noun-1 wn30schema:gloss "emblem usually consisting of a rectangular piece of cloth of distinctive design"@en-us .
+
+wn30:synset-human-adjective-1 wn30schema:gloss "characteristic of humanity; \"human nature\""@en-us .
+
+wn30:synset-international-adjective-1 wn30schema:gloss "concerning or belonging to all or at least two or more nations; \"international affairs\"; \"an international agreement\"; \"international waters\""@en-us .
+
+wn30:synset-jersey-noun-3 wn30schema:gloss "a close-fitting pullover shirt"@en-us .
+
+wn30:synset-joy-noun-1 wn30schema:gloss "the emotion of great happiness"@en-us .
+
+wn30:synset-moment-noun-1 wn30schema:gloss "a particular point in time; \"the moment he arrived the party began\""@en-us .
+
+wn30:synset-potential-noun-1 wn30schema:gloss "the inherent capacity for coming into being"@en-us .
+
+wn30:synset-raw-adjectivesatellite-6 wn30schema:gloss "brutally unfair or harsh; \"received raw treatment from his friends\"; \"a raw deal\""@en-us .
+
+wn30:synset-spectator-noun-1 wn30schema:gloss "a close observer; someone who looks at something (such as an exhibition of some kind); \"the spectators applauded the performance\"; \"television viewers\"; \"sky watchers discovered a new star\""@en-us .
+
+wn30:synset-spirit-noun-3 wn30schema:gloss "a fundamental emotional and activating principle determining one's character"@en-us .
+
+wn30:synset-stadium-noun-1 wn30schema:gloss "a large structure for open-air sports or entertainments"@en-us .
+
+wn30:synset-still-adverb-1 wn30schema:gloss "with reference to action or condition; without change, interruption, or cessation; \"it's still warm outside\"; \"will you still love me when we're old and grey?\""@en-us .
+
+wn30:synset-track-noun-11 wn30schema:gloss "the act of participating in an athletic competition involving running on a track"@en-us .
+
+wn30:synset-uniform-noun-1 wn30schema:gloss "clothing of distinctive design worn by members of a particular group as a means of identification"@en-us .
+
+wn30:synset-view-noun-2 wn30schema:gloss "the visual percept of a region; \"the most desirable feature of the park are the beautiful views\""@en-us .
+
+fred:flag_1 a fred:Flag ;
+    dul:hasQuality fred:country_2 .
+
+fred:moment_1 a fred:Moment .
+
+fred:pride_1 a pbrs:pride-01 .
+
+fred:scene_1 a fred:Scene ;
+    dul:associatedWith fred:capture_1 ;
+    dul:hasQuality fred:Potential .
+
+fred:spectator_1 a fred:Spectator ;
+    dul:associatedWith fred:stadium_1 ;
+    fred:in fred:background_1 .
+
+fred:stadium_1 a fred:Stadium .
+
+fred:uniform_1 a fred:Uniform ;
+    dul:hasQuality fred:country_1 .
+
+pbrs:compete-01 rdfs:label "vie, wanting to win" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0410f .
+
+pbrs:see-01 rdfs:label "view" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0521f .
+
+fred:person_1 a fred:FellowPerson .
+
+fred:athlete_1 a fred:FemaleAthlete ;
+    dul:hasQuality fred:Jubilant .

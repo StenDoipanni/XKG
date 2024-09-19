@@ -1,0 +1,13 @@
+SELECT DISTINCT ?entity
+WHERE {
+  {
+    ?entity ?predicate ?object .
+    FILTER(REGEX(STR(?entity), "^http://www.ontologydesignpatterns.org/ont/d0.owl#"))
+  }
+  UNION
+  {
+    ?subject ?predicate ?entity .
+    FILTER(REGEX(STR(?entity), "^http://www.ontologydesignpatterns.org/ont/d0.owl#"))
+  }
+}
+ORDER BY ?entity
