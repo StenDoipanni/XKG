@@ -1,0 +1,15 @@
+@prefix caus: <http://www.ontologydesignpatterns.org/ont/causal/causal.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+caus:triggeringCauseFor a owl:ObjectProperty .
+
+fred:campaign_1 caus:triggeringCauseFor fred:symbolize_1 .
+
+fred:perform-01_1 caus:triggeringCauseFor fred:nature_1 .
+
+fred:raise_1 caus:triggeringCauseFor fred:gesture_1 .
+
+fred:rally_1 caus:triggeringCauseFor fred:convey_1 .
+
+fred:speak_1 caus:triggeringCauseFor fred:engage_1 .

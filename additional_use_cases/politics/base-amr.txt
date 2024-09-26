@@ -1,0 +1,83 @@
+(z0 / multi-sentence
+    :snt1 (z1 / appear-02
+              :ARG1 (z2 / or
+                        :op1 (z3 / note-01
+                                 :ARG0 (z4 / figure
+                                           :quant 1
+                                           :location (z5 / foreground))
+                                 :ARG1 (z6 / event))
+                        :op2 (z7 / record-01
+                                 :ARG0 z4
+                                 :ARG1 z6)))
+    :snt2 (z8 / convey-01
+              :ARG0 (z9 / compose-02)
+              :ARG1 (z10 / and
+                         :op1 (z11 / energy)
+                         :op2 (z12 / patriotism)
+                         :op3 (z13 / intensity
+                                   :poss (z14 / moment
+                                              :mod (z15 / campaign-01)))))
+    :snt3 (z16 / raise-01
+               :ARG0 (z17 / figure
+                          :mod (z18 / central)
+                          :ARG1-of (z19 / surround-01
+                                        :ARG2 (z20 / individual
+                                                   :ARG1-of (z21 / suit-01)
+                                                   :ARG2-of (z22 / include-91
+                                                                 :ARG1 (z23 / personnel
+                                                                            :mod (z24 / security)
+                                                                            :ARG0-of (z25 / wear-01
+                                                                                          :ARG1 (z26 / sunglasses)))))))
+               :ARG1 (z27 / fist
+                          :ARG1-of (z28 / clench-01))
+               :manner (z29 / gesture-01
+                            :ARG0 z17
+                            :ARG1 (z30 / or
+                                       :op1 (z31 / defy-01
+                                                 :ARG0 z17)
+                                       :op2 (z32 / triumph-01
+                                                 :ARG0 z17)))
+               :time-of (z33 / open-01
+                             :ARG0 z17
+                             :ARG1 (z34 / mouth
+                                        :part-of z17)
+                             :time (z35 / middle
+                                        :op1 (z36 / exclamation))))
+    :snt4 (z37 / symbolize-01
+               :ARG1 (z38 / scene
+                          :mod (z39 / rally-01
+                                    :ARG2 (z40 / politics))
+                          :accompanier (z41 / backdrop
+                                            :mod (z42 / flag
+                                                      :mod (z43 / country
+                                                                :wiki "United_States"
+                                                                :name (z44 / name
+                                                                           :op1 "United"
+                                                                           :op2 "States")))
+                                            :accompanier (z45 / sky
+                                                              :ARG1-of (z46 / clear-01)
+                                                              :mod (z47 / blue)))
+                          :ARG2 (z48 / moment
+                                     :time-of (z49 / and
+                                                   :op1 (z50 / speak-01
+                                                             :manner (z51 / impassioned))
+                                                   :op2 (z52 / engage-01
+                                                             :ARG1 (z53 / crowd)))))
+               :snt5 (z54 / symbolize-01
+                          :ARG1 z38
+                          :ARG2 (z55 / and
+                                     :op1 (z56 / democracy
+                                               :mod (z57 / act-02)
+                                               :mod (z58 / country
+                                                         :wiki "United_States"
+                                                         :name (z59 / name
+                                                                    :op1 "United"
+                                                                    :op2 "States")))
+                                     :op2 (z60 / dynamic
+                                               :mod (z61 / power))
+                                     :op3 (z62 / nature
+                                               :mod (z63 / theater)
+                                               :poss (z64 / perform-01
+                                                          :mod (z65 / politics)
+                                                          :location (z66 / stage
+                                                                         :mod (z67 / nation))))))))

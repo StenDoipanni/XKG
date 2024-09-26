@@ -1,0 +1,24 @@
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix caus: <http://www.ontologydesignpatterns.org/ont/causal/causal.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+caus:truthDependingOn a owl:ObjectProperty .
+
+fred:disrupt_1 a pbrs:disrupt-01 ;
+    boxing:hasTruthValue false ;
+    caus:truthDependingOn fred:surround_1 ;
+    owl:sameAs wn30:synset-disrupt-verb-1 .
+
+fred:leave_1 a pbrs:leave-01 ;
+    boxing:hasTruthValue false ;
+    caus:truthDependingOn fred:engage_1 ;
+    owl:sameAs wn30:synset-leave-verb-1 .
+
+fred:protest_1 a pbrs:protest-01 ;
+    boxing:hasTruthValue false ;
+    caus:truthDependingOn fred:raise_1 ;
+    owl:sameAs wn30:synset-protest-verb-1 .

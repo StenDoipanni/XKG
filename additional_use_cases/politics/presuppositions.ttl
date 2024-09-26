@@ -1,0 +1,75 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn4: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dul:isSettingFor a owl:ObjectProperty .
+
+dul:precedes a owl:ObjectProperty .
+
+fred:arrangedForCoverage a owl:DatatypeProperty .
+
+fred:completedBeforeRally a owl:DatatypeProperty .
+
+fred:doneBeforeAttendees a owl:DatatypeProperty .
+
+fred:implementedBeforeRally a owl:DatatypeProperty .
+
+fred:occurredBeforeSpeech a owl:DatatypeProperty .
+
+fred:plannedInAdvance a owl:DatatypeProperty .
+
+fred:previouslyPlanned a owl:DatatypeProperty .
+
+fred:scene_1 dul:isSettingFor fred:flagSetup_1,
+        fred:mediaSetup_1,
+        fred:politicalRally_1,
+        fred:venuePreperation_1 .
+
+fred:CrowdGathering rdfs:subClassOf wn4:synset-gather-verb-1 .
+
+fred:FlagSetup rdfs:subClassOf wn4:synset-set_up-verb-2 .
+
+fred:MediaSetup rdfs:subClassOf wn4:synset-set_up-verb-2 .
+
+fred:PoliticalRally rdfs:subClassOf pbrs:rally-01 .
+
+fred:SecurityArrangement rdfs:subClassOf wn4:synset-arrange-verb-1 .
+
+fred:SpeechDelivery rdfs:subClassOf pbrs:speak-01 .
+
+fred:VenuePreparation rdfs:subClassOf wn30:synset-prepare-verb-1 .
+
+fred:flagSetup_1 a fred:FlagSetup ;
+    dul:precedes fred:politicalRally_1 ;
+    fred:completedBeforeRally true .
+
+fred:mediaSetup_1 a fred:MediaSetup ;
+    dul:precedes fred:politicalRally_1 ;
+    fred:arrangedForCoverage true .
+
+fred:securityArrangement_1 a fred:SecurityArrangement ;
+    dul:precedes fred:politicalRally_1 ;
+    fred:implementedBeforeRally true .
+
+fred:speechDelivery_1 a fred:SpeechDelivery ;
+    fred:plannedInAdvance true .
+
+fred:venuePreperation_1 a fred:VenuePreparation ;
+    dul:precedes fred:crowdGathering_1 ;
+    fred:doneBeforeAttendees true .
+
+fred:crowdGathering_1 a fred:CrowdGathering ;
+    dul:precedes fred:speak_1 ;
+    fred:occurredBeforeSpeech true .
+
+fred:politicalRally_1 a fred:PoliticalRally ;
+    dul:isSettingFor fred:crowdGathering_1,
+        fred:securityArrangement_1,
+        fred:speechDelivery_1 ;
+    dul:precedes fred:speak_1 ;
+    fred:previouslyPlanned true .

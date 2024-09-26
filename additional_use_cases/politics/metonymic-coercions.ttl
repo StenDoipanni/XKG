@@ -1,0 +1,25 @@
+ERROR
+
+at line 123 of <>:
+Bad syntax (Prefix "wdt:" not bound) at ^ in:
+"...b'e_1 pblr:raise-01.thing-raised :fist_1 .\n:fist_1 owl:sameAs '^b'wdt:Q192457 .\n:contain_1 a pbrs:contain-01 ; pblr:contain-01'..."
+
+RESPONSE FROM LLM
+
+:gesture_1 pblr:gesture-01.theme :fist_1 .
+:fist_1 a pbrs:clench-01 ; pblr:clench-01.clenched-thing :finger_1 .
+:finger_1 a wn30:synset-finger-noun-1 .
+:raise_1 pblr:raise-01.thing-raised :fist_1 .
+:fist_1 owl:sameAs wdt:Q192457 .
+:contain_1 a pbrs:contain-01 ; pblr:contain-01.container :fist_1 ; pblr:contain-01.contents :finger_1 .
+:symbolize_1 pblr:symbolize-01.symbol :fist_1 ; pblr:symbolize-01.class :defiance_1 .
+:defiance_1 a wn30:synset-defiance-noun-1 .
+:symbolize_2 pblr:symbolize-01.symbol :fist_1 ; pblr:symbolize-01.class :triumph_1 .
+:triumph_1 a wn30:synset-triumph-noun-1 .
+:pblr:gesture-01.theme rdf:type owl:ObjectProperty .
+:pblr:clench-01.clenched-thing rdf:type owl:ObjectProperty .
+:pblr:raise-01.thing-raised rdf:type owl:ObjectProperty .
+:pblr:contain-01.container rdf:type owl:ObjectProperty .
+:pblr:contain-01.contents rdf:type owl:ObjectProperty .
+:pblr:symbolize-01.symbol rdf:type owl:ObjectProperty .
+:pblr:symbolize-01.class rdf:type owl:ObjectProperty .

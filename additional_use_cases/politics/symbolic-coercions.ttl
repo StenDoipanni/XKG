@@ -1,0 +1,47 @@
+@prefix coerce: <http://www.ontologydesignpatterns.org/ont/coercion/coerce.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix mor: <http://www.ontologydesignpatterns.org/ont/values/moral.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+coerce:coercedType a owl:ObjectProperty .
+
+fred:backdrop_1 coerce:coercedType mor:NationalIdentity .
+
+fred:crowd_1 coerce:coercedType mor:PublicOpinion .
+
+fred:engage_1 coerce:coercedType mor:PoliticalParticipation .
+
+fred:fist_1 coerce:coercedType mor:PoliticalPower .
+
+fred:gesture_1 coerce:coercedType mor:PoliticalStatement .
+
+fred:perform-01_1 coerce:coercedType mor:PoliticalAction .
+
+fred:scene_1 coerce:coercedType mor:PoliticalPerformance .
+
+fred:sky_1 coerce:coercedType mor:Freedom .
+
+fred:stage_1 coerce:coercedType mor:PoliticalArena .
+
+fred:symbolize_1 coerce:coercedType mor:PoliticalRepresentation .
+
+mor:Freedom owl:equivalentClass wn30:synset-freedom-noun-1 .
+
+mor:NationalIdentity owl:equivalentClass wn30:synset-national_identity-noun-1 .
+
+mor:PoliticalAction owl:equivalentClass wn30:synset-political_action-noun-1 .
+
+mor:PoliticalArena owl:equivalentClass wn30:synset-political_arena-noun-1 .
+
+mor:PoliticalParticipation owl:equivalentClass wn30:synset-political_participation-noun-1 .
+
+mor:PoliticalPerformance owl:equivalentClass wn30:synset-political_campaign-noun-1 .
+
+mor:PoliticalPower owl:equivalentClass wn30:synset-political_power-noun-1 .
+
+mor:PoliticalRepresentation owl:equivalentClass wn30:synset-political_representation-noun-1 .
+
+mor:PoliticalStatement owl:equivalentClass wn30:synset-political_statement-noun-1 .
+
+mor:PublicOpinion owl:equivalentClass wn30:synset-public_opinion-noun-1 .

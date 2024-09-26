@@ -1,0 +1,68 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix is: <http://www.ontologydesignpatterns.org/ont/is/is.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wn2: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn4: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:backdrop_1 is:evokes is:Background .
+
+fred:crowd_1 is:evokes is:Collection .
+
+fred:figure_2 is:evokes is:CenterPeriphery .
+
+fred:fist_1 is:evokes is:Force .
+
+fred:foreground_1 is:evokes is:Foreground .
+
+fred:gesture_1 is:evokes is:BodyMovement .
+
+fred:mouth_1 is:evokes is:OpenClosed .
+
+fred:raise_1 is:evokes is:VerticalMovement .
+
+fred:scene_1 is:evokes is:Container .
+
+fred:sky_1 is:evokes is:UpDown .
+
+fred:stage_1 is:evokes is:Surface .
+
+fred:surround_1 is:evokes is:Containment .
+
+is:evokes a owl:ObjectProperty .
+
+is:Background a is:SpatialPrimitive ;
+    owl:equivalentClass wn30:synset-background-noun-1 .
+
+is:BodyMovement a is:ImageSchema ;
+    owl:equivalentClass wn30:synset-body_movement-noun-1 .
+
+is:CenterPeriphery a is:ImageSchema ;
+    owl:equivalentClass wn4:synset-center-noun-2 .
+
+is:Collection a is:ImageSchema ;
+    owl:equivalentClass wn30:synset-collection-noun-1 .
+
+is:Container a is:ImageSchema ;
+    owl:equivalentClass wn30:synset-container-noun-1 .
+
+is:Containment a is:ImageSchema ;
+    owl:equivalentClass wn30:synset-containment-noun-2 .
+
+is:Force a is:ImageSchema ;
+    owl:equivalentClass wn30:synset-force-noun-6 .
+
+is:Foreground a is:SpatialPrimitive ;
+    owl:equivalentClass wn30:synset-foreground-noun-1 .
+
+is:OpenClosed a is:ImageSchema ;
+    owl:equivalentClass wn30:synset-open-adjective-1 .
+
+is:Surface a is:SpatialPrimitive ;
+    owl:equivalentClass wn2:synset-surface-noun-1 .
+
+is:UpDown a is:ImageSchema ;
+    owl:equivalentClass wn30:synset-vertical-adjective-1 .
+
+is:VerticalMovement a is:ImageSchema ;
+    owl:equivalentClass wn30:synset-vertical_motion-noun-1 .

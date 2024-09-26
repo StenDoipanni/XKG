@@ -1,0 +1,48 @@
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix caus: <http://www.ontologydesignpatterns.org/ont/causal/causal.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#caus:truthDependingOn> a owl:ObjectProperty .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dul:precedes> a owl:ObjectProperty .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pblr:campaign-01.campaigner> a owl:ObjectProperty .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pblr:vote-01.voter> a owl:ObjectProperty .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pblr:win-01.winner> a owl:ObjectProperty .
+
+fred:campaign_future_1 a pbrs:campaign-01 ;
+    boxing:hasTruthValue true ;
+    caus:truthDependingOn fred:rally_1 ;
+    dul:precedes fred:election_1,
+        fred:win_1 ;
+    pblr:campaign-01.campaigner fred:figure_2 .
+
+fred:engage_1 dul:precedes fred:vote_1 .
+
+fred:rally_1 dul:precedes fred:election_1 .
+
+fred:take_office_1 a fred:TakeOffice ;
+    owl:sameAs wd:Q504037 .
+
+fred:vote_1 a pbrs:vote-01 ;
+    boxing:hasTruthValue true ;
+    caus:truthDependingOn fred:engage_1 ;
+    dul:precedes fred:election_1 ;
+    pblr:vote-01.voter fred:crowd_1 .
+
+fred:win_1 a pbrs:win-01 ;
+    boxing:hasTruthValue true ;
+    caus:truthDependingOn fred:campaign_future_1 ;
+    dul:precedes fred:take_office_1 ;
+    pblr:win-01.winner fred:figure_2 .
+
+fred:election_1 a fred:Election ;
+    owl:sameAs wd:Q40231 .

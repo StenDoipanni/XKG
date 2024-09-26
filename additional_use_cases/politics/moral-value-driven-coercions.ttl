@@ -1,0 +1,39 @@
+@prefix coerce: <http://www.ontologydesignpatterns.org/ont/coercion/coerce.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix mor: <http://www.ontologydesignpatterns.org/ont/values/moral.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+
+coerce:coercedType a owl:ObjectProperty .
+
+fred:engage_1 coerce:coercedType fred:mobilize_1 .
+
+fred:raise_1 coerce:coercedType fred:assert_1 .
+
+fred:speak_1 coerce:coercedType fred:influence_1 .
+
+mor:commitment a owl:ObjectProperty .
+
+fred:assert_1 a pbrs:assert-02 ;
+    mor:commitment mor:LeadershipAuthority ;
+    pblr:assert-02.agent fred:figure_2 ;
+    pblr:assert-02.theme mor:PowerAssertion .
+
+fred:influence_1 a pbrs:influence-01 ;
+    mor:commitment mor:PublicPersuasion ;
+    pblr:influence-01.influencee fred:crowd_1 ;
+    pblr:influence-01.influencer fred:figure_2 .
+
+fred:mobilize_1 a pbrs:mobilize-01 ;
+    mor:commitment mor:CivicEngagement ;
+    pblr:mobilize-01.agent fred:figure_2 ;
+    pblr:mobilize-01.patient fred:crowd_1 .
+
+mor:CivicEngagement a mor:PositiveMoralValueGain .
+
+mor:LeadershipAuthority a mor:MoralDue .
+
+mor:PowerAssertion a mor:MoralValueGain .
+
+mor:PublicPersuasion a mor:MoralResponsibility .

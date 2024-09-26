@@ -1,0 +1,531 @@
+@prefix amr: <https://w3id.org/framester/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn3: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+@prefix wn4: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dul:associatedWith a owl:ObjectProperty .
+
+dul:hasDataValue a owl:DatatypeProperty .
+
+dul:hasMember a owl:ObjectProperty .
+
+dul:hasQuality a owl:ObjectProperty .
+
+fred:appear_1 a pbrs:appear-02 ;
+    pblr:appear-02.thing-seeming fred:disjunct_1 .
+
+fred:clear_1 a pbrs:clear-01 ;
+    pblr:clear-01.thing-made-clean fred:sky_1 .
+
+fred:clench_1 a pbrs:clench-01 ;
+    pblr:clench-01.clenched-thing fred:fist_1 .
+
+fred:conjunct_2 a boxing:Conjunct ;
+    dul:hasMember fred:engage_1,
+        fred:speak_1 ;
+    vn.role:Time fred:moment_2 .
+
+fred:convey_1 a pbrs:convey-01 ;
+    pblr:convey-01.sender fred:compose_1 ;
+    pblr:convey-01.thing-sent fred:conjunct_1 .
+
+fred:include_1 a pbrs:include-91 ;
+    pblr:include-91.subset fred:personnel_1 ;
+    pblr:include-91.superset fred:individual_1 .
+
+fred:open_1 a pbrs:open-01 ;
+    vn.role:Time fred:exclamation_1,
+        fred:raise_1 ;
+    pblr:open-01.opener fred:figure_2 ;
+    pblr:open-01.thing-opening fred:mouth_1 .
+
+fred:suit_1 a pbrs:suit-01 ;
+    pblr:suit-01.suitable-thing fred:individual_1 .
+
+fred:surround_1 a pbrs:surround-01 ;
+    pblr:surround-01.thing-surrounded fred:individual_1 ;
+    pblr:surround-01.thing-surrounding fred:figure_2 .
+
+fred:symbolize_1 a pbrs:symbolize-01 ;
+    pblr:symbolize-01.symbol fred:scene_1 .
+
+fred:symbolize_2 a pbrs:symbolize-01 ;
+    pblr:symbolize-01.class fred:conjunct_3 ;
+    pblr:symbolize-01.symbol fred:scene_1 .
+
+fred:wear_1 a pbrs:wear-01 ;
+    pblr:wear-01.clothing fred:sunglasses_1 ;
+    pblr:wear-01.wearer fred:personnel_1 .
+
+vn.role:Location a owl:ObjectProperty .
+
+vn.role:Predicate a owl:ObjectProperty .
+
+vn.role:Time a owl:ObjectProperty .
+
+schema:name a owl:ObjectProperty .
+
+amr:manner a owl:ObjectProperty,
+        fschema:SemanticRole ;
+    owl:equivalentProperty <https://w3id.org/framester/data/propbank-3.4.0/GenericRole/manner> .
+
+amr:part-of a owl:ObjectProperty .
+
+pblr:appear-02.thing-seeming a owl:ObjectProperty .
+
+pblr:clear-01.thing-made-clean a owl:ObjectProperty .
+
+pblr:clench-01.clenched-thing a owl:ObjectProperty .
+
+pblr:convey-01.sender a owl:ObjectProperty .
+
+pblr:convey-01.thing-sent a owl:ObjectProperty .
+
+pblr:defy-01.defiant-one a owl:ObjectProperty .
+
+pblr:engage-01.entity-sucked-in a owl:ObjectProperty .
+
+pblr:gesture-01.agent a owl:ObjectProperty .
+
+pblr:gesture-01.theme a owl:ObjectProperty .
+
+pblr:include-91.subset a owl:ObjectProperty .
+
+pblr:include-91.superset a owl:ObjectProperty .
+
+pblr:note-01.noter a owl:ObjectProperty .
+
+pblr:note-01.utterance a owl:ObjectProperty .
+
+pblr:open-01.opener a owl:ObjectProperty .
+
+pblr:open-01.thing-opening a owl:ObjectProperty .
+
+pblr:raise-01.agent a owl:ObjectProperty .
+
+pblr:raise-01.logical-subject a owl:ObjectProperty .
+
+pblr:rally-01.cause a owl:ObjectProperty .
+
+pblr:record-01.record a owl:ObjectProperty .
+
+pblr:record-01.recorder a owl:ObjectProperty .
+
+pblr:suit-01.suitable-thing a owl:ObjectProperty .
+
+pblr:surround-01.thing-surrounded a owl:ObjectProperty .
+
+pblr:surround-01.thing-surrounding a owl:ObjectProperty .
+
+pblr:symbolize-01.class a owl:ObjectProperty .
+
+pblr:symbolize-01.symbol a owl:ObjectProperty .
+
+pblr:triumph-01.winner a owl:ObjectProperty .
+
+pblr:wear-01.clothing a owl:ObjectProperty .
+
+pblr:wear-01.wearer a owl:ObjectProperty .
+
+fschema:subsumedUnder a owl:ObjectProperty .
+
+fred:Backdrop rdfs:subClassOf dul:InformationEntity,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn4:synset-backdrop-noun-1 .
+
+fred:Blue rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn4:synset-blue-adjectivesatellite-1 .
+
+fred:Central rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-cardinal-adjectivesatellite-1 .
+
+fred:Crowd rdfs:subClassOf dul:Collection,
+        wn30:supersense-noun_group ;
+    owl:equivalentClass wn30:synset-crowd-noun-1 .
+
+fred:Democracy rdfs:subClassOf d0:CognitiveEntity,
+        wn30:supersense-noun_cognition ;
+    owl:equivalentClass wn4:synset-democracy-noun-1 .
+
+fred:Dynamic rdfs:subClassOf d0:Event,
+        wn4:supersense-noun_motive ;
+    owl:equivalentClass wn4:synset-moral_force-noun-1 .
+
+fred:Energy rdfs:subClassOf d0:Characteristic,
+        wn30:supersense-noun_attribute ;
+    owl:equivalentClass wn4:synset-energy-noun-2 .
+
+fred:Event rdfs:subClassOf d0:Event,
+        wn30:supersense-noun_tops ;
+    owl:equivalentClass wn30:synset-event-noun-1 .
+
+fred:Fist rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_body ;
+    owl:equivalentClass wn4:synset-fist-noun-1 .
+
+fred:Flag rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-flag-noun-1 .
+
+fred:FlagBackdrop dul:associatedWith fred:Flag ;
+    dul:hasQuality fred:country_1 ;
+    rdfs:subClassOf fred:Backdrop .
+
+fred:Foreground rdfs:subClassOf dul:InformationEntity,
+        wn30:supersense-noun_cognition ;
+    owl:equivalentClass wn30:synset-foreground-noun-1 .
+
+fred:Impassioned rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn4:synset-ardent-adjectivesatellite-1 .
+
+fred:Individual rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_tops ;
+    owl:equivalentClass wn3:synset-person-noun-1 .
+
+fred:Intensity rdfs:subClassOf d0:Characteristic,
+        wn30:supersense-noun_attribute ;
+    owl:equivalentClass wn4:synset-intensity-noun-2 .
+
+fred:Mouth rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_body ;
+    owl:equivalentClass wn30:synset-mouth-noun-1 .
+
+fred:NationStage dul:associatedWith fred:Nation ;
+    rdfs:subClassOf fred:Stage .
+
+fred:Nature rdfs:subClassOf d0:Characteristic,
+        wn30:supersense-noun_attribute ;
+    owl:equivalentClass wn4:synset-nature-noun-1 .
+
+fred:Patriotism rdfs:subClassOf d0:Characteristic,
+        wn30:supersense-noun_attribute ;
+    owl:equivalentClass wn4:synset-patriotism-noun-1 .
+
+fred:Personnel rdfs:subClassOf dul:Organization,
+        wn30:supersense-noun_group ;
+    owl:equivalentClass wn30:synset-force-noun-4 .
+
+fred:PoliticsPerform-01 dul:associatedWith fred:Politics ;
+    rdfs:subClassOf fred:Perform-01 .
+
+fred:Power rdfs:subClassOf d0:Characteristic,
+        wn30:supersense-noun_attribute ;
+    owl:equivalentClass wn30:synset-power-noun-1 .
+
+fred:PowerDynamic dul:associatedWith fred:Power ;
+    rdfs:subClassOf fred:Dynamic .
+
+fred:Scene rdfs:subClassOf dul:InformationEntity,
+        wn30:supersense-noun_communication ;
+    owl:equivalentClass wn4:synset-scene-noun-4 .
+
+fred:Security rdfs:subClassOf dul:Organization,
+        wn30:supersense-noun_group ;
+    owl:equivalentClass wn4:synset-security-noun-6 .
+
+fred:SecurityPersonnel dul:associatedWith fred:Security ;
+    rdfs:subClassOf fred:Personnel .
+
+fred:Sky rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_object ;
+    owl:equivalentClass wn3:synset-sky-noun-1 .
+
+fred:Stage rdfs:subClassOf d0:Location,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-stage-noun-3 .
+
+fred:TheaterNature dul:associatedWith fred:Theater ;
+    rdfs:subClassOf fred:Nature .
+
+fred:act_1 a pbrs:act-02 .
+
+fred:backdrop_1 a fred:FlagBackdrop ;
+    fred:with fred:sky_1 .
+
+fred:campaign_1 a pbrs:campaign-01 .
+
+fred:compose_1 a pbrs:compose-02 .
+
+fred:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember fred:energy_1,
+        fred:intensity_1,
+        fred:patriotism_1 .
+
+fred:conjunct_3 a boxing:Conjunct ;
+    dul:hasMember fred:democracy_1,
+        fred:dynamic_1,
+        fred:nature_1 .
+
+fred:country_1 a amr:Country ;
+    owl:sameAs dbpedia:United_States,
+        wd:Q30 ;
+    schema:name "United_States" .
+
+fred:country_2 a amr:Country ;
+    owl:sameAs dbpedia:United_States,
+        wd:Q30 ;
+    schema:name "United_States" .
+
+fred:crowd_1 a fred:Crowd .
+
+fred:defy_1 a pbrs:defy-01 ;
+    pblr:defy-01.defiant-one fred:figure_2 .
+
+fred:democracy_1 a fred:Democracy ;
+    dul:hasQuality fred:act_1,
+        fred:country_2 .
+
+fred:disjunct_1 a boxing:Disjunct ;
+    dul:hasMember fred:note_1,
+        fred:record_1 .
+
+fred:disjunct_2 a boxing:Disjunct ;
+    dul:hasMember fred:defy_1,
+        fred:triumph_1 .
+
+fred:dynamic_1 a fred:PowerDynamic .
+
+fred:energy_1 a fred:Energy .
+
+fred:engage_1 a pbrs:engage-01 ;
+    pblr:engage-01.entity-sucked-in fred:crowd_1 .
+
+fred:exclamation_1 a fred:Exclamation ;
+    dul:associatedWith fred:middle_1 .
+
+fred:foreground_1 a fred:Foreground .
+
+fred:gesture_1 a pbrs:gesture-01 ;
+    pblr:gesture-01.agent fred:figure_2 ;
+    pblr:gesture-01.theme fred:disjunct_2 .
+
+fred:impassioned_1 a fred:Impassioned .
+
+fred:intensity_1 a fred:Intensity ;
+    fred:intensityOf fred:moment_1 .
+
+fred:middle_1 a fred:Middle .
+
+fred:moment_1 a fred:Moment ;
+    dul:hasQuality fred:campaign_1 .
+
+fred:mouth_1 a fred:Mouth ;
+    amr:part-of fred:figure_2 .
+
+fred:nature_1 a fred:TheaterNature ;
+    fred:natureOf fred:perform-01_1 .
+
+fred:note_1 a pbrs:note-01 ;
+    pblr:note-01.noter fred:figure_1 ;
+    pblr:note-01.utterance fred:event_1 .
+
+fred:patriotism_1 a fred:Patriotism .
+
+fred:perform-01_1 a fred:PoliticsPerform-01 ;
+    vn.role:Location fred:stage_1 .
+
+fred:politics_1 a fred:Politics .
+
+fred:raise_1 a pbrs:raise-01 ;
+    fred:raiseBy fred:gesture_1 ;
+    pblr:raise-01.agent fred:figure_2 ;
+    pblr:raise-01.logical-subject fred:fist_1 .
+
+fred:rally_1 a pbrs:rally-01 ;
+    pblr:rally-01.cause fred:politics_1 .
+
+fred:record_1 a pbrs:record-01 ;
+    pblr:record-01.record fred:event_1 ;
+    pblr:record-01.recorder fred:figure_1 .
+
+fred:speak_1 a pbrs:speak-01 ;
+    amr:manner fred:impassioned_1 .
+
+fred:stage_1 a fred:NationStage .
+
+fred:sunglasses_1 a fred:Sunglasses .
+
+fred:triumph_1 a pbrs:triumph-01 ;
+    pblr:triumph-01.winner fred:figure_2 .
+
+pbrs:act-02 rdfs:label "do something, perform an action" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0147f .
+
+pbrs:appear-02 rdfs:label "seem, appear, be unmistakable (for/as)" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0511f .
+
+pbrs:campaign-01 rdfs:label "work towards a goal" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0597f .
+
+pbrs:clear-01 rdfs:label "clean, make clear or open" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0155f .
+
+pbrs:clench-01 rdfs:label "hold together very tightly" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0469f .
+
+pbrs:compose-02 rdfs:label "to create, produce art" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0382f .
+
+pbrs:convey-01 rdfs:label "send (a statement)" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0177f .
+
+pbrs:defy-01 rdfs:label "to oppose, resist, or refuse" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0145f .
+
+pbrs:engage-01 rdfs:label "cause to get involved, involvement" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0147f .
+
+pbrs:gesture-01 rdfs:label "body language" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0369f .
+
+pbrs:include-91 rdfs:subClassOf dul:Event .
+
+pbrs:note-01 rdfs:label "to say or take a note of" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0327f .
+
+pbrs:open-01 rdfs:label "(cause to) become open; change of state, free for passage/entry" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0289f .
+
+pbrs:raise-01 rdfs:label "move upward, quantifiably or metaphorically, (cause of) upward movement/increase" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0219f .
+
+pbrs:rally-01 rdfs:label "summon to a cause" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0396f .
+
+pbrs:record-01 rdfs:label "make a permanent record" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0216f .
+
+pbrs:speak-01 rdfs:label "speak, lecturing, talking" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0009f .
+
+pbrs:suit-01 rdfs:label "(cause to) be suitable for" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0170f .
+
+pbrs:surround-01 rdfs:label "be on all sides of, encompassing" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0420f .
+
+pbrs:triumph-01 rdfs:label "win, victory" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0081f .
+
+pbrs:wear-01 rdfs:label "not be naked" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0553f .
+
+wn4:synset-ardent-adjectivesatellite-1 wn30schema:gloss "characterized by intense emotion; \"ardent love\"; \"an ardent lover\"; \"a fervent desire to change society\"; \"a fervent admirer\"; \"fiery oratory\"; \"an impassioned appeal\"; \"a torrid love affair\""@en-us .
+
+wn4:synset-backdrop-noun-1 wn30schema:gloss "scenery hung at back of stage"@en-us .
+
+wn4:synset-blue-adjectivesatellite-1 wn30schema:gloss "of the color intermediate between green and violet; having a color similar to that of a clear unclouded sky; \"October's bright blue weather\"- Helen Hunt Jackson; \"a blue flame\"; \"blue haze of tobacco smoke\""@en-us .
+
+wn30:synset-cardinal-adjectivesatellite-1 wn30schema:gloss "serving as an essential component; \"a cardinal rule\"; \"the central cause of the problem\"; \"an example that was fundamental to the argument\"; \"computers are fundamental to modern industrial structure\""@en-us .
+
+wn30:synset-crowd-noun-1 wn30schema:gloss "a large number of things or people considered together; \"a crowd of insects assembled around the flowers\""@en-us .
+
+wn4:synset-democracy-noun-1 wn30schema:gloss "the political orientation of those who favor government by the people or by their elected representatives"@en-us .
+
+wn4:synset-energy-noun-2 wn30schema:gloss "forceful exertion; \"he plays tennis with great energy\"; \"he's full of zip\""@en-us .
+
+wn30:synset-event-noun-1 wn30schema:gloss "something that happens at a given place and time"@en-us .
+
+wn4:synset-fist-noun-1 wn30schema:gloss "a hand with the fingers clenched in the palm (as for hitting)"@en-us .
+
+wn30:synset-flag-noun-1 wn30schema:gloss "emblem usually consisting of a rectangular piece of cloth of distinctive design"@en-us .
+
+wn30:synset-force-noun-4 wn30schema:gloss "group of people willing to obey orders; \"a public force is necessary to give security to the rights of citizens\""@en-us .
+
+wn30:synset-foreground-noun-1 wn30schema:gloss "the part of a scene that is near the viewer"@en-us .
+
+wn4:synset-intensity-noun-2 wn30schema:gloss "high level or degree; the property of being intense"@en-us .
+
+wn30:synset-moment-noun-1 wn30schema:gloss "a particular point in time; \"the moment he arrived the party began\""@en-us .
+
+wn4:synset-moral_force-noun-1 wn30schema:gloss "an efficient incentive; \"they hoped it would act as a spiritual dynamic on all churches\""@en-us .
+
+wn30:synset-mouth-noun-1 wn30schema:gloss "the opening through which food is taken in and vocalizations emerge; \"he stuffed his mouth with candy\""@en-us .
+
+wn4:synset-nature-noun-1 wn30schema:gloss "the essential qualities or characteristics by which something is recognized; \"it is the nature of fire to burn\"; \"the true nature of jealousy\""@en-us .
+
+wn4:synset-patriotism-noun-1 wn30schema:gloss "love of country and willingness to sacrifice for it; \"they rode the same wave of popular patriotism\"; \"British nationalism was in the air and patriotic sentiments ran high\""@en-us .
+
+wn3:synset-person-noun-1 wn30schema:gloss "a human being; \"there was too much for one person to do\""@en-us .
+
+wn30:synset-power-noun-1 wn30schema:gloss "possession of controlling influence; \"the deterrent power of nuclear weapons\"; \"the power of his love saved her\"; \"his powerfulness was concealed by a gentle facade\""@en-us .
+
+wn4:synset-scene-noun-4 wn30schema:gloss "a consecutive series of pictures that constitutes a unit of action in a film"@en-us .
+
+wn4:synset-security-noun-6 wn30schema:gloss "a department responsible for the security of the institution's property and workers; \"the head of security was a former policeman\""@en-us .
+
+wn3:synset-sky-noun-1 wn30schema:gloss "the atmosphere and outer space as viewed from the earth"@en-us .
+
+wn30:synset-stage-noun-3 wn30schema:gloss "a large platform on which people can stand and can be seen by an audience; \"he clambered up onto the stage and got the actors to help him into the box\""@en-us .
+
+fred:Moment rdfs:subClassOf dul:Amount,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-moment-noun-1 .
+
+fred:event_1 a fred:Event .
+
+fred:figure_1 a fred:Figure ;
+    dul:hasDataValue 1.0 ;
+    vn.role:Location fred:foreground_1 .
+
+fred:fist_1 a fred:Fist .
+
+fred:moment_2 a fred:Moment .
+
+fred:personnel_1 a fred:SecurityPersonnel .
+
+fred:scene_1 a fred:Scene ;
+    dul:hasQuality fred:rally_1 ;
+    fred:with fred:backdrop_1 ;
+    vn.role:Predicate fred:moment_2 .
+
+fred:sky_1 a fred:Sky ;
+    dul:hasQuality fred:Blue .
+
+pbrs:symbolize-01 rdfs:label "act as a representative of a class" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0341f .
+
+fred:individual_1 a fred:Individual .
+
+fred:figure_2 a fred:Figure ;
+    dul:hasQuality fred:Central .

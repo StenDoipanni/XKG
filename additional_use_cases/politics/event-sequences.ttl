@@ -1,0 +1,28 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+
+dul:precedes a owl:ObjectProperty .
+
+fred:convey_1 vn.role:Time fred:rally_1 .
+
+fred:note_1 vn.role:Time fred:rally_1 .
+
+fred:raise_1 dul:precedes fred:engage_1,
+        fred:open_1 ;
+    vn.role:Time fred:rally_1 .
+
+fred:record_1 vn.role:Time fred:rally_1 .
+
+fred:speak_1 vn.role:Time fred:rally_1 .
+
+fred:symbolize_1 vn.role:Time fred:rally_1 .
+
+fred:symbolize_2 vn.role:Time fred:rally_1 .
+
+vn.role:Time a owl:ObjectProperty .
+
+fred:engage_1 vn.role:Time fred:rally_1 .
+
+fred:open_1 vn.role:Time fred:rally_1 .

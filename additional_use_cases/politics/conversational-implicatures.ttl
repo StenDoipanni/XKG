@@ -1,0 +1,55 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+fred:attendee_1 a fred:Attendee ;
+    fred:hasState fred:Engaged .
+
+fred:hasState a owl:ObjectProperty .
+
+fred:openclear_1 a owl:ObjectProperty,
+        pbrs:open-01 ;
+    pblr:open-01.thing-opening fred:rally_1 .
+
+fred:possible_1 a owl:ObjectProperty,
+        pbrs:possible-01 ;
+    pblr:possible-01.thing-that-is-possible fred:win_1 .
+
+fred:speech_1 a owl:ObjectProperty,
+        pbrs:speak-01 ;
+    pblr:speak-01.speaker fred:figure_2 ;
+    pblr:speak-01.topic fred:politics_1 .
+
+fred:stageOf a owl:ObjectProperty .
+
+fred:stage_1 fred:stageOf fred:figure_2 .
+
+pblr:open-01.thing-opening a owl:ObjectProperty .
+
+pblr:possible-01.thing-that-is-possible a owl:ObjectProperty .
+
+pblr:speak-01.speaker a owl:ObjectProperty .
+
+pblr:speak-01.topic a owl:ObjectProperty .
+
+pblr:win-01.prize a owl:ObjectProperty .
+
+pblr:win-01.winner a owl:ObjectProperty .
+
+fred:Attendee rdfs:subClassOf dul:Person .
+
+fred:Election rdfs:subClassOf dul:Event .
+
+fred:Engaged rdfs:subClassOf dul:Quality .
+
+fred:election_1 a fred:Election ;
+    owl:sameAs wd:Q40231 .
+
+fred:win_1 a owl:ObjectProperty,
+        pbrs:win-01 ;
+    pblr:win-01.prize fred:election_1 ;
+    pblr:win-01.winner fred:figure_2 .

@@ -1,0 +1,34 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix impact: <http://www.ontologydesignpatterns.org/ont/impact/impact.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn4: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:crowd_1 impact:hasExpectedEmotion impact:Excitement ;
+    impact:hasExpectedMentalState impact:Engagement .
+
+fred:figure_2 impact:hasExpectedEmotion impact:Passion ;
+    impact:hasExpectedMentalState impact:Determination .
+
+fred:personnel_1 impact:hasExpectedMentalState impact:Alertness .
+
+impact:hasExpectedEmotion a owl:ObjectProperty .
+
+impact:hasExpectedMentalState a owl:ObjectProperty .
+
+impact:Alertness rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn30:synset-alertness-noun-1 .
+
+impact:Determination rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn4:synset-determination-noun-1 .
+
+impact:Engagement rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn4:synset-engagement-noun-3 .
+
+impact:Excitement rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn30:synset-excitement-noun-1 .
+
+impact:Passion rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn4:synset-passion-noun-1 .
