@@ -1,0 +1,43 @@
+@prefix coerce: <http://www.ontologydesignpatterns.org/ont/coercion/coerce.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix mor: <http://www.ontologydesignpatterns.org/ont/values/moral.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+coerce:coercedType a owl:ObjectProperty .
+
+fred:capture_1 coerce:coercedType mor:Spontaneity,
+        mor:Vitality .
+
+fred:embody_1 coerce:coercedType mor:NationalIdentity .
+
+fred:evoke_1 coerce:coercedType mor:TimePassage .
+
+fred:impose_1 coerce:coercedType mor:HistoricalSignificance .
+
+fred:juxtapose_1 coerce:coercedType mor:TemporalContrast .
+
+fred:link_1 coerce:coercedType mor:HistoricalContinuity .
+
+fred:symbolize_1 coerce:coercedType mor:Freedom,
+        mor:Playfulness .
+
+mor:Freedom owl:equivalentClass wn30:synset-freedom-noun-1 .
+
+mor:HistoricalContinuity rdfs:subClassOf dul:Concept .
+
+mor:HistoricalSignificance rdfs:subClassOf dul:Concept .
+
+mor:NationalIdentity owl:equivalentClass wn30:synset-national_identity-noun-1 .
+
+mor:Playfulness owl:equivalentClass wn30:synset-playfulness-noun-1 .
+
+mor:Spontaneity owl:equivalentClass wn30:synset-spontaneity-noun-1 .
+
+mor:TemporalContrast rdfs:subClassOf dul:Concept .
+
+mor:TimePassage rdfs:subClassOf dul:Concept .
+
+mor:Vitality owl:equivalentClass wn30:synset-vitality-noun-2 .

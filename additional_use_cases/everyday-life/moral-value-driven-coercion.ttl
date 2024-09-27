@@ -1,0 +1,39 @@
+@prefix coerce: <http://www.ontologydesignpatterns.org/ont/coercion/coerce.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix mor: <http://www.ontologydesignpatterns.org/ont/values/moral.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+
+coerce:coercedType a owl:ObjectProperty .
+
+fred:flood_1 coerce:coercedType fred:threaten_1 .
+
+fred:juxtapose_1 coerce:coercedType fred:contrast_1 .
+
+fred:symbolize_1 coerce:coercedType fred:represent_1 .
+
+mor:commitment a owl:ObjectProperty .
+
+mor:evokes a owl:ObjectProperty .
+
+fred:contrast_1 a pbrs:contrast-01 ;
+    mor:evokes mor:TemporalPerspective ;
+    pblr:contrast-01.entity-contrasted fred:architecture_2 ;
+    pblr:contrast-01.entity-contrasted-with fred:moment_1 .
+
+fred:represent_1 a pbrs:represent-01 ;
+    mor:evokes mor:IndividualLiberty ;
+    pblr:represent-01.entity-representing fred:collar_1 ;
+    pblr:represent-01.thing-represented mor:Freedom .
+
+fred:threaten_1 a pbrs:threaten-01 ;
+    mor:evokes mor:EnvironmentalResponsibility ;
+    pblr:threaten-01.cause fred:change_1 ;
+    pblr:threaten-01.theme fred:riverbank_1 .
+
+mor:EnvironmentalResponsibility a mor:MoralDue .
+
+mor:IndividualLiberty a mor:PositiveMoralValueGain .
+
+mor:TemporalPerspective a mor:MoralReflection .

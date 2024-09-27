@@ -1,0 +1,32 @@
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix caus: <http://www.ontologydesignpatterns.org/ont/causal/causal.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fred:climate_change_impact_1 a owl:ObjectProperty,
+        pbrs:impact-01 ;
+    boxing:hasTruthValue true ;
+    caus:truthDependingOn fred:flood_1 ;
+    vn.role:Time fred:future_1 ;
+    pblr:impact-01.entity-impacted fred:cityscape_1 ;
+    pblr:impact-01.thing-affecting fred:climate_change_1 .
+
+fred:ClimateChange rdfs:subClassOf dul:Event .
+
+fred:Future rdfs:subClassOf dul:TimeInterval .
+
+fred:climate_change_1 a fred:ClimateChange ;
+    owl:sameAs wd:Q8740 .
+
+fred:flood_1 a owl:ObjectProperty ;
+    dul:precedes fred:future_1 .
+
+fred:future_1 a fred:Future ;
+    owl:sameAs wd:Q11471 .

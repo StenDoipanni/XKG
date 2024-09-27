@@ -1,0 +1,98 @@
+(z0 / multi-sentence
+    :snt1 (z1 / cityscape
+              :location (z2 / city
+                            :wiki "Budapest"
+                            :name (z3 / name
+                                      :op1 "Budapest"))
+              :mod (z4 / majestic)
+              :time (z5 / dusk))
+    :snt2 (z6 / loom-01
+              :ARG1 (z7 / castle
+                        :wiki "Buda_Castle"
+                        :name (z8 / name
+                                  :op1 "Buda"
+                                  :op2 "Castle")
+                        :part (z14 / architecture
+                                   :mod (z15 / grand)
+                                   :ARG1-of (z16 / silhouet-01
+                                                 :ARG2 (z17 / sky
+                                                            :mod (z18 / moody)))
+                                   :ARG0-of (z19 / embody-01
+                                                 :ARG1 (z20 / history
+                                                            :mod (z21 / regal)
+                                                            :poss (z22 / country
+                                                                       :wiki "Hungary"
+                                                                       :name (z23 / name
+                                                                                  :op1 "Hungary"))))))
+              :location (z9 / across
+                            :op1 (z10 / river
+                                      :wiki "Danube"
+                                      :name (z11 / name
+                                                 :op1 "Danube"))))
+    :snt3 (z12 / evoke-01
+               :ARG0 (z13 / and
+                          :op1 z14
+                          :op2 (z24 / hint-01
+                                    :ARG0 (z25 / boat
+                                               :ARG1-of (z26 / moor-01
+                                                             :ARG2 (z27 / nearby)))
+                                    :ARG1 (z28 / and
+                                               :op1 (z29 / commerce
+                                                         :mod (z30 / river))
+                                               :op2 (z31 / tourism
+                                                         :mod z30)))
+                          :op3 (z32 / capture-01
+                                    :ARG0 (z33 / foreground)
+                                    :ARG1 (z34 / joy
+                                               :mod (z35 / spontaneous)))
+                          :snt4 (z36 / and
+                                     :op1 (z37 / dog
+                                               :ARG1-of (z38 / sleek-01)
+                                               :ARG1-of (z39 / brown)
+                                               :ARG0-of (z40 / leap-02
+                                                             :destination (z41 / water)))
+                                     :op2 (z42 / collar
+                                               :ARG1-of (z43 / green-02)
+                                               :ARG1-of (z44 / see-01)
+                                               :ARG1-of (z45 / symbolize-01
+                                                             :ARG2 (z46 / and
+                                                                        :op1 (z47 / free-04)
+                                                                        :op2 (z48 / playful)))))
+                          :op2 (z49 / suggest-01
+                                    :ARG0 (z50 / riverbank
+                                               :ARG1-of (z51 / flood-01))
+                                    :ARG1 (z52 / water
+                                               :ARG1-of (z53 / rise-01)))
+                          :op3 (z54 / impact-01
+                                    :ARG0 (z55 / change-01
+                                               :ARG1 (z56 / climate)
+                                               :mod (z57 / potential)))
+                          :op4 (z58 / evoke-01
+                                    :ARG0 (z59 / juxtapose-01
+                                               :ARG1 (z60 / architecture
+                                                          :mod (z61 / timeless))
+                                               :ARG2 (z62 / moment
+                                                          :mod (z63 / dog)
+                                                          :ARG1-of (z64 / faint-01)))
+                                    :ARG1 (z65 / pass-03
+                                               :ARG1 (z66 / time)))
+                          :op5 (z67 / nature
+                                    :ARG0-of (z68 / endure-01)
+                                    :poss (z69 / city)
+                                    :location (z70 / alongside
+                                                   :op1 (z71 / life
+                                                             :frequency (z72 / everyday))))
+                          :op6 (z73 / draw-02
+                                    :ARG0 (z74 / compose-01
+                                               :ARG1 (z75 / image))
+                                    :ARG1 (z76 / eye)
+                                    :ARG2 (z77 / dog
+                                               :mod (z78 / exuberant))
+                                    :ARG3 (z79 / castle
+                                               :ARG0-of (z80 / impose-01
+                                                             :ARG1 z79)))
+                          :op7 (z81 / link-01
+                                    :ARG0 z74
+                                    :ARG1 (z82 / present)
+                                    :ARG2 (z83 / past
+                                               :mod (z84 / weighty))))))

@@ -1,0 +1,61 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:stand-for_1 a owl:ObjectProperty,
+        pbrs:stand-for-01 ;
+    pblr:stand-for-01.theme fred:city_1 ;
+    pblr:stand-for-01.thing-stood-for fred:cityscape_1 .
+
+fred:stand-for_2 a owl:ObjectProperty,
+        pbrs:stand-for-01 ;
+    pblr:stand-for-01.theme fred:river_commerce_1 ;
+    pblr:stand-for-01.thing-stood-for fred:boat_1 .
+
+fred:stand-for_3 a owl:ObjectProperty,
+        pbrs:stand-for-01 ;
+    pblr:stand-for-01.theme fred:river_tourism_1 ;
+    pblr:stand-for-01.thing-stood-for fred:boat_1 .
+
+fred:stand-for_4 a owl:ObjectProperty,
+        pbrs:stand-for-01 ;
+    pblr:stand-for-01.theme fred:freedom_1 ;
+    pblr:stand-for-01.thing-stood-for fred:dog_1 .
+
+fred:stand-for_5 a owl:ObjectProperty,
+        pbrs:stand-for-01 ;
+    pblr:stand-for-01.theme fred:playfulness_1 ;
+    pblr:stand-for-01.thing-stood-for fred:dog_1 .
+
+fred:stand-for_6 a owl:ObjectProperty,
+        pbrs:stand-for-01 ;
+    pblr:stand-for-01.theme fred:history_1 ;
+    pblr:stand-for-01.thing-stood-for fred:castle_1 .
+
+fred:castle_1 pblr:stand-for-01.theme fred:history_1 .
+
+fred:cityscape_1 pblr:stand-for-01.theme fred:city_1 .
+
+fred:boat_1 pblr:stand-for-01.theme fred:river_commerce_1,
+        fred:river_tourism_1 .
+
+fred:dog_1 pblr:stand-for-01.theme fred:freedom_1,
+        fred:playfulness_1 .
+
+fred:freedom_1 a fred:Freedom,
+        owl:ObjectProperty ;
+    owl:equivalentClass wn30:synset-freedom-noun-1 .
+
+fred:playfulness_1 a fred:Playfulness,
+        owl:ObjectProperty ;
+    owl:equivalentClass wn30:synset-playfulness-noun-1 .
+
+fred:river_commerce_1 a fred:RiverCommerce,
+        owl:ObjectProperty ;
+    owl:equivalentClass wn30:synset-river_commerce-noun-1 .
+
+fred:river_tourism_1 a fred:RiverTourism,
+        owl:ObjectProperty ;
+    owl:equivalentClass wn30:synset-river_tourism-noun-1 .

@@ -1,0 +1,667 @@
+@prefix amr: <https://w3id.org/framester/amr/> .
+@prefix boxer: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn3: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+@prefix wn4: <https://w3id.org/framester/wn/wn30/instances/> .
+
+boxer:agent a owl:ObjectProperty .
+
+boxer:patient a owl:ObjectProperty .
+
+dul:associatedWith a owl:ObjectProperty .
+
+dul:hasMember a owl:ObjectProperty .
+
+dul:hasQuality a owl:ObjectProperty .
+
+fred:brown_1 a fred:Brown ;
+    vn.role:Predicate fred:dog_1 .
+
+fred:cityscape_1 a fred:Cityscape ;
+    dul:hasQuality fred:Majestic ;
+    vn.role:Location fred:city_1 ;
+    vn.role:Time fred:dusk_1 .
+
+fred:conjunct_3 a boxing:Conjunct ;
+    dul:hasMember fred:collar_1,
+        fred:dog_1 .
+
+fred:embody_1 a pbrs:embody-01 ;
+    boxer:agent fred:architecture_1 ;
+    boxer:patient fred:history_1 .
+
+fred:endure_1 a pbrs:endure-01 ;
+    vn.role:Predicate fred:nature_1 .
+
+fred:evoke_1 a pbrs:evoke-01 ;
+    pblr:evoke-01.evoker fred:conjunct_1 .
+
+fred:faint_1 a pbrs:faint-01 ;
+    vn.role:Predicate fred:moment_1 .
+
+fred:flood_1 a pbrs:flood-01 ;
+    pblr:flood-01.location-flooded fred:riverbank_1 .
+
+fred:green_1 a pbrs:green-02 ;
+    pblr:green-02.green-thing fred:collar_1 .
+
+fred:impose_1 a pbrs:impose-01 ;
+    pblr:impose-01.imposer fred:castle_2 ;
+    pblr:impose-01.thing-imposed fred:castle_2 .
+
+fred:leap_1 a pbrs:leap-02 ;
+    vn.role:Destination fred:water_1 ;
+    pblr:leap-02.jumper fred:dog_1 .
+
+fred:loom_1 a pbrs:loom-01 ;
+    dul:hasQuality fred:Across ;
+    vn.role:Location fred:river_1 ;
+    pblr:loom-01.thing-looming fred:castle_1 .
+
+fred:moor_1 a pbrs:moor-01 ;
+    pblr:moor-01.destination fred:nearby_1 ;
+    pblr:moor-01.thing-docked fred:boat_1 .
+
+fred:rise_1 a pbrs:rise-01 ;
+    pblr:rise-01.logical-subject fred:water_2 .
+
+fred:see_1 a pbrs:see-01 ;
+    pblr:see-01.thing-viewed fred:collar_1 .
+
+fred:silhouet_1 a pbrs:silhouet-01 ;
+    vn.role:Cause fred:sky_1 ;
+    vn.role:Expreriencer fred:architecture_1 .
+
+fred:symbolize_1 a pbrs:symbolize-01 ;
+    pblr:symbolize-01.class fred:conjunct_4 ;
+    pblr:symbolize-01.symbol fred:collar_1 .
+
+vn.role:Cause a owl:ObjectProperty .
+
+vn.role:Destination a owl:ObjectProperty .
+
+vn.role:Expreriencer a owl:ObjectProperty .
+
+vn.role:Location a owl:ObjectProperty .
+
+vn.role:Predicate a owl:ObjectProperty .
+
+vn.role:Time a owl:ObjectProperty .
+
+schema:name a owl:ObjectProperty .
+
+pblr:capture-01.getter a owl:ObjectProperty .
+
+pblr:capture-01.thing-gotten a owl:ObjectProperty .
+
+pblr:change-01.thing-changing a owl:ObjectProperty .
+
+pblr:compose-01.entity-composed a owl:ObjectProperty .
+
+pblr:draw-02.source a owl:ObjectProperty .
+
+pblr:evoke-01.evoker a owl:ObjectProperty .
+
+pblr:evoke-01.thing-evoked a owl:ObjectProperty .
+
+pblr:flood-01.location-flooded a owl:ObjectProperty .
+
+pblr:green-02.green-thing a owl:ObjectProperty .
+
+pblr:hint-01.sayer a owl:ObjectProperty .
+
+pblr:hint-01.utterance a owl:ObjectProperty .
+
+pblr:impact-01.thing-affecting a owl:ObjectProperty .
+
+pblr:impose-01.imposer a owl:ObjectProperty .
+
+pblr:impose-01.thing-imposed a owl:ObjectProperty .
+
+pblr:juxtapose-01.entity-juxtaposed a owl:ObjectProperty .
+
+pblr:juxtapose-01.entity-juxtaposed-with a owl:ObjectProperty .
+
+pblr:leap-02.jumper a owl:ObjectProperty .
+
+pblr:link-01.agent a owl:ObjectProperty .
+
+pblr:link-01.first-or-all-things-being-tied a owl:ObjectProperty .
+
+pblr:link-01.second-thing a owl:ObjectProperty .
+
+pblr:loom-01.thing-looming a owl:ObjectProperty .
+
+pblr:moor-01.destination a owl:ObjectProperty .
+
+pblr:moor-01.thing-docked a owl:ObjectProperty .
+
+pblr:pass-03.thing-passing a owl:ObjectProperty .
+
+pblr:rise-01.logical-subject a owl:ObjectProperty .
+
+pblr:see-01.thing-viewed a owl:ObjectProperty .
+
+pblr:suggest-01.sayer a owl:ObjectProperty .
+
+pblr:suggest-01.utterance a owl:ObjectProperty .
+
+pblr:symbolize-01.class a owl:ObjectProperty .
+
+pblr:symbolize-01.symbol a owl:ObjectProperty .
+
+fschema:subsumedUnder a owl:ObjectProperty .
+
+fred:Boat rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn4:synset-boat-noun-1 .
+
+fred:Brown rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-brown-adjectivesatellite-1 .
+
+fred:City rdfs:subClassOf d0:Location,
+        wn30:supersense-noun_location ;
+    owl:equivalentClass wn30:synset-city-noun-1 .
+
+fred:Cityscape rdfs:subClassOf d0:CognitiveEntity,
+        wn30:supersense-noun_cognition ;
+    owl:equivalentClass wn30:synset-cityscape-noun-1 .
+
+fred:Climate rdfs:subClassOf dul:Situation,
+        wn30:supersense-noun_state ;
+    owl:equivalentClass wn30:synset-climate-noun-1 .
+
+fred:Collar rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-collar-noun-6 .
+
+fred:Commerce rdfs:subClassOf d0:Activity,
+        wn30:supersense-noun_act ;
+    owl:equivalentClass wn30:synset-commerce-noun-1 .
+
+fred:DogMoment dul:associatedWith fred:Dog ;
+    rdfs:subClassOf fred:Moment .
+
+fred:Dusk rdfs:subClassOf dul:InformationEntity,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-twilight-noun-1 .
+
+fred:Everyday rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-everyday-adjectivesatellite-3 .
+
+fred:Exuberant rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-ebullient-adjectivesatellite-1 .
+
+fred:Eye rdfs:subClassOf d0:CognitiveEntity,
+        wn30:supersense-noun_cognition ;
+    owl:equivalentClass wn30:synset-eye-noun-3 .
+
+fred:Foreground rdfs:subClassOf dul:InformationEntity,
+        wn30:supersense-noun_cognition ;
+    owl:equivalentClass wn30:synset-foreground-noun-1 .
+
+fred:Grand rdfs:subClassOf dul:Quality,
+        fschema:AdjectivalQuality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-expansive-adjectivesatellite-2 .
+
+fred:GrandArchitecture dul:associatedWith fred:Grand ;
+    rdfs:subClassOf fred:Architecture .
+
+fred:History rdfs:subClassOf dul:TimeInterval,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-history-noun-1 .
+
+fred:Image rdfs:subClassOf dul:InformationEntity,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-picture-noun-1 .
+
+fred:Joy rdfs:subClassOf d0:CognitiveEntity,
+        wn30:supersense-noun_feeling ;
+    owl:equivalentClass wn30:synset-joy-noun-1 .
+
+fred:Life rdfs:subClassOf dul:Situation,
+        wn30:supersense-noun_state ;
+    owl:equivalentClass wn3:synset-life-noun-1 .
+
+fred:Majestic rdfs:subClassOf dul:Quality,
+        fschema:AdjectivalQuality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-gallant-adjectivesatellite-3 .
+
+fred:Moment rdfs:subClassOf dul:Amount,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-moment-noun-1 .
+
+fred:Moody rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-dark-adjectivesatellite-6 .
+
+fred:Nature rdfs:subClassOf d0:Characteristic,
+        wn30:supersense-noun_attribute ;
+    owl:equivalentClass wn4:synset-nature-noun-1 .
+
+fred:Nearby rdfs:subClassOf dul:Quality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-nearby-adverb-1 .
+
+fred:Past rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-past-adjective-1 .
+
+fred:Potential rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-potential-adjective-1 .
+
+fred:Present rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-present-adjective-1 .
+
+fred:Regal rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-imperial-adjectivesatellite-4 .
+
+fred:River rdfs:subClassOf d0:Location,
+        wn30:supersense-noun_object ;
+    owl:equivalentClass wn30:synset-river-noun-1 .
+
+fred:Riverbank rdfs:subClassOf d0:Location,
+        wn30:supersense-noun_object ;
+    owl:equivalentClass wn30:synset-riverbank-noun-1 .
+
+fred:Sky rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_object ;
+    owl:equivalentClass wn3:synset-sky-noun-1 .
+
+fred:Sleek rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-streamlined-adjectivesatellite-2 .
+
+fred:Spontaneous rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-spontaneous-adjective-1 .
+
+fred:Time rdfs:subClassOf dul:TimeInterval,
+        wn30:supersense-noun_tops ;
+    owl:equivalentClass wn30:synset-time-noun-5 .
+
+fred:Timeless rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-dateless-adjectivesatellite-4 .
+
+fred:Tourism rdfs:subClassOf d0:Activity,
+        wn30:supersense-noun_act ;
+    owl:equivalentClass wn30:synset-tourism-noun-1 .
+
+fred:Weighty rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-weighty-adjectivesatellite-4 .
+
+fred:architecture_2 a fred:Architecture ;
+    dul:hasQuality fred:Timeless .
+
+fred:capture_1 a pbrs:capture-01 ;
+    pblr:capture-01.getter fred:foreground_1 ;
+    pblr:capture-01.thing-gotten fred:joy_1 .
+
+fred:castle_1 a fred:Castle ;
+    fred:with fred:architecture_1 ;
+    owl:sameAs dbpedia:Buda_Castle,
+        wd:Q46313 ;
+    schema:name "Buda_Castle" .
+
+fred:change_1 a pbrs:change-01 ;
+    dul:hasQuality fred:Potential ;
+    pblr:change-01.thing-changing fred:climate_1 .
+
+fred:city_1 a amr:City ;
+    owl:sameAs dbpedia:Budapest,
+        wd:Q1781 ;
+    schema:name "Budapest" .
+
+fred:city_2 a fred:City .
+
+fred:climate_1 a fred:Climate .
+
+fred:commerce_1 a fred:RiverTourism .
+
+fred:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember fred:architecture_1,
+        fred:capture_1,
+        fred:draw_1,
+        fred:evoke_2,
+        fred:hint_1,
+        fred:impact_1,
+        fred:link_1,
+        fred:nature_1,
+        fred:suggest_1 .
+
+fred:conjunct_2 a boxing:Conjunct ;
+    dul:hasMember fred:commerce_1,
+        fred:tourism_1 .
+
+fred:conjunct_4 a boxing:Conjunct ;
+    dul:hasMember fred:free_1,
+        fred:playful_1 .
+
+fred:country_1 a amr:Country ;
+    owl:sameAs dbpedia:Hungary,
+        wd:Q28 ;
+    schema:name "Hungary" .
+
+fred:dog_2 a fred:Dog ;
+    dul:hasQuality fred:Exuberant .
+
+fred:draw_1 a pbrs:draw-02 ;
+    boxer:agent fred:compose_1 ;
+    boxer:patient fred:eye_1 ;
+    vn.role:Predicate fred:castle_2 ;
+    pblr:draw-02.source fred:dog_2 .
+
+fred:dusk_1 a fred:Dusk .
+
+fred:everyday_1 a fred:Everyday .
+
+fred:evoke_2 a pbrs:evoke-01 ;
+    pblr:evoke-01.evoker fred:juxtapose_1 ;
+    pblr:evoke-01.thing-evoked fred:pass_1 .
+
+fred:eye_1 a fred:Eye .
+
+fred:foreground_1 a fred:Foreground .
+
+fred:free_1 a pbrs:free-04 .
+
+fred:hint_1 a pbrs:hint-01 ;
+    pblr:hint-01.sayer fred:boat_1 ;
+    pblr:hint-01.utterance fred:conjunct_2 .
+
+fred:history_1 a fred:History ;
+    dul:hasQuality fred:Regal ;
+    fred:historyOf fred:country_1 .
+
+fred:image_1 a fred:Image .
+
+fred:impact_1 a pbrs:impact-01 ;
+    pblr:impact-01.thing-affecting fred:change_1 .
+
+fred:joy_1 a fred:Joy ;
+    dul:hasQuality fred:Spontaneous .
+
+fred:juxtapose_1 a pbrs:juxtapose-01 ;
+    pblr:juxtapose-01.entity-juxtaposed fred:architecture_2 ;
+    pblr:juxtapose-01.entity-juxtaposed-with fred:moment_1 .
+
+fred:life_1 a fred:Life ;
+    dul:associatedWith fred:everyday_1 .
+
+fred:link_1 a pbrs:link-01 ;
+    pblr:link-01.agent fred:compose_1 ;
+    pblr:link-01.first-or-all-things-being-tied fred:present_1 ;
+    pblr:link-01.second-thing fred:past_1 .
+
+fred:nearby_1 a fred:Nearby .
+
+fred:pass_1 a pbrs:pass-03 ;
+    pblr:pass-03.thing-passing fred:time_1 .
+
+fred:past_1 a fred:Past ;
+    dul:hasQuality fred:Weighty .
+
+fred:playful_1 a fred:Playful .
+
+fred:present_1 a fred:Present .
+
+fred:river_1 a amr:River ;
+    owl:sameAs dbpedia:Danube,
+        wd:Q1653 ;
+    schema:name "Danube" .
+
+fred:sky_1 a fred:Sky ;
+    dul:hasQuality fred:Moody .
+
+fred:suggest_1 a pbrs:suggest-01 ;
+    pblr:suggest-01.sayer fred:riverbank_1 ;
+    pblr:suggest-01.utterance fred:water_2 .
+
+fred:time_1 a fred:Time .
+
+fred:tourism_1 a fred:RiverTourism .
+
+fred:water_1 a fred:Water .
+
+pbrs:capture-01 rdfs:label "get" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0301f .
+
+pbrs:change-01 rdfs:label "transform" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0016f .
+
+pbrs:compose-01 rdfs:label "to form,  constitute" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0341f .
+
+pbrs:draw-02 rdfs:label "pull, extract, withdraw" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0290f .
+
+pbrs:embody-01 rdfs:label "to represent in bodily form or incorporate" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0341f .
+
+pbrs:endure-01 rdfs:label "to last or experience for a long time" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0114f .
+
+pbrs:faint-01 rdfs:label "faint, pass out" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0452f .
+
+pbrs:flood-01 rdfs:label "cover with a liquid, to fill with an excess, filling past capacity with liquid" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0421f .
+
+pbrs:free-04 rdfs:label "unconstrained, unrestricted" ;
+    rdfs:subClassOf dul:Event .
+
+pbrs:green-02 rdfs:label "be green in color" ;
+    rdfs:subClassOf dul:Event .
+
+pbrs:hint-01 rdfs:label "say, giving a clue, suggesting" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0009f .
+
+pbrs:impact-01 rdfs:label "have an effect on" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0201f .
+
+pbrs:impose-01 rdfs:label "be a bother" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0050f .
+
+pbrs:juxtapose-01 rdfs:label "to place side by side, side by side placement" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0418f .
+
+pbrs:leap-02 rdfs:label "be excited for an opportunity" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0582f .
+
+pbrs:link-01 rdfs:label "attach" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0520f .
+
+pbrs:loom-01 rdfs:label "appear in a threatening manner" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0288f .
+
+pbrs:moor-01 rdfs:label "(cause to) park (a ship) in a dock" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0206f .
+
+pbrs:pass-03 rdfs:label "go by" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0111f,
+        va:0333f .
+
+pbrs:rise-01 rdfs:label "go up" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0430f .
+
+pbrs:see-01 rdfs:label "view" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0521f .
+
+pbrs:suggest-01 rdfs:label "say, giving of advice" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0227f .
+
+pbrs:symbolize-01 rdfs:label "act as a representative of a class" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0341f .
+
+wn30:synset-architecture-noun-1 wn30schema:gloss "an architectural product or work"@en-us .
+
+wn4:synset-boat-noun-1 wn30schema:gloss "a small vessel for travel on water"@en-us .
+
+wn30:synset-brown-adjectivesatellite-1 wn30schema:gloss "of a color similar to that of wood or earth"@en-us .
+
+wn30:synset-city-noun-1 wn30schema:gloss "a large and densely populated urban area; may include several independent administrative districts; \"Ancient Troy was a great city\""@en-us .
+
+wn30:synset-cityscape-noun-1 wn30schema:gloss "a viewpoint toward a city or other heavily populated area; \"the dominant character of the cityscape is it poverty\""@en-us .
+
+wn30:synset-climate-noun-1 wn30schema:gloss "the weather in some location averaged over some long period of time; \"the dank climate of southern Wales\"; \"plants from a cold clime travel best in winter\""@en-us .
+
+wn30:synset-collar-noun-6 wn30schema:gloss "a band of leather or rope that is placed around an animal's neck as a harness or to identify it"@en-us .
+
+wn30:synset-commerce-noun-1 wn30schema:gloss "transactions (sales and purchases) having the objective of supplying commodities (goods and services)"@en-us .
+
+wn30:synset-dark-adjectivesatellite-6 wn30schema:gloss "showing a brooding ill humor; \"a dark scowl\"; \"the proverbially dour New England Puritan\"; \"a glum, hopeless shrug\"; \"he sat in moody silence\"; \"a morose and unsociable manner\"; \"a saturnine, almost misanthropic young genius\"- Bruce Bliven; \"a sour temper\"; \"a sullen crowd\""@en-us .
+
+wn30:synset-dateless-adjectivesatellite-4 wn30schema:gloss "unaffected by time; \"few characters are so dateless as Hamlet\"; \"Helen's timeless beauty\""@en-us .
+
+wn30:synset-dog-noun-1 wn30schema:gloss "a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds; \"the dog barked all night\""@en-us .
+
+wn30:synset-ebullient-adjectivesatellite-1 wn30schema:gloss "joyously unrestrained"@en-us .
+
+wn30:synset-everyday-adjectivesatellite-3 wn30schema:gloss "commonplace and ordinary; \"the familiar everyday world\""@en-us .
+
+wn30:synset-expansive-adjectivesatellite-2 wn30schema:gloss "of behavior that is impressive and ambitious in scale or scope; \"an expansive lifestyle\"; \"in the grand manner\"; \"collecting on a grand scale\"; \"heroic undertakings\""@en-us .
+
+wn30:synset-eye-noun-3 wn30schema:gloss "attention to what is seen; \"he tried to catch her eye\""@en-us .
+
+wn30:synset-foreground-noun-1 wn30schema:gloss "the part of a scene that is near the viewer"@en-us .
+
+wn30:synset-gallant-adjectivesatellite-3 wn30schema:gloss "having or displaying great dignity or nobility; \"a gallant pageant\"; \"lofty ships\"; \"majestic cities\"; \"proud alpine peaks\""@en-us .
+
+wn30:synset-history-noun-1 wn30schema:gloss "the aggregate of past events; \"a critical time in the school's history\""@en-us .
+
+wn30:synset-imperial-adjectivesatellite-4 wn30schema:gloss "belonging to or befitting a supreme ruler; \"golden age of imperial splendor\"; \"purple tyrant\"; \"regal attire\"; \"treated with royal acclaim\"; \"the royal carriage of a stag's head\""@en-us .
+
+wn30:synset-joy-noun-1 wn30schema:gloss "the emotion of great happiness"@en-us .
+
+wn3:synset-life-noun-1 wn30schema:gloss "a characteristic state or mode of living; \"social life\"; \"city life\"; \"real life\""@en-us .
+
+wn30:synset-moment-noun-1 wn30schema:gloss "a particular point in time; \"the moment he arrived the party began\""@en-us .
+
+wn4:synset-nature-noun-1 wn30schema:gloss "the essential qualities or characteristics by which something is recognized; \"it is the nature of fire to burn\"; \"the true nature of jealousy\""@en-us .
+
+wn30:synset-nearby-adverb-1 wn30schema:gloss "not far away in relative terms; \"she works nearby\"; \"the planets orbiting nearby are Venus and Mars\""@en-us .
+
+wn30:synset-palace-noun-1 wn30schema:gloss "a large and stately mansion"@en-us .
+
+wn30:synset-past-adjective-1 wn30schema:gloss "earlier than the present time; no longer current; \"time past\"; \"his youth is past\"; \"this past Thursday\"; \"the past year\""@en-us .
+
+wn30:synset-picture-noun-1 wn30schema:gloss "a visual representation (of an object or scene or person or abstraction) produced on a surface; \"they showed us the pictures of their wedding\"; \"a movie is a series of images projected so rapidly that the eye integrates them\""@en-us .
+
+wn30:synset-potential-adjective-1 wn30schema:gloss "existing in possibility; \"a potential problem\"; \"possible uses of nuclear power\""@en-us .
+
+wn30:synset-present-adjective-1 wn30schema:gloss "temporal sense; intermediate between past and future; now existing or happening or in consideration; \"the present leader\"; \"articles for present use\"; \"the present topic\"; \"the present system\"; \"present observations\""@en-us .
+
+wn30:synset-river-noun-1 wn30schema:gloss "a large natural stream of water (larger than a creek); \"the river was navigable for 50 miles\""@en-us .
+
+wn30:synset-riverbank-noun-1 wn30schema:gloss "the bank of a river"@en-us .
+
+wn3:synset-sky-noun-1 wn30schema:gloss "the atmosphere and outer space as viewed from the earth"@en-us .
+
+wn30:synset-spontaneous-adjective-1 wn30schema:gloss "happening or arising without apparent external cause; \"spontaneous laughter\"; \"spontaneous combustion\"; \"a spontaneous abortion\""@en-us .
+
+wn30:synset-streamlined-adjectivesatellite-2 wn30schema:gloss "designed or arranged to offer the least resistant to fluid flow; \"a streamlined convertible\""@en-us .
+
+wn30:synset-time-noun-5 wn30schema:gloss "the continuum of experience in which events pass from the future through the present to the past"@en-us .
+
+wn30:synset-tourism-noun-1 wn30schema:gloss "the business of providing services to tourists; \"Tourism is a major business in Bermuda\""@en-us .
+
+wn30:synset-twilight-noun-1 wn30schema:gloss "the time of day immediately following sunset; \"he loved the twilight\"; \"they finished before the fall of night\""@en-us .
+
+wn3:synset-water-noun-1 wn30schema:gloss "binary compound that occurs at room temperature as a clear colorless odorless tasteless liquid; freezes into ice below 0 degrees centigrade and boils above 100 degrees centigrade; widely used as a solvent"@en-us .
+
+wn30:synset-weighty-adjectivesatellite-4 wn30schema:gloss "weighing heavily on the spirit; causing anxiety or worry; \"weighty problems\""@en-us .
+
+fred:Architecture rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-architecture-noun-1 .
+
+fred:Castle rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-palace-noun-1 .
+
+fred:RiverTourism dul:associatedWith fred:River ;
+    rdfs:subClassOf fred:Commerce,
+        fred:Tourism .
+
+fred:Water rdfs:subClassOf dul:PhysicalObject,
+        wn4:supersense-noun_substance ;
+    owl:equivalentClass wn3:synset-water-noun-1 .
+
+fred:boat_1 a fred:Boat .
+
+fred:compose_1 a pbrs:compose-01 ;
+    pblr:compose-01.entity-composed fred:image_1 .
+
+fred:moment_1 a fred:DogMoment .
+
+fred:nature_1 a fred:Nature ;
+    dul:hasQuality fred:Alongside ;
+    fred:natureOf fred:city_2 ;
+    vn.role:Location fred:life_1 .
+
+fred:riverbank_1 a fred:Riverbank .
+
+fred:water_2 a fred:Water .
+
+pbrs:evoke-01 rdfs:label "summon, make allusions to" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0435f .
+
+fred:Dog rdfs:subClassOf dul:Organism,
+        wn30:supersense-noun_animal ;
+    owl:equivalentClass wn30:synset-dog-noun-1 .
+
+fred:castle_2 a fred:Castle .
+
+fred:dog_1 a fred:Dog ;
+    dul:hasQuality fred:Sleek .
+
+fred:architecture_1 a fred:GrandArchitecture .
+
+fred:collar_1 a fred:Collar .

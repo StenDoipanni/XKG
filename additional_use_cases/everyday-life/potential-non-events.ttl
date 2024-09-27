@@ -1,0 +1,30 @@
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix caus: <http://www.ontologydesignpatterns.org/ont/causal/causal.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+caus:truthDependingOn a owl:ObjectProperty .
+
+fred:destroy_1 a pbrs:destroy-01 ;
+    boxing:hasTruthValue false ;
+    caus:truthDependingOn fred:endure_1 ;
+    owl:sameAs wn30:synset-destroy-verb-1 .
+
+fred:disrupt_1 a pbrs:disrupt-01 ;
+    boxing:hasTruthValue false ;
+    caus:truthDependingOn fred:endure_1 ;
+    owl:sameAs wn30:synset-disrupt-verb-1 .
+
+fred:drown_1 a pbrs:drown-01 ;
+    boxing:hasTruthValue false ;
+    caus:truthDependingOn fred:leap_1 ;
+    owl:sameAs wn30:synset-drown-verb-1 .
+
+fred:flood_2 a pbrs:flood-01 ;
+    boxing:hasTruthValue false ;
+    caus:truthDependingOn fred:rise_1 ;
+    owl:sameAs wd:Q8068 .

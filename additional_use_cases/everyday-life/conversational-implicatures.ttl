@@ -1,0 +1,38 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+
+fred:architecture_1 fred:isWellPreserved fred:true .
+
+fred:boatOf a owl:ObjectProperty .
+
+fred:boat_1 fred:boatOf fred:tourist_1 .
+
+fred:castle_1 fred:hasHistoricalSignificance fred:true ;
+    fred:isOpenToVisitors fred:true .
+
+fred:cityscape_1 fred:isPopularTouristAttraction fred:true .
+
+fred:contributesToLocalEconomy a owl:ObjectProperty .
+
+fred:dog_1 fred:hasOwner fred:local_1 .
+
+fred:hasHistoricalSignificance a owl:ObjectProperty .
+
+fred:hasOwner a owl:ObjectProperty .
+
+fred:isOpenToVisitors a owl:ObjectProperty .
+
+fred:isPopularTouristAttraction a owl:ObjectProperty .
+
+fred:isSafeForSwimming a owl:ObjectProperty .
+
+fred:isWellPreserved a owl:ObjectProperty .
+
+fred:possible_1 a pbrs:possible-01 ;
+    pblr:possible-01.thing-that-is-possible fred:change_1 .
+
+fred:requiresFloodControl a owl:ObjectProperty .
+
+fred:river_1 fred:isSafeForSwimming fred:false .

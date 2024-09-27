@@ -1,0 +1,27 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+
+fred:draw_1 dul:precedes fred:link_1 .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dul:precedes> a owl:ObjectProperty .
+
+fred:flood_1 dul:precedes fred:suggest_1 .
+
+fred:leap_2 vn.role:Time fred:capture_1 .
+
+fred:loom_1 dul:precedes fred:capture_1,
+        fred:hint_1 .
+
+fred:moor_1 dul:precedes fred:hint_1 .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#vn.role:Time> a owl:ObjectProperty .
+
+fred:juxtapose_1 dul:precedes fred:evoke_2 .
+
+fred:suggest_1 dul:precedes fred:juxtapose_1 .
+
+fred:capture_1 dul:precedes fred:evoke_1 .
+
+fred:hint_1 dul:precedes fred:evoke_1 .

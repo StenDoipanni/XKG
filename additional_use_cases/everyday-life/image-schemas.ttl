@@ -1,0 +1,139 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix is: <http://www.ontologydesignpatterns.org/ont/is/is.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn2: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn4: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:Attraction rdfs:subClassOf dul:Event ;
+    owl:equivalentClass wn4:synset-attraction-noun-1 .
+
+fred:Balance rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn30:synset-balance-noun-1 .
+
+fred:Configuration rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn30:synset-configuration-noun-2 .
+
+fred:Container rdfs:subClassOf dul:PhysicalObject ;
+    owl:equivalentClass wn30:synset-container-noun-1 .
+
+fred:Containment rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn30:synset-containment-noun-1 .
+
+fred:Cycle rdfs:subClassOf dul:TimeInterval ;
+    owl:equivalentClass wn30:synset-cycle-noun-1 .
+
+fred:Force rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn30:synset-force-noun-1 .
+
+fred:Linkage rdfs:subClassOf dul:Relation ;
+    owl:equivalentClass wn30:synset-linkage-noun-1 .
+
+fred:Movement rdfs:subClassOf dul:Event ;
+    owl:equivalentClass wn30:synset-movement-noun-2 .
+
+fred:Path rdfs:subClassOf dul:SpaceRegion ;
+    owl:equivalentClass wn30:synset-path-noun-1 .
+
+fred:Restraint rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn30:synset-restraint-noun-1 .
+
+fred:Surface rdfs:subClassOf dul:PhysicalObject ;
+    owl:equivalentClass wn2:synset-surface-noun-1 .
+
+fred:Verticality rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn30:synset-verticality-noun-1 .
+
+fred:architecture_1 is:evokes is:Verticality .
+
+fred:boat_1 is:evokes is:Balance .
+
+fred:castle_1 is:evokes is:Container .
+
+fred:castle_2 is:evokes is:Goal .
+
+fred:cityscape_1 is:evokes is:Configuration .
+
+fred:climate_1 is:evokes is:Force .
+
+fred:collar_1 is:evokes is:Restraint .
+
+fred:compose_1 is:evokes is:Linkage ;
+    owl:sameAs pbrs:compose-01 .
+
+fred:dog_1 is:evokes is:Source .
+
+fred:dog_2 is:evokes is:Source .
+
+fred:draw_1 is:evokes is:Attraction ;
+    owl:sameAs pbrs:draw-02 .
+
+fred:eye_1 is:evokes is:Center_Periphery .
+
+fred:flood_1 is:evokes is:Full_Empty ;
+    owl:sameAs pbrs:flood-01 .
+
+fred:image_1 is:evokes is:Part_Whole .
+
+fred:leap_1 is:evokes is:Movement ;
+    owl:sameAs pbrs:leap-02 .
+
+fred:pass_1 is:evokes is:Movement ;
+    owl:sameAs pbrs:pass-03 .
+
+fred:river_1 is:evokes is:Path .
+
+fred:riverbank_1 is:evokes is:Surface .
+
+fred:sky_1 is:evokes is:Up_Down .
+
+fred:time_1 is:evokes is:Cycle .
+
+fred:water_1 is:evokes is:Destination .
+
+fred:water_2 is:evokes is:Containment .
+
+is:evokes a owl:ObjectProperty .
+
+is:Attraction a is:ImageSchema .
+
+is:Balance a is:ImageSchema .
+
+is:Center_Periphery a is:ImageSchema .
+
+is:Configuration a is:SpatialPrimitive .
+
+is:Container a is:ImageSchema .
+
+is:Containment a is:ImageSchema .
+
+is:Cycle a is:ImageSchema .
+
+is:Destination a is:SpatialPrimitive .
+
+is:Force a is:ImageSchema .
+
+is:Full_Empty a is:ImageSchema .
+
+is:Goal a is:SpatialPrimitive .
+
+is:Linkage a is:ImageSchema .
+
+is:Part_Whole a is:ImageSchema .
+
+is:Path a is:SpatialPrimitive .
+
+is:Restraint a is:ImageSchema .
+
+is:Surface a is:SpatialPrimitive .
+
+is:Up_Down a is:ImageSchema .
+
+is:Verticality a is:ImageSchema .
+
+is:Movement a is:ImageSchema .
+
+is:Source a is:SpatialPrimitive .

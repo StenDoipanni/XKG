@@ -1,0 +1,96 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dul:precedes a owl:ObjectProperty .
+
+fred:architecture_1 fred:hasEndured true .
+
+fred:boat_1 fred:wasOperational true .
+
+fred:capture_1 dul:precedes fred:joy_1 .
+
+fred:castle_1 fred:wasBuilt true .
+
+fred:change_1 dul:precedes fred:impact_1 .
+
+fred:city_1 fred:hasHistoricalSignificance true .
+
+fred:cityscape_1 fred:hasExistedBefore true .
+
+fred:climate_1 fred:wasStable true .
+
+fred:commerce_1 fred:existedPreviously true .
+
+fred:compose_1 dul:precedes fred:draw_1 .
+
+fred:couldPerceive a owl:DatatypeProperty .
+
+fred:dog_1 fred:hadFreedom true .
+
+fred:embody_1 dul:precedes fred:history_1 .
+
+fred:endure_1 dul:precedes fred:nature_1 .
+
+fred:existedBefore a owl:DatatypeProperty .
+
+fred:existedPreviously a owl:DatatypeProperty .
+
+fred:eye_1 fred:couldPerceive true .
+
+fred:flood_1 dul:precedes fred:suggest_1 .
+
+fred:hadFreedom a owl:DatatypeProperty .
+
+fred:hasEndured a owl:DatatypeProperty .
+
+fred:hasExistedBefore a owl:DatatypeProperty .
+
+fred:hasExistedContinuously a owl:DatatypeProperty .
+
+fred:hasExistedForLongTime a owl:DatatypeProperty .
+
+fred:hasHistoricalSignificance a owl:DatatypeProperty .
+
+fred:hasOccurred a owl:DatatypeProperty .
+
+fred:hasOngoing a owl:DatatypeProperty .
+
+fred:hasPassedBefore a owl:DatatypeProperty .
+
+fred:image_1 fred:wasComposed true .
+
+fred:life_1 fred:hasOngoing true .
+
+fred:pass_1 dul:precedes fred:time_1 .
+
+fred:rise_1 dul:precedes fred:water_2 .
+
+fred:river_1 fred:hasExistedForLongTime true .
+
+fred:riverbank_1 fred:wasNotFlooded true .
+
+fred:tourism_1 fred:existedPreviously true .
+
+fred:wasBuilt a owl:DatatypeProperty .
+
+fred:wasComposed a owl:DatatypeProperty .
+
+fred:wasLower a owl:DatatypeProperty .
+
+fred:wasNotFlooded a owl:DatatypeProperty .
+
+fred:wasOperational a owl:DatatypeProperty .
+
+fred:wasStable a owl:DatatypeProperty .
+
+fred:history_1 fred:hasOccurred true .
+
+fred:joy_1 fred:existedBefore true .
+
+fred:nature_1 fred:hasExistedContinuously true .
+
+fred:time_1 fred:hasPassedBefore true .
+
+fred:water_2 fred:wasLower true .

@@ -1,0 +1,45 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix impact: <http://www.ontologydesignpatterns.org/ont/impact/impact.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:boat_1 impact:hasExpectedSocialImpact impact:TourismActivity .
+
+fred:castle_1 impact:hasExpectedCognitiveImpact impact:HistoricalAwareness .
+
+fred:cityscape_1 impact:hasExpectedCognitiveImpact impact:AestheticAppreciation .
+
+fred:climate_1 impact:hasExpectedCognitiveImpact impact:EnvironmentalConcern .
+
+fred:dog_1 impact:hasExpectedEmotion impact:Joy ;
+    impact:hasExpectedPhysicalSensation impact:Refreshment .
+
+fred:riverbank_1 impact:hasExpectedPhysicalSensation impact:Wetness .
+
+fred:sky_1 impact:hasExpectedCognitiveImpact impact:AtmosphericPerception .
+
+impact:hasExpectedCognitiveImpact a owl:ObjectProperty .
+
+impact:hasExpectedEmotion a owl:ObjectProperty .
+
+impact:hasExpectedPhysicalSensation a owl:ObjectProperty .
+
+impact:hasExpectedSocialImpact a owl:ObjectProperty .
+
+impact:AestheticAppreciation owl:equivalentClass wn30:synset-aesthetic_appreciation-noun-1 .
+
+impact:AtmosphericPerception rdfs:subClassOf dul:CognitiveState .
+
+impact:EnvironmentalConcern rdfs:subClassOf dul:CognitiveState .
+
+impact:HistoricalAwareness rdfs:subClassOf dul:CognitiveState .
+
+impact:Joy owl:equivalentClass wn30:synset-joy-noun-1 .
+
+impact:Refreshment owl:equivalentClass wn30:synset-refreshment-noun-1 .
+
+impact:TourismActivity owl:equivalentClass wn30:synset-tourism-noun-1 .
+
+impact:Wetness owl:equivalentClass wn30:synset-wetness-noun-1 .
