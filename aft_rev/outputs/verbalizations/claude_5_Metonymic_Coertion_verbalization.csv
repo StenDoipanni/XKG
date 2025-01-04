@@ -1,0 +1,11 @@
+triple,verbalization
+fred:stadium_1 :hasComponent fred:Track_Component .,"[TextBlock(text='The stadium has a track.', type='text')]"
+fred:Track_Component a fred:Track ;,"[TextBlock(text='This appears to be an invalid request as the triple ""fred:Track_Component a fred:Track"" is not present in the provided knowledge graph. I cannot verbalize a triple that is not in the given context.', type='text')]"
+dul:hasLocation fred:stadium_1 ;,"[TextBlock(text='The event takes place in the stadium.', type='text')]"
+owl:sameAs fred:track_1 .,"[TextBlock(text='This triple is not present in the provided graph data, so I cannot verbalize it.', type='text')]"
+fred:uniform_1 :representsTeam fred:country_1 .,"[TextBlock(text=""The athlete's uniform represents Saint Lucia."", type='text')]"
+fred:jersey_1 :isPartOf fred:uniform_1 .,"[TextBlock(text='The jersey is part of the uniform.', type='text')]"
+fred:spectator_1 :locatedIn fred:stadium_1 .,"[TextBlock(text='The spectators are in the stadium.', type='text')]"
+fred:stadium_1 :containsEvent fred:race_1 .,"[TextBlock(text='The stadium hosted the race.', type='text')]"
+fred:pride_1 :manifestedThrough fred:celebrate_1 .,"[TextBlock(text=""The athlete's pride is expressed through her victory celebration."", type='text')]"
+fred:joy_1 :manifestedThrough fred:celebrate_1 .,"[TextBlock(text=""The athlete's joy is expressed through her victory celebration."", type='text')]"

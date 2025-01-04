@@ -1,0 +1,9 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix causal: <http://www.ontologydesignpatterns.org/ont/fred/causal.owl#> .
+
+fred:win_1 causal:triggeringCauseFor fred:celebrate_1 .
+fred:achieve_1 causal:triggeringCauseFor fred:thrill_1 .
+fred:celebrate_1 causal:triggeringCauseFor fred:spectator_1 .
+fred:win_1 causal:triggeringCauseFor fred:beam_1 .
+fred:achieve_1 causal:triggeringCauseFor fred:pride_1 .
+fred:achieve_1 causal:triggeringCauseFor fred:inspire_1 .

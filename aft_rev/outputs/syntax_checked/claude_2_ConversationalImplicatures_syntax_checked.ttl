@@ -1,0 +1,31 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+fred:athlete_1 fred:hasEarnedPosition fred:FirstPlace ;
+    fred:hasCompletedRace true .
+
+fred:race_1 fred:hasStatus fred:Completed ;
+    fred:isOfficialCompetition true .
+
+fred:competitors_1 a fred:Group ;
+    dul:hasMember fred:athlete_1 ;
+    fred:hasRanking fred:RankingList .
+
+fred:RankingList fred:hasFirstPlace fred:athlete_1 .
+
+fred:stadium_1 fred:hasStatus fred:ActiveEvent ;
+    fred:isOfficialVenue true .
+
+fred:uniform_1 fred:isOfficialUniform true ;
+    fred:representingCountry fred:country_1 .
+
+fred:event_1 a fred:SportingEvent ;
+    owl:sameAs wd:Q5389 ;
+    fred:hasStatus fred:Official ;
+    fred:hasLevel fred:International .
+
+fred:spectator_1 fred:hasPaidAdmission true ;
+    fred:isAuthorizedPresence true .

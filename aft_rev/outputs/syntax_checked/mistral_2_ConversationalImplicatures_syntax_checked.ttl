@@ -1,0 +1,41 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+# Implicature: The athlete is highly skilled and trained
+fred:athlete_1 a fred:Athlete ;
+    dul:hasQuality fred:Athletic .
+
+# Implicature: The athlete has trained hard
+fred:athlete_1 a fred:Athlete ;
+    dul:hasQuality fred:dedicated_1 .
+
+# Implicature: The crowd is cheering for the athlete
+fred:cheer_1 a pbrs:cheer-02 ;
+    pblr:cheer-02.clapper fred:spectator_1 ;
+    pblr:cheer-02.cheeredEntity fred:athlete_1 .
+
+# Implicature: The athlete is wearing the uniform of Saint Lucia
+fred:uniform_1 a fred:Uniform ;
+    dul:hasQuality fred:country_1 .
+
+# Implicature: The event is part of the Olympic Games
+fred:compete_2 a pbrs:compete-01 ;
+    dul:associatedWith fred:game_1 .
+
+# Implicature: The athlete is a participant in the Olympic Games
+fred:athlete_1 a fred:Athlete ;
+    dul:associatedWith fred:game_1 .
+
+# Implicature: The athlete is representing her country
+fred:athlete_1 a fred:Athlete ;
+    dul:hasQuality fred:pride-01_1 .
+
+# Implicature: The event is inspiring to others
+fred:inspire_1 a pbrs:inspire-01 ;
+    pblr:inspire-01.causer-of-inspiration fred:scene_1 ;
+    pblr:inspire-01.inspiredEntity fred:spectator_1 .

@@ -1,0 +1,23 @@
+```turtle
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+
+fred:rest_1 a pbrs:rest-01 ;
+    dul:associatedWith fred:human_1 ;
+    dul:associatedWith fred:finish_1 ;
+    dul:hasQuality fred:joy_1 .
+
+fred:future_compete_1 a pbrs:compete-01 ;
+    dul:associatedWith fred:athlete_1 ;
+    dul:associatedWith fred:game_1 ;
+    dul:hasQuality fred:Potential .
+
+fred:future_pride_1 a pbrs:pride-01 ;
+    dul:associatedWith fred:country_1 ;
+    dul:associatedWith fred:athlete_1 .
+
+fred:future_inspire_1 a pbrs:inspire-01 ;
+    dul:associatedWith fred:scene_1 ;
+    dul:associatedWith fred:athlete_1 .
+```

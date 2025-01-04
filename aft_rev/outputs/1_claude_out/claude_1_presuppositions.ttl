@@ -1,0 +1,43 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:athlete_1_racing a dul:Situation ;
+    dul:hasParticipant fred:athlete_1 ;
+    dul:hasQuality "true" ;
+    time:before fred:celebrate_1 .
+
+fred:athlete_1_competing a dul:Situation ;
+    dul:hasParticipant fred:athlete_1 ;
+    dul:hasQuality "true" ;
+    time:before fred:win_1 .
+
+fred:athlete_1_training a dul:Situation ;
+    dul:hasParticipant fred:athlete_1 ;
+    dul:hasQuality "true" ;
+    time:before fred:race_1 .
+
+fred:athlete_1_qualification a dul:Situation ;
+    dul:hasParticipant fred:athlete_1 ;
+    dul:hasQuality "true" ;
+    time:before fred:race_1 .
+
+fred:race_1_organization a dul:Situation ;
+    dul:hasParticipant fred:track_1 ;
+    dul:hasQuality "true" ;
+    time:before fred:race_1 .
+
+fred:spectator_1_attendance a dul:Situation ;
+    dul:hasParticipant fred:spectator_1 ;
+    dul:hasQuality "true" ;
+    time:before fred:cheer_1 .
+
+fred:athlete_1_represents fred:country_1 ;
+    dul:hasQuality "true" .
+
+fred:athlete_1_eligibility a dul:Situation ;
+    dul:hasParticipant fred:athlete_1 ;
+    dul:hasQuality "true" ;
+    time:before fred:compete_1 .

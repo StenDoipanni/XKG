@@ -1,0 +1,62 @@
+@prefix amr: <https://w3id.org/framester/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+# Adding Implied Future Event triples
+
+fred:future_participate_1 a pbrs:participate-01 ;
+    pblr:participate-01.participant fred:athlete_1 ;
+    dul:associatedWith fred:future_event_1 .
+
+fred:future_event_1 a dul:Event ;
+    dul:hasQuality fred:Achieve ;
+    dul:hasQuality fred:Potential ;
+    rdfs:label "Future participation in athletic competitions" .
+
+fred:future_inspire_1 a pbrs:inspire-01 ;
+    pblr:inspire-01.causer-of-inspiration fred:scene_1 ;
+    dul:associatedWith fred:future_event_1 .
+
+# Implied Future Event involving the athlete's future achievements
+
+fred:future_achievement_1 a dul:Situation ;
+    dul:hasQuality fred:Achieve ;
+    dul:associatedWith fred:future_event_1 .
+
+# Implied Future Event involving continued hard work and dedication
+
+fred:future_dedication_1 a dul:Situation ;
+    dul:hasQuality fred:Athletic ;
+    dul:hasQuality fred:International ;
+    dul:hasQuality fred:Spirit ;
+    dul:hasQuality fred:Human ;
+    dul:hasQuality fred:Potential ;
+    dul:hasQuality fred:Joy ;
+    dul:hasQuality fred:Exhilarate ;
+    dul:associatedWith fred:future_event_1 ;
+    rdfs:label "Continued hard work and dedication" .
+
+# Implied Future Event involving the continued celebration of achievements
+
+fred:future_celebration_1 a pbrs:celebrate-01 ;
+    pblr:celebrate-01.honored fred:future_achievement_1 ;
+    pblr:celebrate-01.honorer fred:athlete_1 .
+
+# Implied Future Event involving the continued embodiment of Olympic spirit
+
+fred:future_embodiment_1 a pbrs:embody-01 ;
+    pblr:embody-01.entity-embodied fred:future_dedication_1 .

@@ -1,0 +1,15 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+
+fred:OlympicSpiritCoercion a pbrs:symbolize-01 ;
+    pblr:symbolize-01.symbol fred:spirit_1 ;
+    pblr:symbolize-01.class fred:International .
+
+fred:NationalPrideCoercion a pbrs:symbolize-01 ;
+    pblr:symbolize-01.symbol fred:pride_1 ;
+    pblr:symbolize-01.class fred:country_1 .
+
+fred:VictoryCoercion a pbrs:symbolize-01 ;
+    pblr:symbolize-01.symbol fred:win_1 ;
+    pblr:symbolize-01.class fred:potential_1 .

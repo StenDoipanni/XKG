@@ -1,0 +1,8 @@
+triple,verbalization
+# Factual Impact Triples,"[TextBlock(text='A jubilant female athlete from Saint Lucia named Alfred celebrates victory on the track.', type='text')]"
+fred:athlete_1 :hasExpectedEmotion :Joy .,"[TextBlock(text='The athlete is expected to feel joy.', type='text')]"
+fred:athlete_1 :hasExpectedMentalState :Exhilaration .,"[TextBlock(text='The athlete is feeling exhilarated.', type='text')]"
+fred:spectator_1 :hasExpectedEmotion :Joy .,"[TextBlock(text='The spectators are expected to feel joy.', type='text')]"
+fred:spectator_1 :hasExpectedMentalState :Inspiration .,"[TextBlock(text='The spectators are expected to feel inspired.', type='text')]"
+fred:country_1 :hasExpectedEmotion :NationalPride .,"[TextBlock(text='Saint Lucia is expected to feel national pride.', type='text')]"
+fred:country_1 :hasExpectedEmotion :Joy .,"[TextBlock(text='Saint Lucia is expected to feel joy.', type='text')]"

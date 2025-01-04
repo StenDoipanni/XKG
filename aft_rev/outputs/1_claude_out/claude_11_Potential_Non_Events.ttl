@@ -1,0 +1,24 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:lose_1 a pbrs:lose-02 ;
+    dul:hasValue "False" ;
+    dul:valueDependingOn fred:win_1 ;
+    dul:associatedWith fred:athlete_1 .
+
+fred:fail_1 a pbrs:fail-01 ;
+    dul:hasValue "False" ;
+    dul:valueDependingOn fred:achieve_1 ;
+    dul:associatedWith fred:athlete_1 .
+
+fred:defeat_1 a wn30:synset-defeat-noun-1 ;
+    dul:hasValue "False" ;
+    dul:valueDependingOn fred:celebrate_1 ;
+    dul:associatedWith fred:athlete_1 .
+
+fred:disappointment_1 a wn30:synset-disappointment-noun-1 ;
+    dul:hasValue "False" ;
+    dul:valueDependingOn fred:joy_1 ;
+    dul:associatedWith fred:athlete_1 .

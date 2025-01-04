@@ -1,0 +1,28 @@
+@prefix : <http://example.org/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix schema: <https://schema.org/> .
+
+:ArmsPosition :mappedTo :VERTICALITY .
+:VERTICALITY a :ImageSchema .
+
+:StadiumSpace :mappedTo :CONTAINMENT .
+:CONTAINMENT a :ImageSchema .
+
+:RaceProgress :mappedTo :SOURCE_PATH_GOAL .
+:SOURCE_PATH_GOAL a :ImageSchema .
+
+:CrowdStadium :mappedTo :CENTER-PERIPHERY .
+:CENTER-PERIPHERY a :ImageSchema .
+
+:VictoryPose :mappedTo :FORCE .
+:FORCE a :ImageSchema .
+
+:UniformWearing :mappedTo :COVERING .
+:COVERING a :ImageSchema .
+
+fred:stadium_1 :evokes :CONTAINMENT .
+fred:track_1 :evokes :SOURCE_PATH_GOAL .
+fred:athlete_1 :evokes :FORCE, :VERTICALITY .
+fred:spectator_1 :evokes :CENTER-PERIPHERY .
+fred:uniform_1 :evokes :COVERING .

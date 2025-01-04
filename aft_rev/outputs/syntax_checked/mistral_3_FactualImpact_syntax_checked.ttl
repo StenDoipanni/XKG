@@ -1,0 +1,20 @@
+@prefix : <https://w3id.org/framester/amr/> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+# Factual Impact Triples
+
+fred:athlete_1 :hasExpectedEmotion :Joy .
+fred:athlete_1 :hasExpectedMentalState :Exhilaration .
+
+fred:spectator_1 :hasExpectedEmotion :Joy .
+fred:spectator_1 :hasExpectedMentalState :Inspiration .
+
+fred:country_1 :hasExpectedEmotion :NationalPride .
+fred:country_1 :hasExpectedEmotion :Joy .

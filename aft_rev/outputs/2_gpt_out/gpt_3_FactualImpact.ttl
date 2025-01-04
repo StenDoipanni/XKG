@@ -1,0 +1,20 @@
+```turtle
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+
+fred:athlete_1 pbrs:hasExpectedEmotion fred:Joy ;
+    pbrs:hasExpectedMentalState fred:Exhilaration ;
+    pbrs:hasExpectedSocialImpact fred:Recognition .
+
+fred:competitor_1 pbrs:hasExpectedEmotion fred:Regret ;
+    pbrs:hasExpectedEmotion fred:MotivationToImprove .
+
+fred:spectator_1 pbrs:hasExpectedEmotion fred:Inspiration ;
+    pbrs:hasExpectedSocialImpact fred:Solidarity .
+
+fred:finish_1 pbrs:hasExpectedPhysicalImpact dul:Fatique .
+
+fred:stadium_1 pbrs:hasExpectedCognitiveImpact fred:Unity .
+```

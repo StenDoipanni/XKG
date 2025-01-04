@@ -1,0 +1,28 @@
+```turtle
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+
+fred:PotentialLoss_1 a dul:Situation ;
+    dul:hasQuality fred:International ;
+    dul:associatedWith fred:game_1 ;
+    dul:sameSettingAs fred:race_1 .
+
+fred:PotentialLoss_2 a dul:Situation ;
+    dul:hasQuality fred:Human ;
+    dul:associatedWith fred:spirit_1 ;
+    dul:sameSettingAs fred:embody_1 .
+
+fred:PotentialLoss_3 a dul:Situation ;
+    dul:hasQuality fred:Joy ;
+    dul:associatedWith fred:athlete_1 ;
+    dul:sameSettingAs fred:win_1 .
+
+pbrs:celebrate-01 pbrs:subsumedUnder fred:PotentialLoss_1 .
+
+pbrs:embody-01 pbrs:subsumedUnder fred:PotentialLoss_2 .
+
+pbrs:win-01 pbrs:subsumedUnder fred:PotentialLoss_3 .
+
+```

@@ -1,0 +1,17 @@
+```turtle
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+
+fred:compete_1 fschema:happensInTimeBefore fred:finish_1 .
+
+fred:finish_1 fschema:happensInTimeBefore fred:win_1 .
+
+fred:win_1 fschema:happensInTimeBefore fred:celebrate_1 .
+
+fred:celebrate_1 fschema:happensInTimeBefore fred:cheer_1 .
+
+fred:crowd_1 fschema:happensInTimeBefore fred:cheer_1 .
+```

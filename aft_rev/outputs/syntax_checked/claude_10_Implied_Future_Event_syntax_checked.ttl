@@ -1,0 +1,24 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:MedalCeremony rdfs:subClassOf dul:Event ;
+    owl:equivalentClass wn30:synset-ceremony-noun-1 .
+
+fred:future_ceremony_1 a fred:MedalCeremony ;
+    dul:hasParticipant fred:athlete_1 ;
+    dul:follows fred:win_1 .
+
+fred:future_anthem_1 a pbrs:play-01 ;
+    dul:hasQuality fred:country_1 ;
+    dul:follows fred:future_ceremony_1 .
+
+fred:future_podium_1 a wn30:synset-podium-noun-1 ;
+    dul:hasParticipant fred:athlete_1 ;
+    dul:follows fred:win_1 .
+
+fred:future_medal_1 a wn30:synset-medal-noun-1 ;
+    dul:hasParticipant fred:athlete_1 ;
+    dul:follows fred:win_1 .

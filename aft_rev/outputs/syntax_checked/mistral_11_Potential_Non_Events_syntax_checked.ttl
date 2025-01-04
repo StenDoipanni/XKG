@@ -1,0 +1,35 @@
+@prefix amr: <https://w3id.org/framester/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+fred:potential_loss_1 a dul:Situation ;
+    dul:hasValue "False" ;
+    dul:hasQuality fred:conjunct_3 ;
+    fschema:subsumedUnder wn30:synset-defeat-noun-1 ;
+    dul:valueDependingOn fred:win_1 .
+
+fred:potential_delay_1 a dul:Situation ;
+    dul:hasValue "False" ;
+    dul:hasQuality fred:conjunct_3 ;
+    fschema:subsumedUnder wn30:synset-delay-noun-1 ;
+    dul:valueDependingOn fred:finish_1 .
+
+fred:potential_disappointment_1 a dul:Situation ;
+    dul:hasValue "False" ;
+    dul:hasQuality fred:conjunct_3 ;
+    fschema:subsumedUnder wn30:synset-disappointment-noun-1 ;
+    dul:valueDependingOn fred:embody_1 .

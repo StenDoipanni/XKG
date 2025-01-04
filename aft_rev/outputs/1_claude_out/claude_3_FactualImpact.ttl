@@ -1,0 +1,22 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+fred:hasExpectedEmotion a owl:ObjectProperty .
+fred:hasExpectedPhysicalState a owl:ObjectProperty .
+fred:hasExpectedMentalState a owl:ObjectProperty .
+
+fred:athlete_1 
+    fred:hasExpectedEmotion wn30:synset-pride-noun-1 ;
+    fred:hasExpectedEmotion wn30:synset-euphoria-noun-1 ;
+    fred:hasExpectedPhysicalState wn30:synset-exhaustion-noun-1 ;
+    fred:hasExpectedMentalState wn30:synset-accomplishment-noun-1 .
+
+fred:person_1 
+    fred:hasExpectedEmotion wn30:synset-disappointment-noun-1 ;
+    fred:hasExpectedMentalState wn30:synset-determination-noun-2 .
+
+fred:spectator_1 
+    fred:hasExpectedEmotion wn30:synset-excitement-noun-1 ;
+    fred:hasExpectedEmotion wn30:synset-admiration-noun-1 .

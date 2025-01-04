@@ -1,0 +1,13 @@
+triple,verbalization
+fred:PreviousRaceWinSituation a dul:Situation ;,"[TextBlock(text='This triple cannot be verbalized since it does not appear in the provided graph context.', type='text')]"
+dul:hasQuality fred:achieve_1 ;,"[TextBlock(text='The achievement has athletic qualities.', type='text')]"
+dul:includes fred:win_1 .,"[TextBlock(text=""The athlete's victory is included in the scene."", type='text')]"
+fred:AthleteSuccess a dul:Situation ;,"[TextBlock(text=""An athlete's success is a type of situation."", type='text')]"
+dul:associatedWith fred:athlete_1 ;,"[TextBlock(text='The athlete is associated with the scene.', type='text')]"
+dul:hasTheme fred:hardWorkAndDedication .,"[TextBlock(text='This triple does not appear in the provided knowledge graph.', type='text')]"
+fred:hardWorkAndDedication a dul:Action ;,"[TextBlock(text='The image shows hard work and dedication in action.', type='text')]"
+"pbrs:achieve-01 rdfs:label ""achieve"" ;","[TextBlock(text='The verb ""achieve"" represents an achievement action.', type='text')]"
+dul:hasParticipant fred:athlete_1 .,"[TextBlock(text='The athlete participates in the event.', type='text')]"
+fred:AmericanFlagPresence a dul:Situation ;,"[TextBlock(text='An American flag is visible in the scene.', type='text')]"
+dul:isSettingFor fred:capture_1 ;,"[TextBlock(text='The scene provides the setting for capturing the moment.', type='text')]"
+dul:includes fred:see_2 .,"[TextBlock(text='The scene includes a visible American flag.', type='text')]"

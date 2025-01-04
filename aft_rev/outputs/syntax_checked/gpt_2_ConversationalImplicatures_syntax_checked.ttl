@@ -1,0 +1,10 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+
+fred:crowd_1 dul:hasQuality wn30:synset-open-adjective-1 .
+
+fred:thrill_1 dul:hasQuality wn30:synset-possible-adjective-1 .
+
+fred:jersey_1 dul:hasQuality wn30:synset-not-adverb-1 .

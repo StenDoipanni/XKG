@@ -1,0 +1,25 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+
+fred:AthletePerformance :mappedTo :SOURCE .
+:SOURCE a :SpatialPrimitive .
+
+fred:celebrate_1 :mappedTo :PATH .
+:PATH a :SpatialPrimitive .
+
+fred:Victory :mappedTo :GOAL .
+:GOAL a :SpatialPrimitive .
+
+fred:OlympicMoment :evokes :SOURCE_PATH_GOAL .
+:SOURCE_PATH_GOAL a :ImageSchema .
+
+fred:Stadium :hasSpatialRelation :CONTAINMENT .
+:CONTAINMENT a :ImageSchema .
+
+fred:athlete_1 :associatedWith :CENTER . 
+pa:CheeringSpectators :associatedWith :PERIPHERY .
+:CENTER-PERIPHERY a :ImageSchema .
+
+fred:Victory :associatedWith :FORCE .
+:FORCE a :ImageSchema .

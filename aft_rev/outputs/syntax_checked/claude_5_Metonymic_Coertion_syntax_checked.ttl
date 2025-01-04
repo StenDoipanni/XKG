@@ -1,0 +1,19 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+fred:stadium_1 :hasComponent fred:Track_Component .
+fred:Track_Component a fred:Track ;
+    dul:hasLocation fred:stadium_1 ;
+    owl:sameAs fred:track_1 .
+
+fred:uniform_1 :representsTeam fred:country_1 .
+fred:jersey_1 :isPartOf fred:uniform_1 .
+
+fred:spectator_1 :locatedIn fred:stadium_1 .
+fred:stadium_1 :containsEvent fred:race_1 .
+
+fred:pride_1 :manifestedThrough fred:celebrate_1 .
+fred:joy_1 :manifestedThrough fred:celebrate_1 .

@@ -1,0 +1,6 @@
+triple,verbalization
+fred:compete_1 fschema:happensInTimeBefore fred:finish_1 .,"[TextBlock(text='The athlete competed before finishing the race.', type='text')]"
+fred:finish_1 fschema:happensInTimeBefore fred:win_1 .,"[TextBlock(text='The athlete finished the race before winning.', type='text')]"
+fred:win_1 fschema:happensInTimeBefore fred:celebrate_1 .,"[TextBlock(text='The athlete won before celebrating.', type='text')]"
+fred:celebrate_1 fschema:happensInTimeBefore fred:cheer_1 .,"[TextBlock(text=""The athlete's celebration preceded the spectators' cheering."", type='text')]"
+fred:crowd_1 fschema:happensInTimeBefore fred:cheer_1 .,"[TextBlock(text='The stadium became crowded before the spectators cheered.', type='text')]"

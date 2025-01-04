@@ -1,0 +1,20 @@
+@prefix amr: <https://w3id.org/framester/amr/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+
+fred:PreviousRaceWinSituation a dul:Situation ;
+    dul:hasQuality fred:achieve_1 ;
+    dul:includes fred:win_1 .
+
+fred:AthleteSuccess a dul:Situation ;
+    dul:associatedWith fred:athlete_1 ;
+    dul:hasTheme fred:hardWorkAndDedication .
+
+fred:hardWorkAndDedication a dul:Action ;
+    pbrs:achieve-01 rdfs:label "achieve" ;
+    dul:hasParticipant fred:athlete_1 .
+
+fred:AmericanFlagPresence a dul:Situation ;
+    dul:isSettingFor fred:capture_1 ;
+    dul:includes fred:see_2 .

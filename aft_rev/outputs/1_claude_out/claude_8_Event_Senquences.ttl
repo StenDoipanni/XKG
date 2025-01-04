@@ -1,0 +1,10 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+fred:compete_1 time:before fred:win_1 .
+fred:win_1 time:before fred:celebrate_1 .
+fred:celebrate_1 time:before fred:beam_1 .
+fred:race_1 time:before fred:finish_1 .
+fred:finish_1 time:before fred:win_1 .
+fred:compete_1 time:before fred:finish_1 .

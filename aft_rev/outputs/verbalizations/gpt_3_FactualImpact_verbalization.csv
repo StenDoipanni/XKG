@@ -1,0 +1,10 @@
+triple,verbalization
+fred:athlete_1 pbrs:hasExpectedEmotion fred:Joy ;,"[TextBlock(text='The athlete is expected to feel joy.', type='text')]"
+pbrs:hasExpectedMentalState fred:Exhilaration ;,"[TextBlock(text='The athlete is expected to feel exhilarated.', type='text')]"
+pbrs:hasExpectedSocialImpact fred:Recognition .,"[TextBlock(text='This triple is not present in the provided knowledge graph, so I cannot verbalize it.', type='text')]"
+fred:competitor_1 pbrs:hasExpectedEmotion fred:Regret ;,"[TextBlock(text='This triple does not appear in the provided knowledge graph, so I cannot verbalize it.', type='text')]"
+pbrs:hasExpectedEmotion fred:MotivationToImprove .,"[TextBlock(text='This triple does not appear in the provided knowledge graph context.', type='text')]"
+fred:spectator_1 pbrs:hasExpectedEmotion fred:Inspiration ;,"[TextBlock(text='The spectators are expected to feel inspired.', type='text')]"
+pbrs:hasExpectedSocialImpact fred:Solidarity .,"[TextBlock(text='This triple is not present in the provided knowledge graph, so I cannot verbalize it.', type='text')]"
+fred:finish_1 pbrs:hasExpectedPhysicalImpact dul:Fatique .,"[TextBlock(text='The act of finishing causes physical fatigue.', type='text')]"
+fred:stadium_1 pbrs:hasExpectedCognitiveImpact fred:Unity .,"[TextBlock(text='The stadium fosters a sense of unity.', type='text')]"

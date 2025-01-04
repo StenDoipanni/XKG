@@ -1,0 +1,10 @@
+triple,verbalization
+fred:OlympicSpiritCoercion a pbrs:symbolize-01 ;,"[TextBlock(text='The Olympic spirit symbolizes dedication and international unity.', type='text')]"
+pblr:symbolize-01.symbol fred:spirit_1 ;,"[TextBlock(text='The Olympic spirit symbolizes the moment of triumph.', type='text')]"
+pblr:symbolize-01.class fred:International .,"[TextBlock(text='The moment symbolizes international competition.', type='text')]"
+fred:NationalPrideCoercion a pbrs:symbolize-01 ;,"[TextBlock(text='This triple does not appear in the provided graph data, so I cannot provide a verbalization for it.', type='text')]"
+pblr:symbolize-01.symbol fred:pride_1 ;,"[TextBlock(text='The pride symbolizes the moment.', type='text')]"
+pblr:symbolize-01.class fred:country_1 .,"[TextBlock(text='The moment symbolizes national pride for Saint Lucia.', type='text')]"
+fred:VictoryCoercion a pbrs:symbolize-01 ;,"[TextBlock(text='The moment symbolizes victory.', type='text')]"
+pblr:symbolize-01.symbol fred:win_1 ;,"[TextBlock(text='The moment symbolizes the victory.', type='text')]"
+pblr:symbolize-01.class fred:potential_1 .,"[TextBlock(text='The moment symbolizes potential.', type='text')]"

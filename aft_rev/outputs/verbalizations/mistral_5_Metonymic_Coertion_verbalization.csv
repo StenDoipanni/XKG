@@ -1,0 +1,5 @@
+triple,verbalization
+fred:jersey_1 dul:hasComponent fred:string-entity_1 .,"[TextBlock(text='The jersey has ""ALFRED"" written on it.', type='text')]"
+fred:string-entity_1 vn.role:Location fred:jersey_1 .,"[TextBlock(text='The name ""ALFRED"" appears on the jersey.', type='text')]"
+fred:flag_1 dul:hasComponent fred:country_2 .,"[TextBlock(text='The American flag is visible.', type='text')]"
+fred:country_2 vn.role:Location fred:flag_1 .,"[TextBlock(text='The American flag is visible in the scene.', type='text')]"

@@ -1,0 +1,7 @@
+triple,verbalization
+fred:compete_1 time:before fred:win_1 .,"[TextBlock(text='The athlete competed before winning.', type='text')]"
+fred:win_1 time:before fred:celebrate_1 .,"[TextBlock(text='The athlete won before celebrating.', type='text')]"
+fred:celebrate_1 time:before fred:beam_1 .,"[TextBlock(text='The athlete celebrated her victory before beaming with joy and exhilaration.', type='text')]"
+fred:race_1 time:before fred:finish_1 .,"[TextBlock(text='The race occurred before its completion.', type='text')]"
+fred:finish_1 time:before fred:win_1 .,"[TextBlock(text='The athlete finished the race before winning.', type='text')]"
+fred:compete_1 time:before fred:finish_1 .,"[TextBlock(text='The athlete competed before finishing the race.', type='text')]"

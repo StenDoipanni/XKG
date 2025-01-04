@@ -1,0 +1,26 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix moral: <http://example.org/moral#> .
+
+fred:VictoryCelebration a moral:MoralValueDrivenCoercion ;
+    moral:instantiationOf moral:PersonalAndNationalPride ;
+    moral:gainFrom moral:MoralValueGain .
+
+moral:PersonalAndNationalPride a moral:PositiveMoralValueGain ;
+    rdfs:subClassOf d0:Characteristic .
+
+fred:HardWorkAndDedication a moral:MoralValueDrivenCoercion ;
+    moral:instantiationOf moral:AchievementThroughEffort ;
+    moral:fulfills moral:MoralDue .
+
+moral:AchievementThroughEffort a moral:MoralDue ;
+    rdfs:subClassOf d0:Process .
+
+fred:OlympicSpirit a moral:MoralValueDrivenCoercion ;
+    moral:instantiationOf moral:Sportsmanship ;
+    moral:exemplifies moral:EthicalVirtue .
+
+moral:Sportsmanship a moral:EthicalVirtue ;
+    rdfs:subClassOf wn30:supersense-noun_attribute .

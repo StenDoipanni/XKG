@@ -1,0 +1,10 @@
+triple,verbalization
+mvdc:AthleticAchievement a mvdc:PositiveMoralValue ;,"[TextBlock(text='Athletic achievement represents a positive moral value.', type='text')]"
+rdfs:subClassOf fred:achieve_1 .,"[TextBlock(text='The athletic achievement is a type of accomplishment.', type='text')]"
+mvdc:NationalRepresentation a mvdc:MoralDue ;,"[TextBlock(text='National representation is a moral duty.', type='text')]"
+owl:equivalentClass fred:pride-01_1 .,"[TextBlock(text='The national pride is equivalent to pride.', type='text')]"
+mvdc:OlympicCompetition a mvdc:MoralDue ;,"[TextBlock(text='The Olympic competition represents a moral obligation and responsibility.', type='text')]"
+owl:equivalentClass fred:compete_2 .,"[TextBlock(text='The athlete is participating in an international competition.', type='text')]"
+fred:celebrate_1 mvdc:instantiationOf mvdc:AthleticAchievement .,"[TextBlock(text='The celebration represents an athletic achievement.', type='text')]"
+fred:wear_1 mvdc:instantiationOf mvdc:NationalRepresentation .,"[TextBlock(text='The athlete wearing the Saint Lucia uniform represents her nation.', type='text')]"
+fred:compete_2 mvdc:instantiationOf mvdc:OlympicCompetition .,"[TextBlock(text='The competition is an Olympic event.', type='text')]"

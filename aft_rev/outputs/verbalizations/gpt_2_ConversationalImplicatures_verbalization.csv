@@ -1,0 +1,4 @@
+triple,verbalization
+fred:crowd_1 dul:hasQuality wn30:synset-open-adjective-1 .,"[TextBlock(text='The stadium is crowded with spectators.', type='text')]"
+fred:thrill_1 dul:hasQuality wn30:synset-possible-adjective-1 .,"[TextBlock(text='The thrill of athletic achievement was possible.', type='text')]"
+fred:jersey_1 dul:hasQuality wn30:synset-not-adverb-1 .,"[TextBlock(text='The jersey is not visible.', type='text')]"

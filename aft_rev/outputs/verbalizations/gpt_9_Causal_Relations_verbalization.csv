@@ -1,0 +1,8 @@
+triple,verbalization
+fred:win_1 dul:causes fred:celebrate_1 .,"[TextBlock(text=""The athlete's victory led to her celebration on the track."", type='text')]"
+fred:achieve_1 dul:causes fred:thrill_1 .,"[TextBlock(text='The athletic achievement causes a thrill.', type='text')]"
+fred:emotion_1 dul:causes fred:exhilarate_1 .,"[TextBlock(text='Raw emotion causes exhilaration.', type='text')]"
+fred:scene_1 dul:causes fred:inspire_1 .,"[TextBlock(text='The inspiring scene motivates and uplifts.', type='text')]"
+fred:beaming_1 a pbrs:beam-01 ;,"[TextBlock(text='The athlete beams with joy and exhilaration.', type='text')]"
+dul:causes fred:celebrate_1 .,"[TextBlock(text=""The athlete's celebration is caused by her victory."", type='text')]"
+fred:pride_1 dul:causes fred:symbolize_1 .,"[TextBlock(text=""The athlete's pride symbolizes the moment of victory."", type='text')]"

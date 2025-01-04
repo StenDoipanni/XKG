@@ -1,0 +1,7 @@
+triple,verbalization
+fred:win_1 causal:triggeringCauseFor fred:celebrate_1 .,"[TextBlock(text=""The athlete's victory triggered her celebration."", type='text')]"
+fred:achieve_1 causal:triggeringCauseFor fred:thrill_1 .,"[TextBlock(text='The athletic achievement triggered a thrilling moment.', type='text')]"
+fred:celebrate_1 causal:triggeringCauseFor fred:spectator_1 .,"[TextBlock(text=""The athlete's celebration prompted the spectators' reaction."", type='text')]"
+fred:win_1 causal:triggeringCauseFor fred:beam_1 .,"[TextBlock(text=""The athlete's victory caused her to beam with joy."", type='text')]"
+fred:achieve_1 causal:triggeringCauseFor fred:pride_1 .,"[TextBlock(text='The athletic achievement triggered feelings of pride.', type='text')]"
+fred:achieve_1 causal:triggeringCauseFor fred:inspire_1 .,"[TextBlock(text='The athletic achievement triggered inspiration.', type='text')]"

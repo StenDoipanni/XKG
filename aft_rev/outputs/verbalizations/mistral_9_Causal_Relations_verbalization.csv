@@ -1,0 +1,6 @@
+triple,verbalization
+fred:win_1 fred:triggeringCauseFor fred:celebrate_1 .,"[TextBlock(text=""The athlete's victory led to her celebration."", type='text')]"
+fred:celebrate_1 fred:triggeringCauseFor fred:beam_1 .,"[TextBlock(text=""The athlete's celebration caused her to beam with joy."", type='text')]"
+fred:beam_1 fred:triggeringCauseFor fred:capture_1 .,"[TextBlock(text=""The athlete's beaming expression led to capturing the moment."", type='text')]"
+fred:capture_1 fred:triggeringCauseFor fred:inspire_1 .,"[TextBlock(text='The captured scene of athletic triumph inspires others.', type='text')]"
+fred:inspire_1 fred:triggeringCauseFor fred:embody_1 .,"[TextBlock(text='The inspiring scene embodies the Olympic spirit and international competition.', type='text')]"

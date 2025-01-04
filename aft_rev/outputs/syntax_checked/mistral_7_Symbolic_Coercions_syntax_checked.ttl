@@ -1,0 +1,58 @@
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix amr: <https://w3id.org/framester/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix schema: <https://schema.org/> .
+
+# Symbolic Coercion: The athlete's victory represents hard work and dedication
+fred:win_1 a pbrs:win-01 ;
+    pblr:win-01.winner fred:athlete_1 ;
+    pblr:symbolize-01.symbol fred:achieve_1 .
+
+# Symbolic Coercion: The moment represents personal and national pride
+fred:moment_1 a fred:Moment ;
+    pblr:symbolize-01.symbol fred:pride-01_1 .
+
+# Symbolic Coercion: The flag represents the nation
+fred:flag_1 a fred:Flag ;
+    pblr:symbolize-01.symbol fred:country_1 .
+
+# Symbolic Coercion: The Olympic spirit represents international competition
+fred:spirit_1 a fred:Spirit ;
+    pblr:symbolize-01.symbol fred:compete_2 .
+
+# Symbolic Coercion: The scene represents the realization of human potential
+fred:scene_1 a fred:Scene ;
+    pblr:symbolize-01.symbol fred:potential_1 .
+
+# Symbolic Coercion: The jersey with 'ALFRED' represents the athlete
+fred:string-entity_1 a amr:String-entity ;
+    pblr:symbolize-01.symbol fred:athlete_1 ;
+    vn.role:Location fred:jersey_1 .
+
+# Symbolic Coercion: The race represents the competition
+fred:race_1 a pbrs:race-02 ;
+    pblr:symbolize-01.symbol fred:compete_2 .
+
+# Symbolic Coercion: The athletes still finishing the race represent the ongoing competition
+fred:finish_1 a pbrs:finish-01 ;
+    pblr:symbolize-01.symbol fred:compete_2 .
+
+# Symbolic Coercion: The stadium represents the venue of the competition
+fred:stadium_1 a fred:Stadium ;
+    pblr:symbolize-01.symbol fred:compete_2 .
+
+# Symbolic Coercion: The uniform represents the national team
+fred:uniform_1 a fred:Uniform ;
+    pblr:symbolize-01.symbol fred:country_1 .

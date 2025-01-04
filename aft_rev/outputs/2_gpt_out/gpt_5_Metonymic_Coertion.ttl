@@ -1,0 +1,34 @@
+```turtle
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+fred:crowd_1 dul:hasQuality fred:FullCapacity ;
+    pbrs:crowd-01.fullness fred:stadium_1 .
+
+fred:stadium_1 wn30schema:gloss "a large capacity building for sports or entertainment events that becomes full during major events"@en-us .
+
+fred:athlete_1 dul:hasQuality fred:Performance-Place ;
+    pbrs:perform-01.place-of-action fred:track_1 .
+
+fred:track_1 wn30schema:gloss "a course used for running events, associated with athletic participation"@en-us .
+
+fred:flag_1 dul:associatedWith fred:national-01_1 ;
+    fred:mean fred:national-pride_1 .
+
+fred:national-pride_1 a fred:NationPride-01 ;
+    pblr:pride-01.focus fred:country_1 .
+
+fred:country_2 fred:mean fred:national_emblem_1 .
+
+fred:national_emblem_1 a fred:Flag ;
+    dul:represents fred:national_1 .
+
+fred:national_1 a fred:Country ;
+    owl:sameAs fred:country_2 .
+
+```

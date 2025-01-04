@@ -1,0 +1,41 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+fred:ArmsOutstretched rdfs:subClassOf dul:Position ;
+    owl:equivalentClass wn30:synset-outstretched-adjective-1 .
+
+fred:Victory :symbolOf fred:Triumph .
+fred:ArmsOutstretched :symbolOf fred:Victory .
+fred:Stadium :symbolOf fred:GlobalStage .
+fred:UniformWithFlag :symbolOf fred:NationalIdentity .
+fred:Track :symbolOf fred:LifeJourney .
+fred:Race :symbolOf fred:Competition .
+fred:Behind :symbolOf fred:Hierarchy .
+fred:FinishLine :symbolOf fred:Achievement .
+
+:symbolOf a owl:ObjectProperty ;
+    rdfs:label "is symbol of" .
+
+fred:Triumph rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn30:synset-triumph-noun-1 .
+
+fred:GlobalStage rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn30:synset-worldwide-adjective-1 .
+
+fred:NationalIdentity rdfs:subClassOf dul:SocialConcept ;
+    owl:equivalentClass wn30:synset-national_identity-noun-1 .
+
+fred:LifeJourney rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn30:synset-life_journey-noun-1 .
+
+fred:Competition rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn30:synset-competition-noun-1 .
+
+fred:Hierarchy rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn30:synset-hierarchy-noun-1 .
+
+fred:Achievement rdfs:subClassOf dul:Situation ;
+    owl:equivalentClass wn30:synset-achievement-noun-1 .

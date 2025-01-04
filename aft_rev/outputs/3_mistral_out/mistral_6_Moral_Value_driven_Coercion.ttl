@@ -1,0 +1,51 @@
+```turtle
+@prefix amr: <https://w3id.org/framester/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+fred:PersonalAchievement rdfs:subClassOf dul:Event ;
+    owl:equivalentClass wn30:synset-achievement-noun-1 .
+
+fred:MoralValueGain rdfs:subClassOf dul:Event ;
+    owl:equivalentClass wn30:synset-goodness-noun-1 .
+
+fred:Dedication rdfs:subClassOf dul:Quality ;
+    owl:equivalentClass wn30:synset-dedication-noun-2 .
+
+fred:HardWork rdfs:subClassOf dul:Event ;
+    owl:equivalentClass wn30:synset-work-noun-1 .
+
+fred:Inspiration rdfs:subClassOf dul:Event ;
+    owl:equivalentClass wn30:synset-inspiration-noun-1 .
+
+fred:Representation rdfs:subClassOf dul:Event ;
+    owl:equivalentClass wn30:synset-representation-noun-1 .
+
+fred:achieve_1 fred:instantiationOf fred:PersonalAchievement .
+
+fred:PersonalAchievement dul:hasQuality fred:MoralValueGain .
+
+fred:capture_1 dul:associatedWith fred:Dedication, fred:HardWork .
+
+fred:inspire_1 fred:instantiationOf fred:Inspiration .
+
+fred:Inspiration dul:hasQuality fred:MoralValueGain .
+
+fred:celebrate_1 fred:instantiationOf fred:Representation .
+
+fred:Representation dul:hasQuality fred:MoralValueGain .
+```

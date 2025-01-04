@@ -1,0 +1,19 @@
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix mvdc: <http://www.ontologydesignpatterns.org/ont/mvdc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+mvdc:AthleticAchievement a mvdc:PositiveMoralValue ;
+    rdfs:subClassOf fred:achieve_1 .
+
+mvdc:NationalRepresentation a mvdc:MoralDue ;
+    owl:equivalentClass fred:pride-01_1 .
+
+mvdc:OlympicCompetition a mvdc:MoralDue ;
+    owl:equivalentClass fred:compete_2 .
+
+fred:celebrate_1 mvdc:instantiationOf mvdc:AthleticAchievement .
+
+fred:wear_1 mvdc:instantiationOf mvdc:NationalRepresentation .
+
+fred:compete_2 mvdc:instantiationOf mvdc:OlympicCompetition .

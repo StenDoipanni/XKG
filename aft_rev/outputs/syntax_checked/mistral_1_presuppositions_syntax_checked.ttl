@@ -1,0 +1,184 @@
+@prefix amr: <https://w3id.org/framester/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pblr: <https://w3id.org/framester/data/propbank-3.4.0/LocalRole/> .
+@prefix pbrs: <https://w3id.org/framester/data/propbank-3.4.0/RoleSet/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+fred:athlete_1 a fred:FemaleAthlete ;
+    dul:hasQuality fred:Jubilant ;
+    owl:sameAs wd:Q11694 .
+
+fred:uniform_1 a fred:Uniform ;
+    dul:hasQuality fred:country_1 ;
+    owl:sameAs wd:Q1520785 .
+
+fred:jersey_1 a fred:Jersey ;
+    owl:sameAs wd:Q1520785 ;
+    dul:hasQuality fred:string-entity_1 .
+
+fred:spectator_1 a fred:Spectator ;
+    dul:associatedWith fred:stadium_1 ;
+    fred:in fred:background_1 ;
+    owl:sameAs wd:Q17155423 .
+
+fred:stadium_1 a fred:Stadium ;
+    owl:sameAs wd:Q16917 .
+
+fred:race_1 a pbrs:race-02 ;
+    dul:hasMember fred:athlete_1,
+        fred:person_1 ;
+    owl:sameAs wd:Q13406463 .
+
+fred:flag_1 a fred:Flag ;
+    dul:hasQuality fred:country_2 ;
+    owl:sameAs wd:Q614670 .
+
+fred:country_1 a amr:Country ;
+    owl:sameAs dbpedia:Saint_Lucia,
+        wd:Q760 ;
+    schema:name "Saint_Lucia" ;
+    dul:hasMember fred:athlete_1 .
+
+fred:country_2 a amr:Country ;
+    owl:sameAs dbpedia:United_States,
+        wd:Q30 ;
+    schema:name "America" ;
+    dul:hasMember fred:spectator_1 .
+
+fred:game_1 a amr:Game ;
+    owl:sameAs dbpedia:Olympic_Games,
+        wd:Q5389 ;
+    schema:name "Olympic" ;
+    dul:hasMember fred:athlete_1,
+        fred:spectator_1 .
+
+fred:win_1 a pbrs:win-01 ;
+    pblr:win-01.winner fred:athlete_1 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:celebrate_1 a pbrs:celebrate-01 ;
+    vn.role:Location fred:track_1 ;
+    pblr:celebrate-01.honored fred:win_1 ;
+    pblr:celebrate-01.honorer fred:athlete_1 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:pride_1 a pbrs:pride-01 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:finish_1 a pbrs:finish-01 ;
+    dul:hasQuality fred:Still ;
+    pblr:finish-01.intentional-agent fred:athlete_1 ;
+    pblr:finish-01.thing-finishing fred:race_1 ;
+    dul:hasMember fred:athlete_1,
+        fred:person_1 .
+
+fred:see_1 a pbrs:see-01 ;
+    dul:hasQuality fred:Behind ;
+    pblr:see-01.attribute-of-arg1 fred:finish_1 ;
+    pblr:see-01.thing-viewed fred:person_1 ;
+    dul:hasMember fred:person_1 .
+
+fred:see_2 a pbrs:see-01 ;
+    pblr:see-01.thing-viewed fred:flag_1 ;
+    dul:hasMember fred:spectator_1 .
+
+fred:cheer_1 a pbrs:cheer-02 ;
+    pblr:cheer-02.clapper fred:spectator_1 ;
+    dul:hasMember fred:spectator_1 .
+
+fred:crowd_1 a pbrs:crowd-01 ;
+    pblr:crowd-01.container fred:stadium_1 ;
+    dul:hasMember fred:spectator_1 .
+
+fred:inspire_1 a pbrs:inspire-01 ;
+    pblr:inspire-01.causer-of-inspiration fred:scene_1 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:personal_1 a pbrs:personal-02 ;
+    pblr:personal-02.private-thing fred:pride_1 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:symbolize_1 a pbrs:symbolize-01 ;
+    pblr:symbolize-01.class fred:conjunct_3 ;
+    pblr:symbolize-01.symbol fred:moment_1 ;
+    dul:hasMember fred:moment_1 .
+
+fred:capture_1 a pbrs:capture-01 ;
+    pblr:capture-01.thing-gotten fred:conjunct_5 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:embody_1 a pbrs:embody-01 ;
+    pblr:embody-01.entity-embodied fred:conjunct_4 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:wear_1 a pbrs:wear-01 ;
+    pblr:wear-01.clothing fred:uniform_1 ;
+    pblr:wear-01.wearer fred:athlete_1 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:achieve_1 a pbrs:achieve-01 ;
+    dul:hasQuality fred:Athletic ;
+    dul:hasMember fred:athlete_1 .
+
+fred:compete_1 a pbrs:compete-01 ;
+    pblr:compete-01.competitor fred:person_1 ;
+    dul:hasMember fred:athlete_1,
+        fred:person_1 .
+
+fred:compete_2 a pbrs:compete-01 ;
+    dul:hasQuality fred:International ;
+    dul:hasMember fred:athlete_1,
+        fred:spectator_1 .
+
+fred:have_1 a pbrs:have-03 ;
+    pblr:have-03.owner fred:uniform_1 ;
+    pblr:have-03.possession fred:string-entity_1 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:background_1 a fred:Background ;
+    dul:hasMember fred:spectator_1 .
+
+fred:beam_1 a pbrs:beam-01 ;
+    pblr:beam-01.thing-transmitted fred:athlete_1 ;
+    pblr:beam-01.transmitter fred:conjunct_2 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:track_1 a fred:Track ;
+    dul:hasMember fred:athlete_1 .
+
+fred:exhilarate_1 a pbrs:exhilarate-01 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:joy_1 a fred:Joy ;
+    dul:hasMember fred:athlete_1 .
+
+fred:emotion_1 a fred:Emotion ;
+    dul:hasQuality fred:Raw ;
+    dul:hasMember fred:athlete_1 .
+
+fred:thrill_1 a pbrs:thrill-01 ;
+    pblr:thrill-01.excited-entity fred:achieve_1 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:spirit_1 a fred:Spirit ;
+    dul:hasQuality fred:game_1 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:potential_1 a fred:Potential ;
+    fred:potentialOf fred:human_1 ;
+    dul:hasMember fred:athlete_1 .
+
+fred:human_1 a fred:Human ;
+    dul:hasMember fred:athlete_1 .
