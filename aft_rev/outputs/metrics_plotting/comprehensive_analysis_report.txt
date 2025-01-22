@@ -1,0 +1,188 @@
+=== Agreement Metrics ===
+
+
+Presuppositions:
+Krippendorff's Alpha: 0.058
+
+Cohen's Kappa:
+  claude-gpt: 0.018
+  claude-mistral: 0.094
+  gpt-mistral: 0.002
+
+Pairwise Agreement:
+  claude-gpt: 0.541
+  claude-mistral: 0.603
+  gpt-mistral: 0.514
+
+Conversational Implicatures:
+Krippendorff's Alpha: 0.174
+
+Cohen's Kappa:
+  claude-gpt: 0.119
+  claude-mistral: 0.011
+  gpt-mistral: 0.085
+
+Pairwise Agreement:
+  claude-gpt: 0.389
+  claude-mistral: 0.389
+  gpt-mistral: 0.306
+
+Factual Impact:
+Krippendorff's Alpha: 0.313
+
+Cohen's Kappa:
+  claude-gpt: 0.285
+  claude-mistral: 0.144
+  gpt-mistral: 0.058
+
+Pairwise Agreement:
+  claude-gpt: 0.500
+  claude-mistral: 0.462
+  gpt-mistral: 0.308
+
+Metonymic Coercions:
+Krippendorff's Alpha: 0.277
+
+Cohen's Kappa:
+  claude-gpt: 0.199
+  claude-mistral: 0.137
+  gpt-mistral: 0.068
+
+Pairwise Agreement:
+  claude-gpt: 0.448
+  claude-mistral: 0.483
+  gpt-mistral: 0.310
+
+Moral value-driven Coercions:
+Krippendorff's Alpha: 0.269
+
+Cohen's Kappa:
+  claude-gpt: 0.266
+  claude-mistral: -0.103
+  gpt-mistral: 0.017
+
+Pairwise Agreement:
+  claude-gpt: 0.455
+  claude-mistral: 0.273
+  gpt-mistral: 0.250
+
+Symbolic Coercions:
+Krippendorff's Alpha: 0.489
+
+Cohen's Kappa:
+  claude-gpt: 0.202
+  claude-mistral: 0.265
+  gpt-mistral: 0.222
+
+Pairwise Agreement:
+  claude-gpt: 0.429
+  claude-mistral: 0.500
+  gpt-mistral: 0.429
+
+Event Sequences:
+Krippendorff's Alpha: 0.082
+
+Cohen's Kappa:
+  claude-gpt: -0.073
+  claude-mistral: 0.389
+  gpt-mistral: 0.133
+
+Pairwise Agreement:
+  claude-gpt: 0.250
+  claude-mistral: 0.688
+  gpt-mistral: 0.438
+
+Causal Relations:
+Krippendorff's Alpha: 0.183
+
+Cohen's Kappa:
+  claude-gpt: 0.257
+  claude-mistral: -0.088
+  gpt-mistral: -0.088
+
+Pairwise Agreement:
+  claude-gpt: 0.500
+  claude-mistral: 0.389
+  gpt-mistral: 0.389
+
+Implied Future Events:
+Krippendorff's Alpha: 0.368
+
+Cohen's Kappa:
+  claude-gpt: 0.248
+  claude-mistral: 0.089
+  gpt-mistral: 0.010
+
+Pairwise Agreement:
+  claude-gpt: 0.482
+  claude-mistral: 0.429
+  gpt-mistral: 0.286
+
+Potential Non-Events:
+Krippendorff's Alpha: 0.351
+
+Cohen's Kappa:
+  claude-gpt: 0.334
+  claude-mistral: 0.078
+  gpt-mistral: 0.116
+
+Pairwise Agreement:
+  claude-gpt: 0.478
+  claude-mistral: 0.283
+  gpt-mistral: 0.326
+
+Image Schemas:
+Krippendorff's Alpha: 0.330
+
+Cohen's Kappa:
+  claude-gpt: 0.219
+  claude-mistral: -0.030
+  gpt-mistral: 0.050
+
+Pairwise Agreement:
+  claude-gpt: 0.396
+  claude-mistral: 0.302
+  gpt-mistral: 0.245
+
+
+=== Self-Coherence Analysis ===
+
+
+CLAUDE:
+  Presuppositions: 1.000
+  Conversational Implicatures: 0.889
+  Factual Impact: 0.636
+  Metonymic Coercions: 1.000
+  Moral value-driven Coercions: 0.889
+  Symbolic Coercions: 0.731
+  Event Sequences: 1.000
+  Causal Relations: 0.833
+  Implied Future Events: 0.857
+  Potential Non-Events: 1.000
+  Image Schemas: 1.000
+
+GPT:
+  Presuppositions: 0.750
+  Conversational Implicatures: 0.000
+  Factual Impact: 0.667
+  Metonymic Coercions: 0.667
+  Moral value-driven Coercions: 0.533
+  Symbolic Coercions: 0.333
+  Event Sequences: 0.600
+  Causal Relations: 0.571
+  Implied Future Events: 0.571
+  Potential Non-Events: 0.000
+  Image Schemas: 0.400
+
+MISTRAL:
+  Presuppositions: 0.962
+  Conversational Implicatures: 1.000
+  Factual Impact: 1.000
+  Metonymic Coercions: 1.000
+  Moral value-driven Coercions: 0.800
+  Symbolic Coercions: 0.905
+  Event Sequences: 1.000
+  Causal Relations: 1.000
+  Implied Future Events: 0.786
+  Potential Non-Events: 0.600
+  Image Schemas: 0.700
