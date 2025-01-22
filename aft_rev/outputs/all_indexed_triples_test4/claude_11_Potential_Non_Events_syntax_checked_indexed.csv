@@ -1,0 +1,17 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:lose_1 dul:hasValue False;5;5;5
+2;fred:lose_1 dul:associatedWith fred:athlete_1;5;5;5
+3;fred:defeat_1 rdf:type wn30:synset-defeat-noun-1;4;3;2
+4;fred:lose_1 rdf:type pbrs:lose-02;4;4;1
+5;fred:disappointment_1 dul:hasValue False;5;5;5
+6;fred:disappointment_1 dul:associatedWith fred:athlete_1;5;5;2
+7;fred:disappointment_1 rdf:type wn30:synset-disappointment-noun-1;4;3;1
+8;fred:defeat_1 dul:valueDependingOn fred:celebrate_1;5;2;1
+9;fred:lose_1 dul:valueDependingOn fred:win_1;5;5;5
+10;fred:fail_1 dul:valueDependingOn fred:achieve_1;5;1;1
+11;fred:fail_1 dul:associatedWith fred:athlete_1;5;1;1
+12;fred:fail_1 rdf:type pbrs:fail-01;4;2;1
+13;fred:disappointment_1 dul:valueDependingOn fred:joy_1;5;1;1
+14;fred:defeat_1 dul:hasValue False;5;5;1
+15;fred:defeat_1 dul:associatedWith fred:athlete_1;5;5;1
+16;fred:fail_1 dul:hasValue False;5;5;4

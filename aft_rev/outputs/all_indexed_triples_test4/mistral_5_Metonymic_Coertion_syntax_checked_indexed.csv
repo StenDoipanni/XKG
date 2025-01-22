@@ -1,0 +1,5 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:country_2 vn.role:Location fred:flag_1;5;3;5
+2;fred:string-entity_1 vn.role:Location fred:jersey_1;5;5;5
+3;fred:flag_1 dul:hasComponent fred:country_2;4;2;4
+4;fred:jersey_1 dul:hasComponent fred:string-entity_1;5;4;5

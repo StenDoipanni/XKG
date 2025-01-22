@@ -1,0 +1,4 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:crowd_1 dul:hasQuality wn30:synset-open-adjective-1;4;2;3
+2;fred:thrill_1 dul:hasQuality wn30:synset-possible-adjective-1;2;2;4
+3;fred:jersey_1 dul:hasQuality wn30:synset-not-adverb-1;1;2;5

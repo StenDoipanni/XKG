@@ -1,0 +1,21 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:finishLine_1 rdfs:label GOAL;4;3;5
+2;fred:containingStadium_1 rdfs:label CONTAINMENT;4;3;1
+3;fred:trackPath_1 rdfs:label PATH;5;3;4
+4;fred:containingStadium_1 dul:hasQuality fred:containingStadium_1;2;2;3
+5;fred:finishLine_1 rdf:type fred:SpatialPrimitive;4;3;3
+6;fred:trackPath_1 dul:hasQuality fred:trackPath_1;2;2;5
+7;fred:finishLine_1 dul:hasQuality fred:finishLine_1;2;2;1
+8;fred:finishLine_1 dul:associatedWith fred:race_1;5;5;5
+9;fred:imageSchema_1 rdfs:label SOURCE_PATH_GOAL;4;3;5
+10;fred:containingStadium_1 rdf:type fred:SpatialPrimitive;4;3;5
+11;fred:containingStadium_1 dul:associatedWith fred:stadium_1;5;4;4
+12;fred:competitionScene_1 rdf:type fred:Scene;5;5;5
+13;fred:startingLine_1 dul:associatedWith fred:race_1;4;5;5
+14;fred:trackPath_1 dul:associatedWith fred:race_1;5;5;5
+15;fred:startingLine_1 rdfs:label SOURCE;4;3;1
+16;fred:startingLine_1 rdf:type fred:SpatialPrimitive;4;3;4
+17;fred:trackPath_1 rdf:type fred:SpatialPrimitive;5;3;4
+18;fred:imageSchema_1 rdf:type fred:ImageSchema;4;3;5
+19;fred:competitionScene_1 dul:evokes fred:imageSchema_1;4;4;4
+20;fred:startingLine_1 dul:hasQuality fred:startingLine_1;2;2;1

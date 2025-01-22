@@ -1,0 +1,19 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:track_1 fred:evokes fred:SOURCE_PATH_GOAL;5;3;4
+2;fred:CrowdStadium fred:mappedTo fred:CENTER-PERIPHERY;4;2;4
+3;fred:athlete_1 fred:evokes fred:VERTICALITY;5;3;5
+4;fred:SOURCE_PATH_GOAL rdf:type fred:ImageSchema;5;5;4
+5;fred:CONTAINMENT rdf:type fred:ImageSchema;5;5;4
+6;fred:UniformWearing fred:mappedTo fred:COVERING;5;4;5
+7;fred:athlete_1 fred:evokes fred:FORCE;5;3;5
+8;fred:ArmsPosition fred:mappedTo fred:VERTICALITY;5;4;5
+9;fred:VictoryPose fred:mappedTo fred:FORCE;5;3;4
+10;fred:spectator_1 fred:evokes fred:CENTER-PERIPHERY;4;2;1
+11;fred:StadiumSpace fred:mappedTo fred:CONTAINMENT;5;4;5
+12;fred:CENTER-PERIPHERY rdf:type fred:ImageSchema;5;5;4
+13;fred:COVERING rdf:type fred:ImageSchema;5;5;5
+14;fred:uniform_1 fred:evokes fred:COVERING;5;5;5
+15;fred:RaceProgress fred:mappedTo fred:SOURCE_PATH_GOAL;5;4;4
+16;fred:stadium_1 fred:evokes fred:CONTAINMENT;5;4;1
+17;fred:FORCE rdf:type fred:ImageSchema;5;5;4
+18;fred:VERTICALITY rdf:type fred:ImageSchema;5;5;4

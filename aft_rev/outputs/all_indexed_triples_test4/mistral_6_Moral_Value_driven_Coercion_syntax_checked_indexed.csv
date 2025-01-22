@@ -1,0 +1,21 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:Dedication rdfs:subClassOf dul:Quality;4;4;4
+2;fred:Representation owl:equivalentClass wn30:synset-representation-noun-1;4;4;5
+3;fred:capture_1 dul:associatedWith fred:Dedication;3;3;5
+4;fred:Inspiration dul:hasQuality fred:MoralValueGain;3;2;4
+5;fred:HardWork rdfs:subClassOf dul:Event;4;4;5
+6;fred:HardWork owl:equivalentClass wn30:synset-work-noun-1;4;3;5
+7;fred:Representation dul:hasQuality fred:MoralValueGain;2;2;4
+8;fred:Inspiration rdfs:subClassOf dul:Event;4;4;4
+9;fred:MoralValueGain rdfs:subClassOf dul:Event;3;2;4
+10;fred:PersonalAchievement dul:hasQuality fred:MoralValueGain;4;2;1
+11;fred:achieve_1 fred:instantiationOf fred:PersonalAchievement;5;3;4
+12;fred:PersonalAchievement rdfs:subClassOf dul:Event;4;4;3
+13;fred:Inspiration owl:equivalentClass wn30:synset-inspiration-noun-1;4;4;5
+14;fred:Dedication owl:equivalentClass wn30:synset-dedication-noun-2;4;4;5
+15;fred:Representation rdfs:subClassOf dul:Event;3;3;4
+16;fred:celebrate_1 fred:instantiationOf fred:Representation;3;3;3
+17;fred:inspire_1 fred:instantiationOf fred:Inspiration;4;3;4
+18;fred:MoralValueGain owl:equivalentClass wn30:synset-goodness-noun-1;3;4;1
+19;fred:capture_1 dul:associatedWith fred:HardWork;4;5;5
+20;fred:PersonalAchievement owl:equivalentClass wn30:synset-achievement-noun-1;5;5;5

@@ -1,0 +1,6 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:finish_1 fschema:happensInTimeBefore fred:win_1;5;1;5
+2;fred:win_1 fschema:happensInTimeBefore fred:celebrate_1;5;5;5
+3;fred:crowd_1 fschema:happensInTimeBefore fred:cheer_1;4;3;4
+4;fred:celebrate_1 fschema:happensInTimeBefore fred:cheer_1;3;4;5
+5;fred:compete_1 fschema:happensInTimeBefore fred:finish_1;5;5;5

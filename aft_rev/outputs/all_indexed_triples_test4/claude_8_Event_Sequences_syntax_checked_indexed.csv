@@ -1,0 +1,7 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:race_1 time:before fred:finish_1;5;3;5
+2;fred:compete_1 time:before fred:win_1;5;4;5
+3;fred:celebrate_1 time:before fred:beam_1;4;4;4
+4;fred:finish_1 time:before fred:win_1;5;2;5
+5;fred:win_1 time:before fred:celebrate_1;5;4;5
+6;fred:compete_1 time:before fred:finish_1;5;4;5

@@ -1,0 +1,7 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:athlete_1 fred:hasExpectedMentalState fred:Exhilaration;5;5;5
+2;fred:spectator_1 fred:hasExpectedEmotion fred:Joy;4;5;4
+3;fred:athlete_1 fred:hasExpectedEmotion fred:Joy;5;5;4
+4;fred:country_1 fred:hasExpectedEmotion fred:Joy;4;2;4
+5;fred:spectator_1 fred:hasExpectedMentalState fred:Inspiration;4;3;5
+6;fred:country_1 fred:hasExpectedEmotion fred:NationalPride;5;4;4

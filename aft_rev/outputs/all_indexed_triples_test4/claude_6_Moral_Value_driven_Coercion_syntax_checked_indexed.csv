@@ -1,0 +1,10 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;mvdc:AthleticAchievement rdf:type mvdc:PositiveMoralValue;5;3;5
+2;mvdc:AthleticAchievement rdfs:subClassOf fred:achieve_1;4;1;5
+3;fred:celebrate_1 mvdc:instantiationOf mvdc:AthleticAchievement;5;4;5
+4;fred:wear_1 mvdc:instantiationOf mvdc:NationalRepresentation;5;4;5
+5;mvdc:NationalRepresentation owl:equivalentClass fred:pride-01_1;4;2;5
+6;mvdc:OlympicCompetition owl:equivalentClass fred:compete_2;5;4;5
+7;mvdc:NationalRepresentation rdf:type mvdc:MoralDue;3;2;4
+8;mvdc:OlympicCompetition rdf:type mvdc:MoralDue;4;2;5
+9;fred:compete_2 mvdc:instantiationOf mvdc:OlympicCompetition;5;5;4

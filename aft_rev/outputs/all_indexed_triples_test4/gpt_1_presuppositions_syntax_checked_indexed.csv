@@ -1,0 +1,13 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:hardWorkAndDedication rdf:type dul:Action;5;3;5
+2;fred:AthleteSuccess dul:hasTheme fred:hardWorkAndDedication;5;4;4
+3;fred:AthleteSuccess dul:associatedWith fred:athlete_1;5;5;4
+4;fred:AthleteSuccess rdf:type dul:Situation;5;4;5
+5;fred:PreviousRaceWinSituation dul:hasQuality fred:achieve_1;4;3;4
+6;pbrs:achieve-01 rdfs:label achieve;5;5;4
+7;fred:AmericanFlagPresence dul:isSettingFor fred:capture_1;5;3;5
+8;fred:AmericanFlagPresence rdf:type dul:Situation;5;4;5
+9;pbrs:achieve-01 dul:hasParticipant fred:athlete_1;5;5;5
+10;fred:PreviousRaceWinSituation rdf:type dul:Situation;5;4;5
+11;fred:PreviousRaceWinSituation dul:includes fred:win_1;5;4;5
+12;fred:AmericanFlagPresence dul:includes fred:see_2;5;4;4

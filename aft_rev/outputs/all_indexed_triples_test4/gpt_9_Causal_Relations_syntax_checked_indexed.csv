@@ -1,0 +1,8 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:pride_1 dul:causes fred:symbolize_1;4;2;5
+2;fred:win_1 dul:causes fred:celebrate_1;5;5;5
+3;fred:emotion_1 dul:causes fred:exhilarate_1;4;5;5
+4;fred:beaming_1 rdf:type pbrs:beam-01;3;1;5
+5;fred:achieve_1 dul:causes fred:thrill_1;5;5;5
+6;fred:beaming_1 dul:causes fred:celebrate_1;3;1;4
+7;fred:scene_1 dul:causes fred:inspire_1;5;5;4

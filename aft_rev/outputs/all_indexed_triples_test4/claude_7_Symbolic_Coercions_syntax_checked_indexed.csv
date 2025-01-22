@@ -1,0 +1,27 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:Behind fred:symbolOf fred:Hierarchy;2;1;1
+2;fred:symbolOf rdf:type owl:ObjectProperty;4;5;4
+3;fred:GlobalStage owl:equivalentClass wn30:synset-worldwide-adjective-1;3;3;3
+4;fred:LifeJourney rdfs:subClassOf dul:Situation;3;4;5
+5;fred:NationalIdentity owl:equivalentClass wn30:synset-national_identity-noun-1;4;3;4
+6;fred:Achievement rdfs:subClassOf dul:Situation;5;4;4
+7;fred:LifeJourney owl:equivalentClass wn30:synset-life_journey-noun-1;3;3;1
+8;fred:Track fred:symbolOf fred:LifeJourney;3;2;4
+9;fred:Triumph owl:equivalentClass wn30:synset-triumph-noun-1;4;3;5
+10;fred:Hierarchy rdfs:subClassOf dul:Situation;3;4;4
+11;fred:Victory fred:symbolOf fred:Triumph;5;4;5
+12;fred:ArmsOutstretched owl:equivalentClass wn30:synset-outstretched-adjective-1;4;3;4
+13;fred:UniformWithFlag fred:symbolOf fred:NationalIdentity;5;4;4
+14;fred:Race fred:symbolOf fred:Competition;5;4;4
+15;fred:ArmsOutstretched rdfs:subClassOf dul:Position;4;3;4
+16;fred:NationalIdentity rdfs:subClassOf dul:SocialConcept;5;4;4
+17;fred:Competition rdfs:subClassOf dul:Situation;5;5;4
+18;fred:Triumph rdfs:subClassOf dul:Situation;5;4;4
+19;fred:symbolOf rdfs:label is symbol of;4;5;4
+20;fred:Stadium fred:symbolOf fred:GlobalStage;4;4;4
+21;fred:Competition owl:equivalentClass wn30:synset-competition-noun-1;5;5;5
+22;fred:ArmsOutstretched fred:symbolOf fred:Victory;5;3;5
+23;fred:FinishLine fred:symbolOf fred:Achievement;5;4;3
+24;fred:Hierarchy owl:equivalentClass wn30:synset-hierarchy-noun-1;3;4;5
+25;fred:Achievement owl:equivalentClass wn30:synset-achievement-noun-1;5;3;5
+26;fred:GlobalStage rdfs:subClassOf dul:Situation;4;4;4

@@ -1,0 +1,15 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:future_inspire_1 rdf:type pbrs:inspire-01;4;3;4
+2;fred:future_pride_1 rdf:type pbrs:pride-01;5;3;4
+3;fred:future_pride_1 dul:associatedWith fred:athlete_1;5;4;5
+4;fred:future_inspire_1 dul:associatedWith fred:athlete_1;4;4;4
+5;fred:future_compete_1 dul:associatedWith fred:game_1;5;5;4
+6;fred:rest_1 dul:associatedWith fred:finish_1;3;2;4
+7;fred:rest_1 dul:associatedWith fred:human_1;3;2;3
+8;fred:rest_1 dul:hasQuality fred:joy_1;4;2;1
+9;fred:future_compete_1 dul:hasQuality fred:Potential;4;4;5
+10;fred:rest_1 rdf:type pbrs:rest-01;3;2;5
+11;fred:future_compete_1 rdf:type pbrs:compete-01;5;4;4
+12;fred:future_inspire_1 dul:associatedWith fred:scene_1;4;4;5
+13;fred:future_pride_1 dul:associatedWith fred:country_1;5;5;5
+14;fred:future_compete_1 dul:associatedWith fred:athlete_1;5;4;5

@@ -1,0 +1,16 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:Victory fred:associatedWith fred:FORCE;4;1;1
+2;fred:Victory fred:mappedTo fred:GOAL;4;2;4
+3;fred:PATH rdf:type fred:SpatialPrimitive;3;3;2
+4;fred:celebrate_1 fred:mappedTo fred:PATH;4;2;1
+5;fred:athlete_1 fred:associatedWith fred:CENTER;5;1;4
+6;fred:Stadium fred:hasSpatialRelation fred:CONTAINMENT;5;3;4
+7;fred:GOAL rdf:type fred:SpatialPrimitive;3;3;4
+8;fred:OlympicMoment fred:evokes fred:SOURCE_PATH_GOAL;4;4;4
+9;fred:CENTER-PERIPHERY rdf:type fred:ImageSchema;3;4;2
+10;fred:AthletePerformance fred:mappedTo fred:SOURCE;4;1;4
+11;fred:SOURCE_PATH_GOAL rdf:type fred:ImageSchema;4;4;5
+12;fred:FORCE rdf:type fred:ImageSchema;4;4;5
+13;fred:CONTAINMENT rdf:type fred:ImageSchema;5;4;4
+14;fred:SOURCE rdf:type fred:SpatialPrimitive;3;3;4
+15;pa:CheeringSpectators fred:associatedWith fred:PERIPHERY;5;4;3

@@ -1,0 +1,10 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:OlympicSpiritCoercion pblr:symbolize-01.class fred:International;4;1;4
+2;fred:OlympicSpiritCoercion pblr:symbolize-01.symbol fred:spirit_1;4;3;4
+3;fred:OlympicSpiritCoercion rdf:type pbrs:symbolize-01;4;3;2
+4;fred:VictoryCoercion pblr:symbolize-01.symbol fred:win_1;5;4;4
+5;fred:VictoryCoercion rdf:type pbrs:symbolize-01;5;3;3
+6;fred:NationalPrideCoercion pblr:symbolize-01.class fred:country_1;4;4;2
+7;fred:VictoryCoercion pblr:symbolize-01.class fred:potential_1;3;2;3
+8;fred:NationalPrideCoercion rdf:type pbrs:symbolize-01;4;3;4
+9;fred:NationalPrideCoercion pblr:symbolize-01.symbol fred:pride_1;5;5;3

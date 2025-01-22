@@ -1,0 +1,15 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:future_podium_1 dul:follows fred:win_1;4;3;5
+2;fred:future_podium_1 dul:hasParticipant fred:athlete_1;4;4;4
+3;fred:future_ceremony_1 dul:follows fred:win_1;4;3;4
+4;fred:future_ceremony_1 dul:hasParticipant fred:athlete_1;4;4;5
+5;fred:MedalCeremony rdfs:subClassOf dul:Event;5;5;4
+6;fred:future_anthem_1 dul:follows fred:future_ceremony_1;3;3;2
+7;fred:future_anthem_1 dul:hasQuality fred:country_1;4;4;4
+8;fred:future_podium_1 rdf:type wn30:synset-podium-noun-1;5;5;4
+9;fred:future_medal_1 dul:hasParticipant fred:athlete_1;4;4;3
+10;fred:future_medal_1 rdf:type wn30:synset-medal-noun-1;5;5;4
+11;fred:future_ceremony_1 rdf:type fred:MedalCeremony;4;5;1
+12;fred:future_medal_1 dul:follows fred:win_1;4;4;4
+13;fred:MedalCeremony owl:equivalentClass wn30:synset-ceremony-noun-1;4;5;4
+14;fred:future_anthem_1 rdf:type pbrs:play-01;3;3;1

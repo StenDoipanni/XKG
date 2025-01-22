@@ -1,0 +1,16 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;moral:AchievementThroughEffort rdfs:subClassOf d0:Process;4;3;5
+2;fred:VictoryCelebration moral:instantiationOf moral:PersonalAndNationalPride;5;5;5
+3;moral:PersonalAndNationalPride rdf:type moral:PositiveMoralValueGain;5;4;4
+4;moral:Sportsmanship rdf:type moral:EthicalVirtue;4;5;5
+5;fred:HardWorkAndDedication rdf:type moral:MoralValueDrivenCoercion;2;2;4
+6;moral:AchievementThroughEffort rdf:type moral:MoralDue;4;3;5
+7;fred:OlympicSpirit rdf:type moral:MoralValueDrivenCoercion;3;2;2
+8;moral:Sportsmanship rdfs:subClassOf wn30:supersense-noun_attribute;4;2;4
+9;fred:VictoryCelebration moral:gainFrom moral:MoralValueGain;4;3;5
+10;fred:HardWorkAndDedication moral:instantiationOf moral:AchievementThroughEffort;5;5;4
+11;fred:VictoryCelebration rdf:type moral:MoralValueDrivenCoercion;2;2;4
+12;fred:HardWorkAndDedication moral:fulfills moral:MoralDue;5;4;4
+13;fred:OlympicSpirit moral:instantiationOf moral:Sportsmanship;5;5;4
+14;moral:PersonalAndNationalPride rdfs:subClassOf d0:Characteristic;4;4;4
+15;fred:OlympicSpirit moral:exemplifies moral:EthicalVirtue;5;5;4

@@ -1,0 +1,11 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:stadium_1 fred:hasComponent fred:Track_Component;5;3;3
+2;fred:Track_Component rdf:type fred:Track;5;3;4
+3;fred:pride_1 fred:manifestedThrough fred:celebrate_1;5;3;4
+4;fred:spectator_1 fred:locatedIn fred:stadium_1;5;5;5
+5;fred:Track_Component dul:hasLocation fred:stadium_1;5;3;4
+6;fred:Track_Component owl:sameAs fred:track_1;5;3;5
+7;fred:jersey_1 fred:isPartOf fred:uniform_1;5;5;4
+8;fred:stadium_1 fred:containsEvent fred:race_1;5;5;4
+9;fred:uniform_1 fred:representsTeam fred:country_1;5;5;5
+10;fred:joy_1 fred:manifestedThrough fred:celebrate_1;5;5;5

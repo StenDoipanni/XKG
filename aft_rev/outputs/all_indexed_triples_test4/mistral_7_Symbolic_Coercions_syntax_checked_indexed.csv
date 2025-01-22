@@ -1,0 +1,22 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:string-entity_1 vn.role:Location fred:jersey_1;5;5;4
+2;fred:string-entity_1 rdf:type amr:String-entity;5;5;5
+3;fred:spirit_1 pblr:symbolize-01.symbol fred:compete_2;3;3;4
+4;fred:moment_1 pblr:symbolize-01.symbol fred:pride-01_1;4;4;5
+5;fred:flag_1 pblr:symbolize-01.symbol fred:country_1;4;2;1
+6;fred:uniform_1 rdf:type fred:Uniform;5;5;5
+7;fred:win_1 pblr:win-01.winner fred:athlete_1;5;5;5
+8;fred:win_1 rdf:type pbrs:win-01;5;5;5
+9;fred:scene_1 pblr:symbolize-01.symbol fred:potential_1;3;3;4
+10;fred:uniform_1 pblr:symbolize-01.symbol fred:country_1;4;3;5
+11;fred:moment_1 rdf:type fred:Moment;5;5;5
+12;fred:stadium_1 pblr:symbolize-01.symbol fred:compete_2;3;2;4
+13;fred:spirit_1 rdf:type fred:Spirit;5;5;5
+14;fred:win_1 pblr:symbolize-01.symbol fred:achieve_1;4;4;4
+15;fred:finish_1 rdf:type pbrs:finish-01;5;5;5
+16;fred:finish_1 pblr:symbolize-01.symbol fred:compete_2;3;2;1
+17;fred:scene_1 rdf:type fred:Scene;5;5;5
+18;fred:stadium_1 rdf:type fred:Stadium;5;5;5
+19;fred:string-entity_1 pblr:symbolize-01.symbol fred:athlete_1;2;2;4
+20;fred:flag_1 rdf:type fred:Flag;5;5;5
+21;fred:race_1 pblr:symbolize-01.symbol fred:compete_2;4;5;4

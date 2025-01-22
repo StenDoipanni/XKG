@@ -1,0 +1,12 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:person_1 fred:hasExpectedMentalState wn30:synset-determination-noun-2;4;3;5
+2;fred:athlete_1 fred:hasExpectedEmotion wn30:synset-euphoria-noun-1;5;5;5
+3;fred:athlete_1 fred:hasExpectedMentalState wn30:synset-accomplishment-noun-1;5;3;4
+4;fred:spectator_1 fred:hasExpectedEmotion wn30:synset-admiration-noun-1;5;4;4
+5;fred:hasExpectedMentalState rdf:type owl:ObjectProperty;3;3;5
+6;fred:hasExpectedPhysicalState rdf:type owl:ObjectProperty;3;3;4
+7;fred:athlete_1 fred:hasExpectedEmotion wn30:synset-pride-noun-1;5;5;5
+8;fred:athlete_1 fred:hasExpectedPhysicalState wn30:synset-exhaustion-noun-1;4;5;4
+9;fred:spectator_1 fred:hasExpectedEmotion wn30:synset-excitement-noun-1;5;4;5
+10;fred:hasExpectedEmotion rdf:type owl:ObjectProperty;3;3;5
+11;fred:person_1 fred:hasExpectedEmotion wn30:synset-disappointment-noun-1;3;2;1

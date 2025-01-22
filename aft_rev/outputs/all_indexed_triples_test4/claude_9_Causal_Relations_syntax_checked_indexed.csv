@@ -1,0 +1,7 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:celebrate_1 causal:triggeringCauseFor fred:spectator_1;3;2;5
+2;fred:achieve_1 causal:triggeringCauseFor fred:inspire_1;4;4;5
+3;fred:win_1 causal:triggeringCauseFor fred:celebrate_1;5;5;5
+4;fred:achieve_1 causal:triggeringCauseFor fred:pride_1;5;4;5
+5;fred:achieve_1 causal:triggeringCauseFor fred:thrill_1;5;5;4
+6;fred:win_1 causal:triggeringCauseFor fred:beam_1;5;4;5

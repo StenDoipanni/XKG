@@ -1,0 +1,16 @@
+index;triple;claude_score;gpt_score;mistral_score
+1;fred:crowd_1 pbrs:crowd-01.fullness fred:stadium_1;5;4;5
+2;fred:flag_1 fred:mean fred:national-pride_1;4;4;2
+3;fred:athlete_1 pbrs:perform-01.place-of-action fred:track_1;5;4;5
+4;fred:crowd_1 dul:hasQuality fred:FullCapacity;5;4;4
+5;fred:national-pride_1 rdf:type fred:NationPride-01;4;5;4
+6;fred:flag_1 dul:associatedWith fred:national-01_1;4;4;4
+7;fred:country_2 fred:mean fred:national_emblem_1;3;3;1
+8;fred:national-pride_1 pblr:pride-01.focus fred:country_1;4;5;5
+9;fred:national_1 owl:sameAs fred:country_2;3;3;1
+10;"fred:track_1 wn30schema:gloss a course used for running events; associated with athletic participation";5;3;5
+11;fred:stadium_1 wn30schema:gloss a large capacity building for sports or entertainment events that becomes full during major events;5;4;5
+12;fred:athlete_1 dul:hasQuality fred:Performance-Place;3;3;5
+13;fred:national_emblem_1 dul:represents fred:national_1;3;3;1
+14;fred:national_emblem_1 rdf:type fred:Flag;4;5;5
+15;fred:national_1 rdf:type fred:Country;4;4;5
